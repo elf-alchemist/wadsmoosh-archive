@@ -1,0 +1,35 @@
+[enu default]
+
+// episode names
+D1EP1NAME = "Knee-Deep in the Dead";
+D1EP2NAME = "The Shores of Hell";
+D1EP3NAME = "Inferno";
+D1EP4NAME = "Thy Flesh Consumed";
+D2EP1NAME = "Hell on Earth";
+D2EP2NAME = "No Rest for the Living";
+D2MLNAME = "The Master Levels";
+TNTNAME = "TNT: Evilution";
+PLUNAME = "The Plutonia Experiment";
+
+// master levels names
+ML01 = "Attack";
+ML02 = "Canyon";
+ML03 = "The Catwalk";
+ML04 = "The Combine";
+ML05 = "The Fistula";
+ML06 = "The Garrison";
+ML07 = "Titan Manor";
+ML08 = "Paradox";
+ML09 = "Subspace";
+ML10 = "Subterra";
+ML11 = "Trapped On Titan";
+ML12 = "Virgil's Lead";
+ML13 = "Minos' Judgement";
+ML14 = "Bloodsea Keep";
+ML15 = "Mephisto's Maosoleum";
+ML16 = "Nessus";
+ML17 = "Geryon";
+ML18 = "Vesperas";
+ML19 = "Black Tower";
+ML20 = "The Express Elevator To Hell";
+ML21 = "Bad Dream";

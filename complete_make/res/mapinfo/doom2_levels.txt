@@ -1,0 +1,479 @@
+map MAP01 lookup "HUSTR_1"
+{
+	next = "MAP02"
+	secretnext = "MAP02"
+	sky1 = "RSKY1"
+	cluster = 5
+	par = 30
+	music = "$MUSIC_RUNNIN"
+}
+
+map MAP02 lookup "HUSTR_2"
+{
+	next = "MAP03"
+	secretnext = "MAP03"
+	sky1 = "RSKY1"
+	cluster = 5
+	par = 90
+	music = "$MUSIC_STALKS"
+}
+
+map MAP03 lookup "HUSTR_3"
+{
+	next = "MAP04"
+	secretnext = "MAP04"
+	sky1 = "RSKY1"
+	cluster = 5
+	par = 120
+	music = "$MUSIC_COUNTD"
+}
+
+map MAP04 lookup "HUSTR_4"
+{
+	next = "MAP05"
+	secretnext = "MAP05"
+	sky1 = "RSKY1"
+	cluster = 5
+	par = 120
+	music = "$MUSIC_BETWEE"
+}
+
+map MAP05 lookup "HUSTR_5"
+{
+	next = "MAP06"
+	secretnext = "MAP06"
+	sky1 = "RSKY1"
+	cluster = 5
+	par = 90
+	music = "$MUSIC_DOOM"
+}
+
+map MAP06 lookup "HUSTR_6"
+{
+	next = "MAP07"
+	secretnext = "MAP07"
+	sky1 = "RSKY1"
+	cluster = 5
+	par = 150
+	sucktime = 1
+	music = "$MUSIC_THE_DA"
+}
+
+map MAP07 lookup "HUSTR_7"
+{
+	next = "MAP08"
+	secretnext = "MAP08"
+	sky1 = "RSKY1"
+	cluster = 6
+	par = 120
+	map07special
+	music = "$MUSIC_SHAWN"
+}
+
+map MAP08 lookup "HUSTR_8"
+{
+	next = "MAP09"
+	secretnext = "MAP09"
+	sky1 = "RSKY1"
+	cluster = 6
+	par = 120
+	music = "$MUSIC_DDTBLU"
+}
+
+map MAP09 lookup "HUSTR_9"
+{
+	next = "MAP10"
+	secretnext = "MAP10"
+	sky1 = "RSKY1"
+	cluster = 6
+	par = 270
+	music = "$MUSIC_IN_CIT"
+}
+
+map MAP10 lookup "HUSTR_10"
+{
+	next = "MAP11"
+	secretnext = "MAP11"
+	sky1 = "RSKY1"
+	cluster = 6
+	par = 90
+	music = "$MUSIC_DEAD"
+}
+
+map MAP11 lookup "HUSTR_11"
+{
+	next = "MAP12"
+	secretnext = "MAP12"
+	sky1 = "RSKY1"
+	cluster = 6
+	par = 210
+	music = "$MUSIC_STLKS2"
+}
+
+map MAP12 lookup "HUSTR_12"
+{
+	next = "MAP13"
+	secretnext = "MAP13"
+	sky1 = "RSKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_THEDA2"
+}
+
+map MAP13 lookup "HUSTR_13"
+{
+	next = "MAP14"
+	secretnext = "MAP14"
+	sky1 = "RSKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_DOOM2"
+}
+
+map MAP14 lookup "HUSTR_14"
+{
+	next = "MAP15"
+	secretnext = "MAP15"
+	sky1 = "RSKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_DDTBL2"
+}
+
+map MAP15 lookup "HUSTR_15"
+{
+	next = "MAP16"
+	secretnext = "MAP31"
+	sky1 = "RSKY2"
+	cluster = 7
+	par = 210
+	music = "$MUSIC_RUNNI2"
+}
+
+map MAP16 lookup "HUSTR_16"
+{
+	next = "MAP17"
+	secretnext = "MAP17"
+	sky1 = "RSKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_DEAD2"
+}
+
+map MAP17 lookup "HUSTR_17"
+{
+	next = "MAP18"
+	secretnext = "MAP18"
+	sky1 = "RSKY2"
+	cluster = 7
+	par = 420
+	music = "$MUSIC_STLKS3"
+}
+
+map MAP18 lookup "HUSTR_18"
+{
+	next = "MAP19"
+	secretnext = "MAP19"
+	sky1 = "RSKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_ROMERO"
+}
+
+map MAP19 lookup "HUSTR_19"
+{
+	next = "MAP20"
+	secretnext = "MAP20"
+	sky1 = "RSKY2"
+	cluster = 7
+	par = 210
+	music = "$MUSIC_SHAWN2"
+}
+
+map MAP20 lookup "HUSTR_20"
+{
+	next = "MAP21"
+	secretnext = "MAP21"
+	sky1 = "RSKY2"
+	cluster = 7
+	par = 150
+	music = "$MUSIC_MESSAG"
+}
+
+map MAP21 lookup "HUSTR_21"
+{
+	next = "MAP22"
+	secretnext = "MAP22"
+	sky1 = "RSKY3"
+	cluster = 8
+	par = 240
+	music = "$MUSIC_COUNT2"
+}
+
+map MAP22 lookup "HUSTR_22"
+{
+	next = "MAP23"
+	secretnext = "MAP23"
+	sky1 = "RSKY3"
+	cluster = 8
+	par = 150
+	music = "$MUSIC_DDTBL3"
+}
+
+map MAP23 lookup "HUSTR_23"
+{
+	next = "MAP24"
+	secretnext = "MAP24"
+	sky1 = "RSKY3"
+	cluster = 8
+	par = 180
+	music = "$MUSIC_AMPIE"
+}
+
+map MAP24 lookup "HUSTR_24"
+{
+	next = "MAP25"
+	secretnext = "MAP25"
+	sky1 = "RSKY3"
+	cluster = 8
+	par = 150
+	music = "$MUSIC_THEDA3"
+}
+
+map MAP25 lookup "HUSTR_25"
+{
+	next = "MAP26"
+	secretnext = "MAP26"
+	sky1 = "RSKY3"
+	cluster = 8
+	par = 150
+	music = "$MUSIC_ADRIAN"
+}
+
+map MAP26 lookup "HUSTR_26"
+{
+	next = "MAP27"
+	secretnext = "MAP27"
+	sky1 = "RSKY3"
+	cluster = 8
+	par = 300
+	music = "$MUSIC_MESSG2"
+}
+
+map MAP27 lookup "HUSTR_27"
+{
+	next = "MAP28"
+	secretnext = "MAP28"
+	sky1 = "RSKY3"
+	cluster = 8
+	par = 330
+	music = "$MUSIC_ROMER2"
+}
+
+map MAP28 lookup "HUSTR_28"
+{
+	next = "MAP29"
+	secretnext = "MAP29"
+	sky1 = "RSKY3"
+	cluster = 8
+	par = 420
+	music = "$MUSIC_TENSE"
+}
+
+map MAP29 lookup "HUSTR_29"
+{
+	next = "MAP30"
+	secretnext = "MAP30"
+	sky1 = "RSKY3"
+	cluster = 8
+	par = 300
+	music = "$MUSIC_SHAWN3"
+}
+
+map MAP30 lookup "HUSTR_30"
+{
+	next = "EndGameC"
+	secretnext = "EndGameC"
+	sky1 = "RSKY3"
+	cluster = 8
+	par = 180
+	allowmonstertelefrags
+	music = "$MUSIC_OPENIN"
+}
+
+map MAP31 lookup "HUSTR_31"
+{
+	next = "MAP16"
+	secretnext = "MAP32"
+	sky1 = "RSKY3"
+	cluster = 9
+	par = 120
+	music = "$MUSIC_EVIL"
+}
+
+map MAP32 lookup "HUSTR_32"
+{
+	next = "MAP16"
+	secretnext = "MAP16"
+	sky1 = "RSKY3"
+	cluster = 10
+	par = 30
+	music = "$MUSIC_ULTIMA"
+}
+
+// DOOM II first cluster (up thru level 6)
+
+cluster 5
+{
+	flat = "$BGFLAT06"
+	music = "$MUSIC_READ_M"
+	exittext = lookup, "C1TEXT"
+
+}
+
+// DOOM II second cluster (up thru level 11)
+
+cluster 6
+{
+	flat = "$BGFLAT11"
+	music = "$MUSIC_READ_M"
+	exittext = lookup, "C2TEXT"
+
+}
+
+// DOOM II third cluster (up thru level 20)
+
+cluster 7
+{
+	flat = "$BGFLAT20"
+	music = "$MUSIC_READ_M"
+	exittext = lookup, "C3TEXT"
+}
+
+// DOOM II fourth cluster (up thru level 30)
+
+cluster 8
+{
+	flat = "$BGFLAT30"
+	music = "$MUSIC_READ_M"
+	exittext = lookup, "C4TEXT"
+}
+
+// DOOM II fifth cluster (level 31)
+
+cluster 9
+{
+	flat = "$BGFLAT15"
+	music = "$MUSIC_READ_M"
+	entertext = lookup, "C5TEXT"
+}
+
+// DOOM II sixth cluster (level 32)
+
+cluster 10
+{
+	flat = "$BGFLAT31"
+	music = "$MUSIC_READ_M"
+	entertext = lookup, "C6TEXT"
+}
+
+// No Rest for the Living
+
+map NERVE_MAP01 lookup "NHUSTR_1"
+{
+	next = "NERVE_MAP02"
+	secretnext = "NERVE_MAP09"
+	sky1 = "RSKY1"
+	cluster = 11
+	par = 75
+	music = "$MUSIC_MESSAG"
+}
+
+map NERVE_MAP02 lookup "NHUSTR_2"
+{
+	next = "NERVE_MAP03"
+	secretnext = "NERVE_MAP09"
+	sky1 = "RSKY1"
+	cluster = 11
+	par = 105
+	music = "$MUSIC_DDTBLU"
+}
+
+map NERVE_MAP03 lookup "NHUSTR_3"
+{
+	next = "NERVE_MAP04"
+	secretnext = "NERVE_MAP09"
+	sky1 = "RSKY1"
+	cluster = 11
+	par = 120
+	music = "$MUSIC_DOOM"
+}
+
+map NERVE_MAP04 lookup "NHUSTR_4"
+{
+	next = "NERVE_MAP05"
+	secretnext = "NERVE_MAP09"
+	sky1 = "RSKY1"
+	cluster = 11
+	par = 105
+	music = "$MUSIC_SHAWN"
+}
+
+map NERVE_MAP05 lookup "NHUSTR_5"
+{
+	next = "NERVE_MAP06"
+	secretnext = "NERVE_MAP09"
+	sky1 = "RSKY1"
+	cluster = 11
+	par = 210
+	music = "$MUSIC_IN_CIT"
+}
+
+map NERVE_MAP06 lookup "NHUSTR_6"
+{
+	next = "NERVE_MAP07"
+	secretnext = "NERVE_MAP09"
+	sky1 = "RSKY1"
+	cluster = 11
+	par = 105
+	sucktime = 1
+	music = "$MUSIC_THE_DA"
+}
+
+map NERVE_MAP07 lookup "NHUSTR_7"
+{
+	next = "NERVE_MAP08"
+	secretnext = "NERVE_MAP09"
+	sky1 = "RSKY1"
+	cluster = 11
+	par = 165
+	map07special
+	music = "$MUSIC_IN_CIT"
+}
+
+map NERVE_MAP08 lookup "NHUSTR_8"
+{
+	next = "EndGameC"
+	secretnext = "EndGameC"
+	sky1 = "RSKY1"
+	cluster = 11
+	par = 105
+	music = "$MUSIC_SHAWN"
+}
+
+map NERVE_MAP09 lookup "NHUSTR_9"
+{
+	next = "NERVE_MAP05"
+	secretnext = "NERVE_MAP05"
+	sky1 = "RSKY1"
+	cluster = 11
+	par = 135
+	music = "$MUSIC_DDTBLU"
+}
+
+cluster 11
+{
+	flat = "SLIME16"
+	music = "$MUSIC_READ_M"
+	exittext = lookup, "NERVETEXT"
+}

@@ -1,0 +1,98 @@
+include mapinfo/doom1_levels.txt
+include mapinfo/doom2_levels.txt
+include mapinfo/masterlevels.txt
+include mapinfo/tnt_levels.txt
+include mapinfo/plutonia_levels.txt
+
+gameinfo
+{
+	creditpage = "CREDIT"
+	titlemusic = "$MUSIC_INTRO"
+	titletime = 11
+	pagetime = 5
+	finalemusic = "$MUSIC_VICTOR"
+	finaleflat = "FLOOR4_8"
+	finalepage = "HELP2", "VICTORY2", "ENDPIC"
+	infopage = "HELP", "CREDIT"
+	quitsound = "menu/quit1"
+	borderflat = "FLOOR7_2"
+	drawreadthis = false
+	intermissionmusic = "$MUSIC_DM2INT"
+	quitmessages = "$QUITMSG", "$QUITMSG1", "$QUITMSG2", "$QUITMSG3", "$QUITMSG4", "$QUITMSG5", "$QUITMSG6", "$QUITMSG7",
+				   "$QUITMSG8", "$QUITMSG9", "$QUITMSG10", "$QUITMSG11", "$QUITMSG12", "$QUITMSG13", "$QUITMSG14"
+}
+
+clearepisodes
+episode e1m1
+{
+	// print names instead of using graphic lump - looks weird next to
+	// episodes that don't have em
+	//picname = "M_EPI1"
+	name = "$D1EP1NAME"
+	key = "k"
+	optional
+}
+
+episode e2m1
+{
+	//picname = "M_EPI2"
+	name = "$D1EP2NAME"
+	key = "s"
+	optional
+}
+
+episode e3m1
+{
+	//picname = "M_EPI3"
+	name = "$D1EP3NAME"
+	key = "i"
+	optional
+}
+
+episode e4m1
+{
+	//picname = "M_EPI4"
+	name = "$D1EP4NAME"
+	key = "f"
+	optional
+}
+
+episode map01
+{
+	name = "$D2EP1NAME"
+	key = "h"
+	optional
+}
+
+episode nerve_map01
+{
+	name = "$D2EP2NAME"
+	key = "n"
+	optional
+}
+
+episode ml_map01
+{
+	name = "$D2MLNAME"
+	key = "m"
+	optional
+}
+
+episode tnt_map01
+{
+	name = "$TNTNAME"
+	key = "t"
+	optional
+}
+
+episode plut_map01
+{
+	name = "$PLUNAME"
+	key = "p"
+	optional
+}
+
+defaultmap
+{
+	sucktime = 1
+}

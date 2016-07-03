@@ -1,0 +1,244 @@
+// doom 2 master levels
+
+// attack
+map ML_MAP01 lookup "ML01"
+{
+	next = "ML_MAP02"
+	secretnext = "ML_MAP02"
+	sky1 = "RSKY1"
+	music = "$MUSIC_RUNNIN"
+	ResetHealth
+	ResetInventory
+}
+
+// canyon
+map ML_MAP02 lookup "ML02"
+{
+	next = "ML_MAP03"
+	secretnext = "ML_MAP03"
+	sky1 = "RSKY1"
+	music = "$MUSIC_RUNNIN"
+	ResetHealth
+	ResetInventory
+}
+
+// the catwalk
+map ML_MAP03 lookup "ML03"
+{
+	next = "ML_MAP04"
+	secretnext = "ML_MAP04"
+	sky1 = "RSKY1"
+	music = "$MUSIC_RUNNIN"
+	ResetHealth
+	ResetInventory
+}
+
+// the combine
+map ML_MAP04 lookup "ML04"
+{
+	next = "ML_MAP05"
+	secretnext = "ML_MAP05"
+	sky1 = "ML_SKY1"
+	music = "$MUSIC_RUNNIN"
+	ResetHealth
+	ResetInventory
+}
+
+// the fistula
+map ML_MAP05 lookup "ML05"
+{
+	next = "ML_MAP06"
+	secretnext = "ML_MAP06"
+	sky1 = "ML_SKY1"
+	music = "$MUSIC_RUNNIN"
+	ResetHealth
+	ResetInventory
+}
+
+// the garrison
+map ML_MAP06 lookup "ML06"
+{
+	next = "ML_MAP07"
+	secretnext = "ML_MAP07"
+	sky1 = "RSKY1"
+	music = "$MUSIC_RUNNIN"
+	ResetHealth
+	ResetInventory
+}
+
+// titan manor
+map ML_MAP07 lookup "ML07"
+{
+	next = "ML_MAP08"
+	secretnext = "ML_MAP08"
+	sky1 = "ML_SKY2"
+	music = "$MUSIC_RUNNIN"
+	ResetHealth
+	ResetInventory
+}
+
+// paradox
+map ML_MAP08 lookup "ML08"
+{
+	next = "ML_MAP09"
+	secretnext = "ML_MAP09"
+	sky1 = "RSKY1"
+	music = "$MUSIC_RUNNIN"
+	ResetHealth
+	ResetInventory
+}
+
+// subspace
+map ML_MAP09 lookup "ML09"
+{
+	next = "ML_MAP10"
+	secretnext = "ML_MAP10"
+	sky1 = "RSKY1"
+	music = "$MUSIC_RUNNIN"
+	ResetHealth
+	ResetInventory
+}
+
+// subterra
+map ML_MAP10 lookup "ML10"
+{
+	next = "ML_MAP11"
+	secretnext = "ML_MAP11"
+	sky1 = "RSKY1"
+	music = "$MUSIC_RUNNIN"
+	ResetHealth
+	ResetInventory
+}
+
+// trapped on titan
+map ML_MAP11 lookup "ML11"
+{
+	next = "ML_MAP12"
+	secretnext = "ML_MAP12"
+	sky1 = "ML_SKY2"
+	music = "$MUSIC_RUNNIN"
+	ResetHealth
+	ResetInventory
+}
+
+// virgil's lead
+map ML_MAP12 lookup "ML12"
+{
+	next = "ML_MAP13"
+	secretnext = "ML_MAP13"
+	sky1 = "ML_SKY3"
+	// map03 music
+	music = "$MUSIC_COUNTD"
+	ResetHealth
+	ResetInventory
+}
+
+// minos' judgment
+map ML_MAP13 lookup "ML13"
+{
+	next = "ML_MAP14"
+	secretnext = "ML_MAP14"
+	sky1 = "ML_SKY3"
+	// map05 music
+	music = "$MUSIC_DOOM"
+	ResetHealth
+	ResetInventory
+}
+
+// bloodsea keep
+map ML_MAP14 lookup "ML14"
+{
+	next = "ML_MAP15"
+	secretnext = "ML_MAP15"
+	sky1 = "RSKY1"
+	// map07 music
+	music = "$MUSIC_SHAWN"
+	map07special
+	ResetHealth
+	ResetInventory
+}
+
+// mephisto's mausoleum
+map ML_MAP15 lookup "ML15"
+{
+	next = "ML_MAP16"
+	secretnext = "ML_MAP16"
+	sky1 = "RSKY1"
+	// map07 music
+	music = "$MUSIC_SHAWN"
+	map07special
+	ResetHealth
+	ResetInventory
+}
+
+// nessus
+map ML_MAP16 lookup "ML16"
+{
+	next = "ML_MAP17"
+	secretnext = "ML_MAP17"
+	sky1 = "ML_SKY3"
+	// map07 music	
+	music = "$MUSIC_SHAWN"
+	ResetHealth
+	ResetInventory
+}
+
+// geryon
+map ML_MAP17 lookup "ML17"
+{
+	next = "ML_MAP18"
+	secretnext = "ML_MAP18"
+	sky1 = "ML_SKY3"
+	// map08 music
+	music = "$MUSIC_DDTBLU"
+	ResetHealth
+	ResetInventory
+}
+
+// vesperas
+map ML_MAP18 lookup "ML18"
+{
+	next = "ML_MAP19"
+	secretnext = "ML_MAP19"
+	sky1 = "ML_SKY3"
+	// map09 music
+	music = "$MUSIC_IN_CIT"
+	ResetHealth
+	ResetInventory
+}
+
+// black tower
+map ML_MAP19 lookup "ML19"
+{
+	next = "ML_MAP20"
+	secretnext = "ML_MAP20"
+	sky1 = "RSKY1"
+	// map25 music
+	music = "$MUSIC_ADRIAN"
+	ResetHealth
+	ResetInventory
+}
+
+// express elevator to hell
+map ML_MAP20 lookup "ML20"
+{
+	// finish if normal exit pressed
+	next = "EndGameC"
+	secretnext = "ML_MAP21"
+	sky1 = "RSKY1"
+	// map31 music
+	music = "$MUSIC_EVIL"
+	ResetHealth
+	ResetInventory
+}
+
+// bad dream
+map ML_MAP21 lookup "ML21"
+{
+	// finish if exit pressed
+	next = "EndGameC"
+	secretnext = "EndGameC"
+	sky1 = "RSKY1"
+	// map32 music
+	music = "$MUSIC_ULTIMA"
+}
