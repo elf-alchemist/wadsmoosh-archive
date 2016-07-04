@@ -7,11 +7,11 @@ import omg
 
 """
 TODO:
-- copy master levels to appropriate filenames + split teeth.wad
+- copy master levels sky lumps
 - tnt map30 intermission pic is ep4
-- doom2 intermission pic is ep4
-- apply tnt map31 fix
+- apply tnt map31 yellow key fix
 - handle various capitalization cases eg doom2.WAD, DOOM2.wad
+- custom ENDOOM :]
 """
 
 SRC_WAD_DIR = 'source_wads/'
@@ -68,6 +68,29 @@ MASTER_LEVELS_MAP_ORDER = [
 ]
 
 MASTER_LEVELS_MAP_PREFIX = 'ml_'
+
+def extract_master_levels():
+    # check if present first
+    if not os.path.exists(SRC_WAD_DIR + MASTER_LEVELS_MAP_ORDER[0].upper() + '.WAD'):
+        print('Master Levels not found.')
+        return
+    print('Processing Master Levels...')
+    for i,wad_name in enumerate(MASTER_LEVELS_MAP_ORDER):
+        in_wad = omg.WAD()
+        in_wad.from_file(SRC_WAD_DIR + wad_name.upper() + '.WAD')
+        out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX
+        # extra zero for <10 map numbers, eg map01
+        map_num = str(i + 1).rjust(2, '0')
+        out_wad_filename += 'map' + map_num + '.wad'
+        print('  Writing %s to %s' % (wad_name, out_wad_filename))
+        # grab first map we find in each wad
+        map_name = in_wad.maps.find('*')[0]
+        ed = omg.MapEditor(in_wad.maps[map_name])
+        extract_map(in_wad, map_name, out_wad_filename)
+    # save teeth map32 to map21 wad
+    out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map21' + '.wad'
+    print('  Writing %s map32 to %s' % (wad_name, out_wad_filename))
+    extract_map(in_wad, in_wad.maps.find('*')[1], out_wad_filename)
 
 def extract_map(in_wad, map_name, out_filename):
     out_wad = omg.WAD()
@@ -146,6 +169,7 @@ def main():
         # TODO: uncomment when done
         extract_lumps(iwad_name)
         #extract_iwad_maps(iwad_name, WAD_MAP_PREFIXES[iwad_name])
+    extract_master_levels()
     # copy pre-authored lumps eg mapinfo
     for src_file in RES_FILES:
         print('Copying %s' % src_file)
