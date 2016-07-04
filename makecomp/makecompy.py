@@ -4,7 +4,7 @@ import omg
 
 """
 TODO:
-- initial pre-pass that determines which WADs are available
+- initial pre-pass that determines which WADs are available?
 - copy master levels to appropriate filenames + split teeth.wad
 - parse & extract lists of lumps for each IWAD (lumpname : optional filename)
   - (how to distinguish between different kinds?)
@@ -15,6 +15,7 @@ TODO:
 """
 
 SRC_WAD_DIR = 'source_wads/'
+DATA_DIR = 'data/'
 RES_DIR = 'res/'
 MAPS_DIR = RES_DIR + 'maps/'
 WAD_EXT = 'wad'
@@ -32,7 +33,7 @@ WAD_MAP_PREFIXES = {
 
 # lists of lumps to extract from each IWAD
 WAD_LUMP_LISTS = {
-    'doom': 'doom1_lumps.txt',
+    'doom': { ['flats_common', 'graphics_common'] },
     'doom2': 'doom2_lumps.txt',
     'tnt': 'tnt_lumps.txt',
     'plutonia': 'plutonia_lumps.txt'
