@@ -2,6 +2,18 @@
 import os
 import omg
 
+"""
+TODO:
+- initial pre-pass that determines which WADs are available
+- copy master levels to appropriate filenames + split teeth.wad
+- parse & extract lists of lumps for each IWAD (lumpname : optional filename)
+  - (how to distinguish between different kinds?)
+- special cases:
+  - apply tnt map31 fix
+  - extract DPHOOF from doom.wad
+- zip up pk3 (import zipfile module)
+"""
+
 SRC_WAD_DIR = 'source_wads/'
 RES_DIR = 'res/'
 MAPS_DIR = RES_DIR + 'maps/'
@@ -63,3 +75,9 @@ def extract_iwad_maps(wad_name, map_prefix):
 for iwad_name in IWADS:
     print('processing IWAD %s...' % iwad_name)
     extract_iwad_maps(iwad_name, WAD_MAP_PREFIXES[iwad_name])
+
+# i = omg.WAD()
+# i.from_file('source_wads/doom.wad')
+# i.data['PLAYPAL'].to_file('playpal')
+# if image:
+# i.data['SKY1'].to_Image().save()

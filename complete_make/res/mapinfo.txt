@@ -12,7 +12,7 @@ gameinfo
 	pagetime = 5
 	finalemusic = "$MUSIC_VICTOR"
 	finaleflat = "FLOOR4_8"
-	finalepage = "HELP2", "VICTORY2", "ENDPIC"
+	finalepage = "CREDIT", "VICTORY2", "ENDPIC"
 	infopage = "HELP", "CREDIT"
 	quitsound = "menu/quit1"
 	borderflat = "FLOOR7_2"
