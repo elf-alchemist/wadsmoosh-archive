@@ -1145,4 +1145,9 @@ Texture DISASTER, 128, 128
 	Patch DISASTER, 0, 32
 }
 
+Texture BLOD3, 128, 128
+{
+	Patch BLOD64A, 0, 0
+}
+
 // End of texture definitions
