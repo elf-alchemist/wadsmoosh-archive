@@ -1,0 +1,70 @@
+===========================================================================
+Advanced engine needed  : ZDoom / GZDoom
+Primary purpose         : IWAD Combining Tool
+===========================================================================
+Title                   : WadSmoosh
+Filename                : wadsmoosh.zip
+Release date            : 2016-07-05
+Author                  : JP LeBreton
+Email Address           : http://vectorpoem.com/contact.html
+Other Files By Author   : arcadia.wad, oakdoom.wad
+Misc. Author Info       : 
+
+Description             : A tool for combining all official id release
+                          WADs into a single PK3 file playable with ZDoom
+						  and its derivatives. Drop your WADs into the
+						  source_wads\ subfolder, then run. A new IWAD
+						  file called "doom_complete.pk3" will be
+						  generated.
+
+Additional Credits to   : 
+===========================================================================
+* What is included *
+
+New levels              : None
+Sounds                  : No
+Music                   : No
+Graphics                : Yes (title art)
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : Yes (custom data files)
+Other files required    : Any/all official id release WADs:
+                          - Doom / Ultimate Doom
+						  - Doom 2
+						  - Master Levels for Doom 2
+						  - No Rest for the Living (extracted)
+						  - Final Doom (TNT and Plutonia)
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : A weekend
+Editor(s) used          : OMGIFOL, the excellent Python-based lump management
+                          library. Playscii for the custom ENDOOM.
+Known Bugs              : Tell me!
+May Not Run With        : Any non-ZDoom-derived source port
+Tested With             : Engines/exes used during testing (include versions)
+
+
+
+* Copyright / Permissions *
+
+Authors (MAY/may NOT) use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+(delete one of these two paragraphs:)
+
+You MAY distribute this file, provided you include this text
+file, with no modifications.  You may distribute this file in any
+electronic format (BBS, Diskette, CD, etc) as long as you include
+this file intact.  I have received permission from the original
+authors of any modified or included content in this file to allow
+further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: 

@@ -8,14 +8,13 @@ import omg
 """
 TODO:
 - finish custom ENDOOM art
-- win32 exe build
 """
 
 SRC_WAD_DIR = 'source_wads/'
 DATA_DIR = 'data/'
 DEST_DIR = 'pk3/'
 DEST_FILENAME = 'doom_complete.pk3'
-LOG_FILENAME = 'makecomp.log'
+LOG_FILENAME = 'wadsmoosh.log'
 RES_DIR = 'res/'
 RES_FILES = [
     'mapinfo.txt', 'language.txt', 'endoom',
