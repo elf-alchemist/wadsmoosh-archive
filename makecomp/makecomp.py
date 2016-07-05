@@ -8,8 +8,10 @@ import omg
 """
 TODO:
 - texture error in tnt map20: "Unknown middle texture 'BLOD3' on first side of linedef 125"
+- split doom1 and doom2 textures into separate files, don't copy if wad isn't present
 - finish custom ENDOOM art
 - test with various wads missing
+- win32 exe build
 """
 
 SRC_WAD_DIR = 'source_wads/'
@@ -213,15 +215,25 @@ def main():
         if not wad_filename:
             print('IWAD %s not found' % iwad_name)
             continue
+        if iwad_name == 'nerve' and not get_wad_filename('doom2'):
+            print('Skipping nerve.wad as doom2.wad is not present')
+            continue
         print('Processing IWAD %s...' % iwad_name)
-        # TODO: uncomment when done
-        #extract_lumps(iwad_name)
-        #extract_iwad_maps(iwad_name, WAD_MAP_PREFIXES[iwad_name])
-    extract_master_levels()
+        extract_lumps(iwad_name)
+        extract_iwad_maps(iwad_name, WAD_MAP_PREFIXES[iwad_name])
+    if get_wad_filename('doom2'):
+        extract_master_levels()
+    else:
+        print('Skipping Master Levels as doom2.wad is not present')
     if get_wad_filename('tnt'):
         tnt_map31_fix()
     # copy pre-authored lumps eg mapinfo
     for src_file in RES_FILES:
+        # don't copy texture lumps for files that aren't present
+        if src_file == 'textures.tnt' and not get_wad_filename('tnt'):
+            continue
+        elif src_file == 'textures.plut' and not get_wad_filename('plutonia'):
+            continue
         print('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
     # create pk3
