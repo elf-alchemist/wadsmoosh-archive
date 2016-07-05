@@ -5,11 +5,6 @@ from zipfile import ZipFile
 
 import omg
 
-"""
-TODO:
-- finish custom ENDOOM art
-"""
-
 SRC_WAD_DIR = 'source_wads/'
 DATA_DIR = 'data/'
 DEST_DIR = 'pk3/'

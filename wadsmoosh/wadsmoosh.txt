@@ -4,11 +4,10 @@ Primary purpose         : IWAD Combining Tool
 ===========================================================================
 Title                   : WadSmoosh
 Filename                : wadsmoosh.zip
-Release date            : 2016-07-05
+Release date            : 2016-07-05 (non-final prerelease version)
 Author                  : JP LeBreton
 Email Address           : http://vectorpoem.com/contact.html
-Other Files By Author   : arcadia.wad, oakdoom.wad
-Misc. Author Info       : 
+Other Files By Author   : arcadia.wad, oakridge.wad
 
 Description             : A tool for combining all official id release
                           WADs into a single PK3 file playable with ZDoom
@@ -32,7 +31,7 @@ Other files required    : Any/all official id release WADs:
                           - Doom / Ultimate Doom
                           - Doom 2
                           - Master Levels for Doom 2
-                          - No Rest for the Living (extracted)
+                          - No Rest for the Living (extracted WAD)
                           - Final Doom (TNT and Plutonia)
 
 
@@ -44,17 +43,14 @@ Editor(s) used          : OMGIFOL, the excellent Python-based lump management
                           library. Playscii for the custom ENDOOM.
 Known Bugs              : Tell me!
 May Not Run With        : Any non-ZDoom-derived source port
-Tested With             : Engines/exes used during testing (include versions)
-
+Tested With             : ZDoom and GZDoom in Windows, macOS, and Arch Linux
 
 
 * Copyright / Permissions *
 
-Authors (MAY/may NOT) use the contents of this file as a base for
+Authors MAY use the contents of this file as a base for
 modification or reuse.  Permissions have been obtained from original
 authors for any of their resources modified or included in this file.
-
-(delete one of these two paragraphs:)
 
 You MAY distribute this file, provided you include this text
 file, with no modifications.  You may distribute this file in any
@@ -67,4 +63,4 @@ further distribution.
 * Where to get the file that this text file describes *
 
 The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
-Web sites: 
+Web sites: http://vectorpoem.com (page forthcoming)
