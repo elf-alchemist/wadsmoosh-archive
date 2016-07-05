@@ -7,10 +7,6 @@ import omg
 
 """
 TODO:
-- split doom1 and doom2 textures into separate files, don't copy if wad isn't present
-- log to a file
-- mac/linux run scripts
-- source distribution build script
 - finish custom ENDOOM art
 - win32 exe build
 """
