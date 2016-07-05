@@ -12,10 +12,10 @@ Misc. Author Info       :
 
 Description             : A tool for combining all official id release
                           WADs into a single PK3 file playable with ZDoom
-						  and its derivatives. Drop your WADs into the
-						  source_wads\ subfolder, then run. A new IWAD
-						  file called "doom_complete.pk3" will be
-						  generated.
+                          and its derivatives. Drop your WADs into the
+                          source_wads\ subfolder, then run. A new IWAD
+                          file called "doom_complete.pk3" will be
+                          generated.
 
 Additional Credits to   : 
 ===========================================================================
@@ -30,10 +30,10 @@ Demos                   : No
 Other                   : Yes (custom data files)
 Other files required    : Any/all official id release WADs:
                           - Doom / Ultimate Doom
-						  - Doom 2
-						  - Master Levels for Doom 2
-						  - No Rest for the Living (extracted)
-						  - Final Doom (TNT and Plutonia)
+                          - Doom 2
+                          - Master Levels for Doom 2
+                          - No Rest for the Living (extracted)
+                          - Final Doom (TNT and Plutonia)
 
 
 * Construction *
