@@ -1,2 +1,2 @@
-python makecomp.py 
+python wadsmoosh.py 
 
