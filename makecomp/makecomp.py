@@ -10,7 +10,6 @@ TODO:
 - copy master levels sky lumps
 - tnt map30 intermission pic is ep4
 - apply tnt map31 yellow key fix
-- handle various capitalization cases eg doom2.WAD, DOOM2.wad
 - custom ENDOOM :]
 """
 
@@ -69,28 +68,38 @@ MASTER_LEVELS_MAP_ORDER = [
 
 MASTER_LEVELS_MAP_PREFIX = 'ml_'
 
+def get_wad_filename(wad_name):
+    # return filename of first case-insensitive match
+    wad_name += '.wad'
+    for filename in os.listdir(SRC_WAD_DIR):
+        if wad_name.lower() == filename.lower():
+            return SRC_WAD_DIR + filename
+    return None
+
 def extract_master_levels():
     # check if present first
-    if not os.path.exists(SRC_WAD_DIR + MASTER_LEVELS_MAP_ORDER[0].upper() + '.WAD'):
+    first_ml_wad = get_wad_filename(MASTER_LEVELS_MAP_ORDER[0])
+    if not first_ml_wad:
         print('Master Levels not found.')
         return
     print('Processing Master Levels...')
     for i,wad_name in enumerate(MASTER_LEVELS_MAP_ORDER):
         in_wad = omg.WAD()
-        in_wad.from_file(SRC_WAD_DIR + wad_name.upper() + '.WAD')
-        out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX
+        wad_filename = get_wad_filename(wad_name)
+        in_wad.from_file(wad_filename)
+        out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map'
         # extra zero for <10 map numbers, eg map01
-        map_num = str(i + 1).rjust(2, '0')
-        out_wad_filename += 'map' + map_num + '.wad'
-        print('  Writing %s to %s' % (wad_name, out_wad_filename))
+        out_wad_filename += str(i + 1).rjust(2, '0') + '.wad'
+        print('  Writing %s to %s' % (wad_filename, out_wad_filename))
         # grab first map we find in each wad
         map_name = in_wad.maps.find('*')[0]
         ed = omg.MapEditor(in_wad.maps[map_name])
         extract_map(in_wad, map_name, out_wad_filename)
     # save teeth map32 to map21 wad
     out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map21' + '.wad'
-    print('  Writing %s map32 to %s' % (wad_name, out_wad_filename))
+    print('  Writing %s map32 to %s' % (wad_filename, out_wad_filename))
     extract_map(in_wad, in_wad.maps.find('*')[1], out_wad_filename)
+    # TODO: sky lumps
 
 def extract_map(in_wad, map_name, out_filename):
     out_wad = omg.WAD()
@@ -100,7 +109,8 @@ def extract_map(in_wad, map_name, out_filename):
 
 def extract_iwad_maps(wad_name, map_prefix):
     in_wad = omg.WAD()
-    in_wad.from_file(SRC_WAD_DIR + wad_name + '.wad')
+    wad_filename = get_wad_filename(wad_name)
+    in_wad.from_file(wad_filename)
     for map_name in in_wad.maps.find('*'):
         print('  Processing map %s...' % map_name)
         out_wad_filename = DEST_DIR + 'maps/' + map_prefix + map_name + '.wad'
@@ -111,7 +121,8 @@ def extract_lumps(wad_name):
     if not wad_name in WAD_LUMP_LISTS:
         return
     wad = omg.WAD()
-    wad.from_file(SRC_WAD_DIR + wad_name + '.wad')
+    wad_filename = get_wad_filename(wad_name)
+    wad.from_file(wad_filename)
     for lump_list in WAD_LUMP_LISTS[wad_name]:
         # derive subdir from name of lump list
         try:
@@ -149,26 +160,28 @@ def extract_lumps(wad_name):
                 print("  Couldn't find lump with name %s" % lump_name)
                 continue
             lump = lump_table[lump_name]
-            out_filename += '.lmp'
+            out_filename += '.lmp' if lump_type != 'music' else '.mus'
             print('    Writing %s' % lump_subdir + out_filename)
             lump.to_file(lump_subdir + out_filename)
 
 def main():
     # make dirs if they don't exist
+    if not os.path.exists(DEST_DIR):
+        os.mkdir(DEST_DIR)
     for dirname in ['flats', 'graphics', 'music', 'maps', 'mapinfo', 'patches',
                     'sounds', 'sprites']:
         if not os.path.exists(DEST_DIR + dirname):
             os.mkdir(DEST_DIR + dirname)
     # extract lumps and maps from wads
     for iwad_name in IWADS:
-        in_wad_filename = SRC_WAD_DIR + iwad_name + '.wad'
-        if not os.path.exists(in_wad_filename):
-            print('IWAD %s not found' % in_wad_filename)
+        wad_filename = get_wad_filename(iwad_name)
+        if not wad_filename:
+            print('IWAD %s not found' % iwad_name)
             continue
         print('Processing IWAD %s...' % iwad_name)
         # TODO: uncomment when done
         extract_lumps(iwad_name)
-        #extract_iwad_maps(iwad_name, WAD_MAP_PREFIXES[iwad_name])
+        extract_iwad_maps(iwad_name, WAD_MAP_PREFIXES[iwad_name])
     extract_master_levels()
     # copy pre-authored lumps eg mapinfo
     for src_file in RES_FILES:
