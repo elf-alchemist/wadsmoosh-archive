@@ -1,8 +1,8 @@
 set ZIP_EXE="c:\Program Files\7-Zip\7z.exe"
 set PINST_EXE="c:\python27\scripts\pyinstaller.exe"
-set PROJ_NAME="makecomp"
+set PROJ_NAME="wadsmoosh"
 
-%PINST_EXE% makecomp.py
+%PINST_EXE% %PROJ_NAME%.py
 pause
 xcopy /E data\*.* dist\%PROJ_NAME%\data\
 xcopy /E res\*.* dist\%PROJ_NAME%\res\
