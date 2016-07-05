@@ -356,6 +356,7 @@ map TNT_MAP30 lookup "THUSTR_30"
 	par = 180
 	allowmonstertelefrags
 	music = "$MUSIC_OPENIN"
+	ExitPic = "TNTINTER"
 	next = endgame {
 		pic = "TNTBOSS"
 		cast

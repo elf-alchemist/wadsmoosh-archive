@@ -7,10 +7,9 @@ import omg
 
 """
 TODO:
-- copy master levels sky lumps
-- tnt map30 intermission pic is ep4
-- apply tnt map31 yellow key fix
-- custom ENDOOM :]
+- texture error in tnt map20: "Unknown middle texture 'BLOD3' on first side of linedef 125"
+- finish custom ENDOOM art
+- test with various wads missing
 """
 
 SRC_WAD_DIR = 'source_wads/'
@@ -19,7 +18,7 @@ DEST_DIR = 'pk3/'
 DEST_FILENAME = 'complete.pk3'
 RES_DIR = 'res/'
 RES_FILES = [
-    'mapinfo.txt', 'language.txt',
+    'mapinfo.txt', 'language.txt', 'endoom',
     'textures.txt', 'textures.tnt', 'textures.plut',
     'graphics/M_DOOM.png', 'graphics/TITLEPIC.png',
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
@@ -68,6 +67,12 @@ MASTER_LEVELS_MAP_ORDER = [
 
 MASTER_LEVELS_MAP_PREFIX = 'ml_'
 
+MASTER_LEVELS_PATCHES = {
+    'combine': ('RSKY1', 'ML_SKY1'),
+    'manor': ('STARS', 'ML_SKY2'),
+    'virgil': ('RSKY1', 'ML_SKY3')
+}
+
 def get_wad_filename(wad_name):
     # return filename of first case-insensitive match
     wad_name += '.wad'
@@ -99,7 +104,37 @@ def extract_master_levels():
     out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map21' + '.wad'
     print('  Writing %s map32 to %s' % (wad_filename, out_wad_filename))
     extract_map(in_wad, in_wad.maps.find('*')[1], out_wad_filename)
-    # TODO: sky lumps
+    # extract sky lumps
+    for wad_name,patch_replace in MASTER_LEVELS_PATCHES.items():
+        wad = omg.WAD()
+        wad_filename = get_wad_filename(wad_name)
+        wad.from_file(wad_filename)
+        # manor stores sky in patches namespace, combine and virgil don't
+        if patch_replace[0] in wad.data:
+            lump = wad.data[patch_replace[0]]
+        else:
+            lump = wad.patches[patch_replace[0]]
+        out_filename = DEST_DIR + 'patches/' + patch_replace[1] + '.lmp'
+        print('  Writing %s lump from %s as %s' % (patch_replace[0],
+                                                   wad_filename,
+                                                   patch_replace[1]))
+        lump.to_file(out_filename)
+
+def tnt_map31_fix():
+    print('Checking for TNT MAP31 fix...')
+    wad = omg.WAD()
+    wad_filename = DEST_DIR + 'maps/' + WAD_MAP_PREFIXES['tnt'] + 'MAP31.wad'
+    wad.from_file(wad_filename)
+    maped = omg.MapEditor(wad.maps['MAP31'])
+    yellow_key = maped.things[470]
+    if yellow_key.type != 6 or \
+       (yellow_key.type == 6 and not yellow_key.get_multiplayer()):
+        print('  TNT MAP31 already fixed.')
+        return
+    yellow_key.set_multiplayer(False)
+    wad.maps['MAP31'] = maped.to_lumps()
+    wad.to_file(wad_filename)
+    print('  TNT MAP31 fix applied.')
 
 def extract_map(in_wad, map_name, out_filename):
     out_wad = omg.WAD()
@@ -180,9 +215,11 @@ def main():
             continue
         print('Processing IWAD %s...' % iwad_name)
         # TODO: uncomment when done
-        extract_lumps(iwad_name)
-        extract_iwad_maps(iwad_name, WAD_MAP_PREFIXES[iwad_name])
+        #extract_lumps(iwad_name)
+        #extract_iwad_maps(iwad_name, WAD_MAP_PREFIXES[iwad_name])
     extract_master_levels()
+    if get_wad_filename('tnt'):
+        tnt_map31_fix()
     # copy pre-authored lumps eg mapinfo
     for src_file in RES_FILES:
         print('Copying %s' % src_file)
