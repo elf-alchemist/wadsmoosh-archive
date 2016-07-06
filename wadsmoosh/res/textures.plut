@@ -26,7 +26,8 @@ Texture "A-YELLOW", 16, 8
 	Patch YELLOW, 0, 0
 }
 
-Texture FIREBLU1, 128, 128
+// renamed from FIREBLU1 to avoid Doom2 conflict
+Texture FIREPLU1, 128, 128
 {
 	Patch FIREBLU1, 0, 0
 }
@@ -51,7 +52,8 @@ Texture AROCK5, 128, 128
 	Patch AROCK5, 0, 0
 }
 
-Texture FIREBLU2, 128, 128
+// renamed from FIREBLU2 to avoid Doom2 conflict
+Texture FIREPLU2, 128, 128
 {
 	Patch FIREBLU2, 0, 0
 }
@@ -126,12 +128,14 @@ Texture "A-BROCK2", 128, 128
 	Patch BROCK2, 0, 0
 }
 
-Texture SW1SKULL, 64, 64
+// renamed from SW1SKULL to avoid Doom2 conflict
+Texture SW1SKULP, 64, 64
 {
 	Patch SW1SKULL, 0, 0
 }
 
-Texture SW2SKULL, 64, 64
+// renamed from SW2SKULL to avoid Doom2 conflict
+Texture SW2SKULP, 64, 64
 {
 	Patch SW2SKULL, 0, 0
 }
@@ -200,7 +204,8 @@ Texture PSKY3, 512, 128
 	Patch PSKY3B, 256, 0
 }
 
-Texture DBRAIN1, 128, 128
+// renamed from DBRAIN1 to avoid Doom2 conflict
+Texture PBRAIN1, 128, 128
 {
 	Patch MC1, 0, 0
 }
@@ -290,7 +295,8 @@ Texture MC19, 128, 128
 	Patch MC19, 0, 0
 }
 
-Texture DBRAIN4, 128, 128
+// renamed from DBRAIN4 to avoid Doom2 conflict
+Texture PBRAIN4, 128, 128
 {
 	Patch MC20, 0, 0
 }

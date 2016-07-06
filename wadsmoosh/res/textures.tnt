@@ -508,7 +508,8 @@ Texture TNTDOOR, 128, 128
 	Patch DOTNTDR, 0, 0
 }
 
-Texture SW1GSTON, 512, 128
+// renamed from SW1GSTON to avoid Doom 2 conflict
+Texture SW1GSTNT, 512, 128
 {
 	Patch WALL48_2, 0, 0
 	Patch SW2_7, 13, 67
@@ -528,7 +529,8 @@ Texture SW1GSTON, 512, 128
 	Patch SW2_7, 462, 69
 }
 
-Texture SW2GSTON, 512, 128
+// renamed from SW2GSTON to avoid Doom 2 conflict
+Texture SW2GSTNT, 512, 128
 {
 	Patch WALL48_2, 0, 0
 	Patch SW2_8, 13, 67

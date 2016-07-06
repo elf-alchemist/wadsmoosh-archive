@@ -31,7 +31,7 @@ map TNT_MAP03 lookup "THUSTR_3"
 	sky1 = "TNT_SKY1"
 	cluster = 12
 	par = 120
-	music = "$MUSIC_COUNTD"
+	music = "T_COUNTD"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -104,7 +104,7 @@ map TNT_MAP09 lookup "THUSTR_9"
 	sky1 = "TNT_SKY1"
 	cluster = 13
 	par = 270
-	music = "$MUSIC_IN_CIT"
+	music = "T_IN_CIT"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -116,7 +116,7 @@ map TNT_MAP10 lookup "THUSTR_10"
 	sky1 = "TNT_SKY1"
 	cluster = 13
 	par = 90
-	music = "$MUSIC_DEAD"
+	music = "T_DEAD"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -140,7 +140,7 @@ map TNT_MAP12 lookup "THUSTR_12"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 150
-	music = "$MUSIC_THEDA2"
+	music = "T_THEDA2"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -152,7 +152,7 @@ map TNT_MAP13 lookup "THUSTR_13"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 150
-	music = "$MUSIC_DOOM2"
+	music = "T_DOOM2"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -176,7 +176,7 @@ map TNT_MAP15 lookup "THUSTR_15"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 210
-	music = "$MUSIC_RUNNI2"
+	music = "T_RUNNI2"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -200,7 +200,7 @@ map TNT_MAP17 lookup "THUSTR_17"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 420
-	music = "$MUSIC_STLKS3"
+	music = "T_STLKS3"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -224,7 +224,7 @@ map TNT_MAP19 lookup "THUSTR_19"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 210
-	music = "$MUSIC_SHAWN2"
+	music = "T_SHAWN2"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -248,7 +248,7 @@ map TNT_MAP21 lookup "THUSTR_21"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 240
-	music = "$MUSIC_COUNT2"
+	music = "T_COUNT2"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -260,7 +260,7 @@ map TNT_MAP22 lookup "THUSTR_22"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 150
-	music = "$MUSIC_DDTBL3"
+	music = "T_DDTBL3"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -272,7 +272,7 @@ map TNT_MAP23 lookup "THUSTR_23"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 180
-	music = "$MUSIC_AMPIE"
+	music = "T_AMPIE"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -284,7 +284,7 @@ map TNT_MAP24 lookup "THUSTR_24"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 150
-	music = "$MUSIC_THEDA3"
+	music = "T_THEDA3"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -296,7 +296,7 @@ map TNT_MAP25 lookup "THUSTR_25"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 150
-	music = "$MUSIC_ADRIAN"
+	music = "T_ADRIAN"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -308,7 +308,7 @@ map TNT_MAP26 lookup "THUSTR_26"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 300
-	music = "$MUSIC_MESSG2"
+	music = "T_MESSG2"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -320,7 +320,7 @@ map TNT_MAP27 lookup "THUSTR_27"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 330
-	music = "$MUSIC_ROMER2"
+	music = "T_ROMER2"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -344,7 +344,7 @@ map TNT_MAP29 lookup "THUSTR_29"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 300
-	music = "$MUSIC_SHAWN3"
+	music = "T_SHAWN3"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }
@@ -355,7 +355,7 @@ map TNT_MAP30 lookup "THUSTR_30"
 	cluster = 15
 	par = 180
 	allowmonstertelefrags
-	music = "$MUSIC_OPENIN"
+	music = "T_OPENIN"
 	ExitPic = "TNTINTER"
 	next = endgame {
 		pic = "TNTBOSS"
@@ -382,7 +382,7 @@ map TNT_MAP32 lookup "THUSTR_32"
 	sky1 = "TNT_SKY3"
 	cluster = 17
 	par = 30
-	music = "$MUSIC_ULTIMA"
+	music = "T_ULTIMA"
 	ExitPic = "TNTINTER"
 	InterMusic = "T_EVIL"
 }

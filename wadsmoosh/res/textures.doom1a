@@ -677,16 +677,6 @@ Texture "STARTAN3", 128, 128
 	Patch "SW19_2", 0, 0
 }
 
-Texture "STEP1", 32, 8
-{
-	Patch "STEP04", 0, 0
-}
-
-Texture "STEP2", 32, 8
-{
-	Patch "STEP03", 0, 0
-}
-
 Texture "STEP3", 32, 8
 {
 	Patch "STEP05", 0, 0

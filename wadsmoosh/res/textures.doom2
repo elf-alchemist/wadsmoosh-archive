@@ -1512,17 +1512,17 @@ Texture "SKSPINE2", 256, 96
 	Patch "SPINE3_2", 128, 0
 }
 
-Texture "SKY1", 256, 128
+Texture "RSKY1", 256, 128
 {
 	Patch "RSKY1", 0, 0
 }
 
-Texture "SKY2", 256, 128
+Texture "RSKY2", 256, 128
 {
 	Patch "RSKY2", 0, 0
 }
 
-Texture "SKY3", 256, 128
+Texture "RSKY3", 256, 128
 {
 	Patch "RSKY3", 0, 0
 }
@@ -1698,14 +1698,14 @@ Texture "STARTAN3", 128, 128
 	Patch "SW19_2", 0, 0
 }
 
-Texture "STEP1", 32, 16
+WallTexture "STEP1", 32, 16
 {
 	Patch "STEP05", 0, 8
 	Patch "STEP05", 0, 5
 	Patch "STEP04", 0, 0
 }
 
-Texture "STEP2", 32, 16
+WallTexture "STEP2", 32, 16
 {
 	Patch "SW11_4", 0, -112
 	Patch "STEP03", 0, 0

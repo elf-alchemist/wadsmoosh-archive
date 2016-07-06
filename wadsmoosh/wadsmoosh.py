@@ -5,6 +5,8 @@ from zipfile import ZipFile
 
 import omg
 
+should_extract = True
+
 SRC_WAD_DIR = 'source_wads/'
 DATA_DIR = 'data/'
 DEST_DIR = 'pk3/'
@@ -52,6 +54,22 @@ WAD_MAP_PREFIXES = {
     'tnt': 'tnt_',
     'plutonia': 'plut_',
     'nerve': 'nerve_'
+}
+
+# replacements for final doom textures that conflict with doom2 textures
+TEXTURE_REPLACEMENTS = {
+    'tnt': {
+        'SW1GSTON': 'SW1GSTNT',
+        'SW2GSTON': 'SW2GSTNT'
+    },
+    'plutonia': {
+        'DBRAIN1': 'PBRAIN1',
+        'DBRAIN4': 'PBRAIN4',
+        'FIREBLU1': 'FIREPLU1',
+        'FIREBLU2': 'FIREPLU2',
+        'SW1SKULL': 'SW1SKULP',
+        'SW2SKULL': 'SW2SKULP'
+    }
 }
 
 MASTER_LEVELS_MAP_ORDER = [
@@ -140,6 +158,25 @@ def tnt_map31_fix():
     wad.to_file(wad_filename)
     logg('  TNT MAP31 fix applied.')
 
+def do_texture_replacements_in_map(map_filename, map_name, replacements):
+    # replace textures in given table for given map in given wad
+    wad = omg.WAD()
+    wad.from_file(map_filename)
+    maped = omg.MapEditor(wad.maps[map_name])
+    for i,sidedef in enumerate(maped.sidedefs):
+        for src,dest in replacements.items():
+            if sidedef.tx_low == src:
+                sidedef.tx_low = dest
+                logg('    Replaced %s with %s on sidedef #%s lower' % (src, dest, i))
+            if sidedef.tx_mid == src:
+                sidedef.tx_mid = dest
+                logg('    Replaced %s with %s on sidedef #%s mid' % (src, dest, i))
+            if sidedef.tx_up == src:
+                sidedef.tx_up = dest
+                logg('    Replaced %s with %s on sidedef #%s upper' % (src, dest, i))
+    wad.maps[map_name] = maped.to_lumps()
+    wad.to_file(map_filename)
+
 def extract_map(in_wad, map_name, out_filename):
     out_wad = omg.WAD()
     ed = omg.MapEditor(in_wad.maps[map_name])
@@ -154,6 +191,11 @@ def extract_iwad_maps(wad_name, map_prefix):
         logg('  Extracting map %s...' % map_name)
         out_wad_filename = DEST_DIR + 'maps/' + map_prefix + map_name + '.wad'
         extract_map(in_wad, map_name, out_wad_filename)
+        # do any texture replacements
+        replacements = TEXTURE_REPLACEMENTS.get(wad_name, None)
+        if replacements:
+            do_texture_replacements_in_map(out_wad_filename, map_name,
+                                           replacements)
         #logg('  Saved map %s' % out_wad_filename)
 
 def extract_lumps(wad_name):
@@ -221,10 +263,12 @@ def main():
             logg('Skipping nerve.wad as doom2.wad is not present')
             continue
         logg('Processing IWAD %s...' % iwad_name)
-        extract_lumps(iwad_name)
-        extract_iwad_maps(iwad_name, WAD_MAP_PREFIXES[iwad_name])
+        if should_extract:
+            extract_lumps(iwad_name)
+            extract_iwad_maps(iwad_name, WAD_MAP_PREFIXES[iwad_name])
     if get_wad_filename('doom2'):
-        extract_master_levels()
+        if should_extract:
+            extract_master_levels()
     else:
         logg('Skipping Master Levels as doom2.wad is not present')
     if get_wad_filename('tnt'):
