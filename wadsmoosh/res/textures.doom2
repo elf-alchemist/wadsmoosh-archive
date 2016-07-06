@@ -3,7 +3,6 @@
 
 Texture "AASHITTY", 64, 64
 {
-	NullTexture
 	Patch "BODIES", 0, 0
 }
 

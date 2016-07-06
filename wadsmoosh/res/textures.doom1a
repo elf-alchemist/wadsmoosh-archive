@@ -3,7 +3,6 @@
 
 Texture "AASTINKY", 24, 72
 {
-	NullTexture
 	Patch "WALL00_3", 0, 0
 	Patch "WALL00_3", 12, -6
 }
