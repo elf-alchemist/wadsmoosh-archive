@@ -1,0 +1,7 @@
+source_wads/.+.wad
+source_wads/.+.WAD
+pk3/*.*
+wadsmoosh.log
+build/*.*
+dist/*.*
+
