@@ -18,11 +18,11 @@ WadSmoosh will create a new file called `doom_complete.pk3` with all the game co
 
 ## Absolute Beginner's Guide
 
-1. [https://bitbucket.org/JPLeBreton/wadsmoosh/downloads](Download WadSmoosh) and extract it to a folder.
+1. [Download WadSmoosh](https://bitbucket.org/JPLeBreton/wadsmoosh/downloads) and extract it to a folder.
 2. Find the folder(s) where Steam/GoG installed your game(s). For Steam, this will be something like `<Steam folder>\SteamApps\Common\<game name>\base`.
 3. Copy any files you find with a `.WAD` extension to the `source_mods/` subfolder where you extracted WadSmoosh.
 4. Double-click `wadsmoosh.exe`. A console window will pop up to show progress.
 5. When it closes, you should have a file in the WadSmoosh folder called `doom_complete.pk3`.
-6. Download [http://zdoom.org](ZDoom) or [http://gzdoom.drdteam.org](GZDoom) - use GZDoom if you want to be able to look up and down - and extract it to a folder.
+6. Download [ZDoom](http://zdoom.org) or [GZDoom](http://gzdoom.drdteam.org) - use GZDoom if you want to be able to look up and down - and extract it to a folder.
 7. Copy the `doom_complete.pk3` file to G/ZDoom's folder and rename it to `doom2.wad`.
 8. Launch G/ZDoom and play!
