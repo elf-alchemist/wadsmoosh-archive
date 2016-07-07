@@ -15,8 +15,7 @@ LOG_FILENAME = 'wadsmoosh.log'
 RES_DIR = 'res/'
 RES_FILES = [
     'mapinfo.txt', 'language.txt', 'endoom',
-    'textures.doom1a', 'textures.doom1b', 'textures.doom2',
-    'textures.tnt', 'textures.plut',
+    'textures.doom1', 'textures.doom2', 'textures.tnt', 'textures.plut',
     'graphics/M_DOOM.png', 'graphics/TITLEPIC.png',
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
     'mapinfo/masterlevels.txt', 'mapinfo/tnt_levels.txt',
@@ -245,6 +244,22 @@ def extract_lumps(wad_name):
             logg('    Extracting %s' % lump_subdir + out_filename)
             lump.to_file(lump_subdir + out_filename)
 
+def copy_resources():
+    for src_file in RES_FILES:
+        # don't copy texture lumps for files that aren't present
+        if src_file.startswith('textures.doom1') and not get_wad_filename('doom'):
+            continue
+        elif src_file == 'textures.doom2' and not get_wad_filename('doom2'):
+            # DO copy if final doom exists and doom2 doesn't
+            if not get_wad_filename('tnt'):
+                continue
+        elif src_file == 'textures.tnt' and not get_wad_filename('tnt'):
+            continue
+        elif src_file == 'textures.plut' and not get_wad_filename('plutonia'):
+            continue
+        logg('Copying %s' % src_file)
+        copyfile(RES_DIR + src_file, DEST_DIR + src_file)
+
 def main():
     # make dirs if they don't exist
     if not os.path.exists(DEST_DIR):
@@ -253,6 +268,14 @@ def main():
                     'sounds', 'sprites']:
         if not os.path.exists(DEST_DIR + dirname):
             os.mkdir(DEST_DIR + dirname)
+    # copy pre-authored lumps eg mapinfo
+    copy_resources()
+    # if final doom present but not doom1/2, extract doom2 resources from it
+    if get_wad_filename('tnt') and not get_wad_filename('doom2'):
+        WAD_LUMP_LISTS['tnt'] += DOOM2_LUMPS
+        # if doom 1 also isn't present (weird) extract all common resources
+        if not get_wad_filename('doom'):
+            WAD_LUMP_LISTS['tnt'] += COMMON_LUMPS
     # extract lumps and maps from wads
     for iwad_name in IWADS:
         wad_filename = get_wad_filename(iwad_name)
@@ -273,19 +296,6 @@ def main():
         logg('Skipping Master Levels as doom2.wad is not present')
     if get_wad_filename('tnt'):
         tnt_map31_fix()
-    # copy pre-authored lumps eg mapinfo
-    for src_file in RES_FILES:
-        # don't copy texture lumps for files that aren't present
-        if src_file.startswith('textures.doom1') and not get_wad_filename('doom'):
-            continue
-        elif src_file == 'textures.doom2' and not get_wad_filename('doom2'):
-            continue
-        elif src_file == 'textures.tnt' and not get_wad_filename('tnt'):
-            continue
-        elif src_file == 'textures.plut' and not get_wad_filename('plutonia'):
-            continue
-        logg('Copying %s' % src_file)
-        copyfile(RES_DIR + src_file, DEST_DIR + src_file)
     # create pk3
     logg('Creating %s...' % DEST_FILENAME)
     pk3 = ZipFile(DEST_FILENAME, 'w')
