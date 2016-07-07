@@ -1,3 +1,4 @@
+./*.pyc
 source_wads/.+.wad
 source_wads/.+.WAD
 pk3/*.*
