@@ -22,7 +22,7 @@ If you've extracted the No Rest for the Living addon episode for Doom 2 from Doo
 
 1. [Download WadSmoosh](https://bitbucket.org/JPLeBreton/wadsmoosh/downloads) and extract it to a folder.
 2. Find the folder(s) where Steam/GoG installed your game(s). For Steam, this will be something like `<Steam folder>\SteamApps\Common\<game name>\base`.
-3. Copy any files you find with a `.WAD` extension to the `source_mods/` subfolder where you extracted WadSmoosh.
+3. Copy any files you find with a `.WAD` extension to the `source_wads/` subfolder where you extracted WadSmoosh.
 4. Double-click `wadsmoosh.exe`. A console window will pop up to show progress.
 5. When it closes, you should have a file in the WadSmoosh folder called `doom_complete.pk3`.
 6. Download [ZDoom](http://zdoom.org) or [GZDoom](http://gzdoom.drdteam.org) - use GZDoom if you want to be able to look up and down - and extract it to a folder.
