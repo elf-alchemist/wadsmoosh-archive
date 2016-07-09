@@ -217,7 +217,7 @@ map PLUT_MAP20 lookup "PHUSTR_20"
 	sky1 = "PSKY2"
 	cluster = 20
 	par = 150
-	music = "$MUSIC_MESSAG"
+	music = "P_MESSAG"
 	ExitPic = "PLUINTER"
 }
 
@@ -239,7 +239,7 @@ map PLUT_MAP22 lookup "PHUSTR_22"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 150
-	music = "$MUSIC_DDTBL3"
+	music = "P_DDTBL3"
 	ExitPic = "PLUINTER"
 }
 
@@ -250,7 +250,7 @@ map PLUT_MAP23 lookup "PHUSTR_23"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 180
-	music = "$MUSIC_AMPIE"
+	music = "P_AMPIE"
 	ExitPic = "PLUINTER"
 }
 
@@ -261,7 +261,7 @@ map PLUT_MAP24 lookup "PHUSTR_24"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 150
-	music = "$MUSIC_THEDA3"
+	music = "P_THEDA3"
 	ExitPic = "PLUINTER"
 }
 
@@ -272,7 +272,7 @@ map PLUT_MAP25 lookup "PHUSTR_25"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 150
-	music = "$MUSIC_ADRIAN"
+	music = "P_ADRIAN"
 	ExitPic = "PLUINTER"
 }
 
@@ -283,7 +283,7 @@ map PLUT_MAP26 lookup "PHUSTR_26"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 300
-	music = "$MUSIC_MESSG2"
+	music = "P_MESSG2"
 	ExitPic = "PLUINTER"
 }
 
@@ -361,7 +361,7 @@ map PLUT_MAP32 lookup "PHUSTR_32"
 cluster 18
 {
 	flat = "$BGFLAT06"
-	music = "$MUSIC_READ_M"
+	music = "P_READ_M"
 	exittext = lookup, "P1TEXT"
 }
 
@@ -370,7 +370,7 @@ cluster 18
 cluster 19
 {
 	flat = "$BGFLAT11"
-	music = "$MUSIC_READ_M"
+	music = "P_READ_M"
 	exittext = lookup, "P2TEXT"
 }
 
@@ -379,7 +379,7 @@ cluster 19
 cluster 20
 {
 	flat = "$BGFLAT20"
-	music = "$MUSIC_READ_M"
+	music = "P_READ_M"
 	exittext = lookup, "P3TEXT"
 }
 
@@ -388,7 +388,7 @@ cluster 20
 cluster 21
 {
 	flat = "$BGFLAT30"
-	music = "$MUSIC_READ_M"
+	music = "P_READ_M"
 	exittext = lookup, "P4TEXT"
 }
 
@@ -397,7 +397,7 @@ cluster 21
 cluster 22
 {
 	flat = "$BGFLAT15"
-	music = "$MUSIC_READ_M"
+	music = "P_READ_M"
 	entertext = lookup, "P5TEXT"
 }
 
@@ -406,6 +406,6 @@ cluster 22
 cluster 23
 {
 	flat = "$BGFLAT31"
-	music = "$MUSIC_READ_M"
+	music = "P_READ_M"
 	entertext = lookup, "P6TEXT"
 }
