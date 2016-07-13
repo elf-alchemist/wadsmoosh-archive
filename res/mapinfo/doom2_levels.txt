@@ -1,3 +1,9 @@
+
+adddefaultmap
+{
+	BorderTexture = "GRNROCK"
+}
+
 map MAP01 lookup "HUSTR_1"
 {
 	next = "MAP02"
