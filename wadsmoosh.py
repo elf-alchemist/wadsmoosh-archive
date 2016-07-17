@@ -30,11 +30,11 @@ WAD_MAP_PREFIXES = {}
 TEXTURE_REPLACEMENTS = {}
 MASTER_LEVELS_MAP_ORDER = []
 
-MASTER_LEVELS_MAP_PREFIX = WAD_MAP_PREFIXES.get('masterlevels', '')
-
 logfile = None
 
 exec(open(DATA_TABLES_FILE).read())
+
+MASTER_LEVELS_MAP_PREFIX = WAD_MAP_PREFIXES.get('masterlevels', '')
 
 def logg(line):
     global logfile
