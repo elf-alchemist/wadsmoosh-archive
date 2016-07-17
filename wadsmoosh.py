@@ -5,6 +5,10 @@ from zipfile import ZipFile
 
 import omg
 
+# TODO:
+# tnt map23 switch (SW1BRN1 in SW corner) - find and substitute all doom1vs2 texture def conflicts?
+
+# if False, do a dry run with no actual file writing
 should_extract = True
 
 SRC_WAD_DIR = 'source_wads/'
@@ -13,79 +17,22 @@ DEST_DIR = 'pk3/'
 DEST_FILENAME = 'doom_complete.pk3'
 LOG_FILENAME = 'wadsmoosh.log'
 RES_DIR = 'res/'
-RES_FILES = [
-    'mapinfo.txt', 'language.txt', 'endoom',
-    'textures.doom1', 'textures.doom2', 'textures.tnt', 'textures.plut',
-    'graphics/M_DOOM.png', 'graphics/TITLEPIC.png',
-    'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
-    'mapinfo/masterlevels.txt', 'mapinfo/tnt_levels.txt',
-    'mapinfo/plutonia_levels.txt'
-]
+DATA_TABLES_FILE = 'wadsmoosh_data.py'
 
-IWADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve']
-
-COMMON_LUMPS = [
-    'data_common', 'flats_common', 'graphics_common', 'patches_common',
-    'sounds_common', 'sprites_common'
-]
-
-DOOM1_LUMPS = [
-    'graphics_doom1', 'music_doom1', 'patches_doom1', 'sounds_doom1'
-]
-
-DOOM2_LUMPS = [
-    'flats_doom2', 'graphics_doom2', 'music_doom2', 'patches_doom2',
-    'sounds_doom2', 'sprites_doom2'
-]
-
-# lists of lumps to extract from each IWAD
-WAD_LUMP_LISTS = {
-    'doom': COMMON_LUMPS + DOOM1_LUMPS,
-    'doom2': COMMON_LUMPS + DOOM2_LUMPS,
-    'tnt': ['graphics_tnt', 'music_tnt', 'patches_tnt'],
-    'plutonia': ['graphics_plutonia', 'music_plutonia', 'patches_plutonia']
-}
-
-# prefixes for filenames of maps extracted from IWADs
-WAD_MAP_PREFIXES = {
-    'doom': '',
-    'doom2': '',
-    'tnt': 'tnt_',
-    'plutonia': 'plut_',
-    'nerve': 'nerve_'
-}
-
-# replacements for final doom textures that conflict with doom2 textures
-TEXTURE_REPLACEMENTS = {
-    'tnt': {
-        'SW1GSTON': 'SW1GSTNT',
-        'SW2GSTON': 'SW2GSTNT'
-    },
-    'plutonia': {
-        'DBRAIN1': 'PBRAIN1',
-        'DBRAIN4': 'PBRAIN4',
-        'FIREBLU1': 'FIREPLU1',
-        'FIREBLU2': 'FIREPLU2',
-        'SW1SKULL': 'SW1SKULP',
-        'SW2SKULL': 'SW2SKULP'
-    }
-}
-
-MASTER_LEVELS_MAP_ORDER = [
-    'attack', 'canyon', 'catwalk', 'combine', 'fistula', 'garrison', 'manor',
-    'paradox', 'subspace', 'subterra', 'ttrap', 'virgil', 'minos', 'bloodsea',
-    'mephisto', 'nessus', 'geryon', 'vesperas', 'blacktwr', 'teeth'
-]
-
-MASTER_LEVELS_MAP_PREFIX = 'ml_'
-
-MASTER_LEVELS_PATCHES = {
-    'combine': ('RSKY1', 'ML_SKY1'),
-    'manor': ('STARS', 'ML_SKY2'),
-    'virgil': ('RSKY1', 'ML_SKY3')
-}
+# forward-declare all the stuff in DATA_TABLES_FILE for clarity
+RES_FILES = []
+IWADS = []
+COMMON_LUMPS = []
+DOOM1_LUMPS = []
+DOOM2_LUMPS = []
+WAD_LUMP_LISTS = {}
+WAD_MAP_PREFIXES = {}
+TEXTURE_REPLACEMENTS = {}
+MASTER_LEVELS_MAP_ORDER = []
 
 logfile = None
+
+exec(open(DATA_TABLES_FILE).read())
 
 def logg(line):
     global logfile
@@ -113,7 +60,7 @@ def extract_master_levels():
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         in_wad.from_file(wad_filename)
-        out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map'
+        out_wad_filename = DEST_DIR + 'maps/' + WAD_MAP_PREFIXES['masterlevels'] + 'map'
         # extra zero for <10 map numbers, eg map01
         out_wad_filename += str(i + 1).rjust(2, '0') + '.wad'
         logg('  Extracting %s to %s' % (wad_filename, out_wad_filename))
@@ -269,7 +216,8 @@ def main():
         if not os.path.exists(DEST_DIR + dirname):
             os.mkdir(DEST_DIR + dirname)
     # copy pre-authored lumps eg mapinfo
-    copy_resources()
+    if should_extract:
+        copy_resources()
     # if final doom present but not doom1/2, extract doom2 resources from it
     if get_wad_filename('tnt') and not get_wad_filename('doom2'):
         WAD_LUMP_LISTS['tnt'] += DOOM2_LUMPS
@@ -294,7 +242,7 @@ def main():
             extract_master_levels()
     else:
         logg('Skipping Master Levels as doom2.wad is not present')
-    if get_wad_filename('tnt'):
+    if get_wad_filename('tnt') and should_extract:
         tnt_map31_fix()
     # create pk3
     logg('Creating %s...' % DEST_FILENAME)
