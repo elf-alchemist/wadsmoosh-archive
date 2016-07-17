@@ -30,6 +30,8 @@ WAD_MAP_PREFIXES = {}
 TEXTURE_REPLACEMENTS = {}
 MASTER_LEVELS_MAP_ORDER = []
 
+MASTER_LEVELS_MAP_PREFIX = WAD_MAP_PREFIXES.get('masterlevels', '')
+
 logfile = None
 
 exec(open(DATA_TABLES_FILE).read())
@@ -60,7 +62,7 @@ def extract_master_levels():
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         in_wad.from_file(wad_filename)
-        out_wad_filename = DEST_DIR + 'maps/' + WAD_MAP_PREFIXES['masterlevels'] + 'map'
+        out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map'
         # extra zero for <10 map numbers, eg map01
         out_wad_filename += str(i + 1).rjust(2, '0') + '.wad'
         logg('  Extracting %s to %s' % (wad_filename, out_wad_filename))
