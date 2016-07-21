@@ -1,9 +1,9 @@
 // Plutonia maps
 
-map PLUT_MAP01 lookup "PHUSTR_1"
+map PL_MAP01 lookup "PHUSTR_1"
 {
-	next = "PLUT_MAP02"
-	secretnext = "PLUT_MAP02"
+	next = "PL_MAP02"
+	secretnext = "PL_MAP02"
 	sky1 = "PSKY1"
 	cluster = 18
 	par = 30
@@ -11,10 +11,10 @@ map PLUT_MAP01 lookup "PHUSTR_1"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP02 lookup "PHUSTR_2"
+map PL_MAP02 lookup "PHUSTR_2"
 {
-	next = "PLUT_MAP03"
-	secretnext = "PLUT_MAP03"
+	next = "PL_MAP03"
+	secretnext = "PL_MAP03"
 	sky1 = "PSKY1"
 	cluster = 18
 	par = 90
@@ -22,10 +22,10 @@ map PLUT_MAP02 lookup "PHUSTR_2"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP03 lookup "PHUSTR_3"
+map PL_MAP03 lookup "PHUSTR_3"
 {
-	next = "PLUT_MAP04"
-	secretnext = "PLUT_MAP04"
+	next = "PL_MAP04"
+	secretnext = "PL_MAP04"
 	sky1 = "PSKY1"
 	cluster = 18
 	par = 120
@@ -33,10 +33,10 @@ map PLUT_MAP03 lookup "PHUSTR_3"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP04 lookup "PHUSTR_4"
+map PL_MAP04 lookup "PHUSTR_4"
 {
-	next = "PLUT_MAP05"
-	secretnext = "PLUT_MAP05"
+	next = "PL_MAP05"
+	secretnext = "PL_MAP05"
 	sky1 = "PSKY1"
 	cluster = 18
 	par = 120
@@ -44,10 +44,10 @@ map PLUT_MAP04 lookup "PHUSTR_4"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP05 lookup "PHUSTR_5"
+map PL_MAP05 lookup "PHUSTR_5"
 {
-	next = "PLUT_MAP06"
-	secretnext = "PLUT_MAP06"
+	next = "PL_MAP06"
+	secretnext = "PL_MAP06"
 	sky1 = "PSKY1"
 	cluster = 18
 	par = 90
@@ -55,10 +55,10 @@ map PLUT_MAP05 lookup "PHUSTR_5"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP06 lookup "PHUSTR_6"
+map PL_MAP06 lookup "PHUSTR_6"
 {
-	next = "PLUT_MAP07"
-	secretnext = "PLUT_MAP07"
+	next = "PL_MAP07"
+	secretnext = "PL_MAP07"
 	sky1 = "PSKY1"
 	cluster = 18
 	par = 150
@@ -66,10 +66,10 @@ map PLUT_MAP06 lookup "PHUSTR_6"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP07 lookup "PHUSTR_7"
+map PL_MAP07 lookup "PHUSTR_7"
 {
-	next = "PLUT_MAP08"
-	secretnext = "PLUT_MAP08"
+	next = "PL_MAP08"
+	secretnext = "PL_MAP08"
 	sky1 = "PSKY1"
 	cluster = 19
 	par = 120
@@ -78,10 +78,10 @@ map PLUT_MAP07 lookup "PHUSTR_7"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP08 lookup "PHUSTR_8"
+map PL_MAP08 lookup "PHUSTR_8"
 {
-	next = "PLUT_MAP09"
-	secretnext = "PLUT_MAP09"
+	next = "PL_MAP09"
+	secretnext = "PL_MAP09"
 	sky1 = "PSKY1"
 	cluster = 19
 	par = 120
@@ -89,10 +89,10 @@ map PLUT_MAP08 lookup "PHUSTR_8"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP09 lookup "PHUSTR_9"
+map PL_MAP09 lookup "PHUSTR_9"
 {
-	next = "PLUT_MAP10"
-	secretnext = "PLUT_MAP10"
+	next = "PL_MAP10"
+	secretnext = "PL_MAP10"
 	sky1 = "PSKY1"
 	cluster = 19
 	par = 270
@@ -100,10 +100,10 @@ map PLUT_MAP09 lookup "PHUSTR_9"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP10 lookup "PHUSTR_10"
+map PL_MAP10 lookup "PHUSTR_10"
 {
-	next = "PLUT_MAP11"
-	secretnext = "PLUT_MAP11"
+	next = "PL_MAP11"
+	secretnext = "PL_MAP11"
 	sky1 = "PSKY1"
 	cluster = 19
 	par = 90
@@ -111,10 +111,10 @@ map PLUT_MAP10 lookup "PHUSTR_10"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP11 lookup "PHUSTR_11"
+map PL_MAP11 lookup "PHUSTR_11"
 {
-	next = "PLUT_MAP12"
-	secretnext = "PLUT_MAP12"
+	next = "PL_MAP12"
+	secretnext = "PL_MAP12"
 	sky1 = "PSKY1"
 	cluster = 19
 	par = 210
@@ -122,10 +122,10 @@ map PLUT_MAP11 lookup "PHUSTR_11"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP12 lookup "PHUSTR_12"
+map PL_MAP12 lookup "PHUSTR_12"
 {
-	next = "PLUT_MAP13"
-	secretnext = "PLUT_MAP13"
+	next = "PL_MAP13"
+	secretnext = "PL_MAP13"
 	sky1 = "PSKY2"
 	cluster = 20
 	par = 150
@@ -133,10 +133,10 @@ map PLUT_MAP12 lookup "PHUSTR_12"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP13 lookup "PHUSTR_13"
+map PL_MAP13 lookup "PHUSTR_13"
 {
-	next = "PLUT_MAP14"
-	secretnext = "PLUT_MAP14"
+	next = "PL_MAP14"
+	secretnext = "PL_MAP14"
 	sky1 = "PSKY2"
 	cluster = 20
 	par = 150
@@ -144,10 +144,10 @@ map PLUT_MAP13 lookup "PHUSTR_13"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP14 lookup "PHUSTR_14"
+map PL_MAP14 lookup "PHUSTR_14"
 {
-	next = "PLUT_MAP15"
-	secretnext = "PLUT_MAP15"
+	next = "PL_MAP15"
+	secretnext = "PL_MAP15"
 	sky1 = "PSKY2"
 	cluster = 20
 	par = 150
@@ -155,10 +155,10 @@ map PLUT_MAP14 lookup "PHUSTR_14"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP15 lookup "PHUSTR_15"
+map PL_MAP15 lookup "PHUSTR_15"
 {
-	next = "PLUT_MAP16"
-	secretnext = "PLUT_MAP31"
+	next = "PL_MAP16"
+	secretnext = "PL_MAP31"
 	sky1 = "PSKY2"
 	cluster = 20
 	par = 210
@@ -166,10 +166,10 @@ map PLUT_MAP15 lookup "PHUSTR_15"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP16 lookup "PHUSTR_16"
+map PL_MAP16 lookup "PHUSTR_16"
 {
-	next = "PLUT_MAP17"
-	secretnext = "PLUT_MAP17"
+	next = "PL_MAP17"
+	secretnext = "PL_MAP17"
 	sky1 = "PSKY2"
 	cluster = 20
 	par = 150
@@ -177,10 +177,10 @@ map PLUT_MAP16 lookup "PHUSTR_16"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP17 lookup "PHUSTR_17"
+map PL_MAP17 lookup "PHUSTR_17"
 {
-	next = "PLUT_MAP18"
-	secretnext = "PLUT_MAP18"
+	next = "PL_MAP18"
+	secretnext = "PL_MAP18"
 	sky1 = "PSKY2"
 	cluster = 20
 	par = 420
@@ -188,10 +188,10 @@ map PLUT_MAP17 lookup "PHUSTR_17"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP18 lookup "PHUSTR_18"
+map PL_MAP18 lookup "PHUSTR_18"
 {
-	next = "PLUT_MAP19"
-	secretnext = "PLUT_MAP19"
+	next = "PL_MAP19"
+	secretnext = "PL_MAP19"
 	sky1 = "PSKY2"
 	cluster = 20
 	par = 150
@@ -199,10 +199,10 @@ map PLUT_MAP18 lookup "PHUSTR_18"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP19 lookup "PHUSTR_19"
+map PL_MAP19 lookup "PHUSTR_19"
 {
-	next = "PLUT_MAP20"
-	secretnext = "PLUT_MAP20"
+	next = "PL_MAP20"
+	secretnext = "PL_MAP20"
 	sky1 = "PSKY2"
 	cluster = 20
 	par = 210
@@ -210,10 +210,10 @@ map PLUT_MAP19 lookup "PHUSTR_19"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP20 lookup "PHUSTR_20"
+map PL_MAP20 lookup "PHUSTR_20"
 {
-	next = "PLUT_MAP21"
-	secretnext = "PLUT_MAP21"
+	next = "PL_MAP21"
+	secretnext = "PL_MAP21"
 	sky1 = "PSKY2"
 	cluster = 20
 	par = 150
@@ -221,10 +221,10 @@ map PLUT_MAP20 lookup "PHUSTR_20"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP21 lookup "PHUSTR_21"
+map PL_MAP21 lookup "PHUSTR_21"
 {
-	next = "PLUT_MAP22"
-	secretnext = "PLUT_MAP22"
+	next = "PL_MAP22"
+	secretnext = "PL_MAP22"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 240
@@ -232,10 +232,10 @@ map PLUT_MAP21 lookup "PHUSTR_21"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP22 lookup "PHUSTR_22"
+map PL_MAP22 lookup "PHUSTR_22"
 {
-	next = "PLUT_MAP23"
-	secretnext = "PLUT_MAP23"
+	next = "PL_MAP23"
+	secretnext = "PL_MAP23"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 150
@@ -243,10 +243,10 @@ map PLUT_MAP22 lookup "PHUSTR_22"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP23 lookup "PHUSTR_23"
+map PL_MAP23 lookup "PHUSTR_23"
 {
-	next = "PLUT_MAP24"
-	secretnext = "PLUT_MAP24"
+	next = "PL_MAP24"
+	secretnext = "PL_MAP24"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 180
@@ -254,10 +254,10 @@ map PLUT_MAP23 lookup "PHUSTR_23"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP24 lookup "PHUSTR_24"
+map PL_MAP24 lookup "PHUSTR_24"
 {
-	next = "PLUT_MAP25"
-	secretnext = "PLUT_MAP25"
+	next = "PL_MAP25"
+	secretnext = "PL_MAP25"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 150
@@ -265,10 +265,10 @@ map PLUT_MAP24 lookup "PHUSTR_24"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP25 lookup "PHUSTR_25"
+map PL_MAP25 lookup "PHUSTR_25"
 {
-	next = "PLUT_MAP26"
-	secretnext = "PLUT_MAP26"
+	next = "PL_MAP26"
+	secretnext = "PL_MAP26"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 150
@@ -276,10 +276,10 @@ map PLUT_MAP25 lookup "PHUSTR_25"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP26 lookup "PHUSTR_26"
+map PL_MAP26 lookup "PHUSTR_26"
 {
-	next = "PLUT_MAP27"
-	secretnext = "PLUT_MAP27"
+	next = "PL_MAP27"
+	secretnext = "PL_MAP27"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 300
@@ -287,10 +287,10 @@ map PLUT_MAP26 lookup "PHUSTR_26"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP27 lookup "PHUSTR_27"
+map PL_MAP27 lookup "PHUSTR_27"
 {
-	next = "PLUT_MAP28"
-	secretnext = "PLUT_MAP28"
+	next = "PL_MAP28"
+	secretnext = "PL_MAP28"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 330
@@ -298,10 +298,10 @@ map PLUT_MAP27 lookup "PHUSTR_27"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP28 lookup "PHUSTR_28"
+map PL_MAP28 lookup "PHUSTR_28"
 {
-	next = "PLUT_MAP29"
-	secretnext = "PLUT_MAP29"
+	next = "PL_MAP29"
+	secretnext = "PL_MAP29"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 420
@@ -309,10 +309,10 @@ map PLUT_MAP28 lookup "PHUSTR_28"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP29 lookup "PHUSTR_29"
+map PL_MAP29 lookup "PHUSTR_29"
 {
-	next = "PLUT_MAP30"
-	secretnext = "PLUT_MAP30"
+	next = "PL_MAP30"
+	secretnext = "PL_MAP30"
 	sky1 = "PSKY3"
 	cluster = 21
 	par = 300
@@ -320,7 +320,7 @@ map PLUT_MAP29 lookup "PHUSTR_29"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP30 lookup "PHUSTR_30"
+map PL_MAP30 lookup "PHUSTR_30"
 {
 	sky1 = "PSKY3"
 	cluster = 21
@@ -334,10 +334,10 @@ map PLUT_MAP30 lookup "PHUSTR_30"
 	}
 }
 
-map PLUT_MAP31 lookup "PHUSTR_31"
+map PL_MAP31 lookup "PHUSTR_31"
 {
-	next = "PLUT_MAP16"
-	secretnext = "PLUT_MAP32"
+	next = "PL_MAP16"
+	secretnext = "PL_MAP32"
 	sky1 = "PSKY3"
 	cluster = 22
 	par = 120
@@ -345,10 +345,10 @@ map PLUT_MAP31 lookup "PHUSTR_31"
 	ExitPic = "PLUINTER"
 }
 
-map PLUT_MAP32 lookup "PHUSTR_32"
+map PL_MAP32 lookup "PHUSTR_32"
 {
-	next = "PLUT_MAP16"
-	secretnext = "PLUT_MAP16"
+	next = "PL_MAP16"
+	secretnext = "PL_MAP16"
 	sky1 = "PSKY3"
 	cluster = 23
 	par = 30

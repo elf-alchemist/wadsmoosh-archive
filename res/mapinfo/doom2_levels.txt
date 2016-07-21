@@ -385,60 +385,60 @@ cluster 10
 
 // No Rest for the Living
 
-map NERVE_MAP01 lookup "NHUSTR_1"
+map NV_MAP01 lookup "NHUSTR_1"
 {
-	next = "NERVE_MAP02"
-	secretnext = "NERVE_MAP09"
+	next = "NV_MAP02"
+	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
 	par = 75
 	music = "$MUSIC_MESSAG"
 }
 
-map NERVE_MAP02 lookup "NHUSTR_2"
+map NV_MAP02 lookup "NHUSTR_2"
 {
-	next = "NERVE_MAP03"
-	secretnext = "NERVE_MAP09"
+	next = "NV_MAP03"
+	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
 	par = 105
 	music = "$MUSIC_DDTBLU"
 }
 
-map NERVE_MAP03 lookup "NHUSTR_3"
+map NV_MAP03 lookup "NHUSTR_3"
 {
-	next = "NERVE_MAP04"
-	secretnext = "NERVE_MAP09"
+	next = "NV_MAP04"
+	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
 	par = 120
 	music = "$MUSIC_DOOM"
 }
 
-map NERVE_MAP04 lookup "NHUSTR_4"
+map NV_MAP04 lookup "NHUSTR_4"
 {
-	next = "NERVE_MAP05"
-	secretnext = "NERVE_MAP09"
+	next = "NV_MAP05"
+	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
 	par = 105
 	music = "$MUSIC_SHAWN"
 }
 
-map NERVE_MAP05 lookup "NHUSTR_5"
+map NV_MAP05 lookup "NHUSTR_5"
 {
-	next = "NERVE_MAP06"
-	secretnext = "NERVE_MAP09"
+	next = "NV_MAP06"
+	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
 	par = 210
 	music = "$MUSIC_IN_CIT"
 }
 
-map NERVE_MAP06 lookup "NHUSTR_6"
+map NV_MAP06 lookup "NHUSTR_6"
 {
-	next = "NERVE_MAP07"
-	secretnext = "NERVE_MAP09"
+	next = "NV_MAP07"
+	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
 	par = 105
@@ -446,10 +446,10 @@ map NERVE_MAP06 lookup "NHUSTR_6"
 	music = "$MUSIC_THE_DA"
 }
 
-map NERVE_MAP07 lookup "NHUSTR_7"
+map NV_MAP07 lookup "NHUSTR_7"
 {
-	next = "NERVE_MAP08"
-	secretnext = "NERVE_MAP09"
+	next = "NV_MAP08"
+	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
 	par = 165
@@ -457,7 +457,7 @@ map NERVE_MAP07 lookup "NHUSTR_7"
 	music = "$MUSIC_IN_CIT"
 }
 
-map NERVE_MAP08 lookup "NHUSTR_8"
+map NV_MAP08 lookup "NHUSTR_8"
 {
 	next = "EndGameC"
 	secretnext = "EndGameC"
@@ -467,10 +467,10 @@ map NERVE_MAP08 lookup "NHUSTR_8"
 	music = "$MUSIC_SHAWN"
 }
 
-map NERVE_MAP09 lookup "NHUSTR_9"
+map NV_MAP09 lookup "NHUSTR_9"
 {
-	next = "NERVE_MAP05"
-	secretnext = "NERVE_MAP05"
+	next = "NV_MAP05"
+	secretnext = "NV_MAP05"
 	sky1 = "RSKY1"
 	cluster = 11
 	par = 135

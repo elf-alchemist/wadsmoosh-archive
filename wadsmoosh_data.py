@@ -40,9 +40,9 @@ WAD_LUMP_LISTS = {
 WAD_MAP_PREFIXES = {
     'doom': '',
     'doom2': '',
-    'tnt': 'tnt_',
-    'plutonia': 'plut_',
-    'nerve': 'nerve_',
+    'tnt': 'tn_',
+    'plutonia': 'pl_',
+    'nerve': 'nv_',
     # master levels not processed like other wads, bespoke prefix lookup
     'masterlevels': 'ml_'
 }

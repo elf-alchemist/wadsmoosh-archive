@@ -64,7 +64,7 @@ episode map01
 	optional
 }
 
-episode nerve_map01
+episode nv_map01
 {
 	name = "$D2EP2NAME"
 	key = "n"
@@ -78,14 +78,14 @@ episode ml_map01
 	optional
 }
 
-episode tnt_map01
+episode tn_map01
 {
 	name = "$TNTNAME"
 	key = "t"
 	optional
 }
 
-episode plut_map01
+episode pl_map01
 {
 	name = "$PLUNAME"
 	key = "p"

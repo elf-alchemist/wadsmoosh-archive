@@ -1,9 +1,9 @@
 // TNT maps
 
-map TNT_MAP01 lookup "THUSTR_1"
+map TN_MAP01 lookup "THUSTR_1"
 {
-	next = "TNT_MAP02"
-	secretnext = "TNT_MAP02"
+	next = "TN_MAP02"
+	secretnext = "TN_MAP02"
 	sky1 = "TNT_SKY1"
 	cluster = 12
 	par = 30
@@ -12,10 +12,10 @@ map TNT_MAP01 lookup "THUSTR_1"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP02 lookup "THUSTR_2"
+map TN_MAP02 lookup "THUSTR_2"
 {
-	next = "TNT_MAP03"
-	secretnext = "TNT_MAP03"
+	next = "TN_MAP03"
+	secretnext = "TN_MAP03"
 	sky1 = "TNT_SKY1"
 	cluster = 12
 	par = 90
@@ -24,10 +24,10 @@ map TNT_MAP02 lookup "THUSTR_2"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP03 lookup "THUSTR_3"
+map TN_MAP03 lookup "THUSTR_3"
 {
-	next = "TNT_MAP04"
-	secretnext = "TNT_MAP04"
+	next = "TN_MAP04"
+	secretnext = "TN_MAP04"
 	sky1 = "TNT_SKY1"
 	cluster = 12
 	par = 120
@@ -36,10 +36,10 @@ map TNT_MAP03 lookup "THUSTR_3"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP04 lookup "THUSTR_4"
+map TN_MAP04 lookup "THUSTR_4"
 {
-	next = "TNT_MAP05"
-	secretnext = "TNT_MAP05"
+	next = "TN_MAP05"
+	secretnext = "TN_MAP05"
 	sky1 = "TNT_SKY1"
 	cluster = 12
 	par = 120
@@ -48,10 +48,10 @@ map TNT_MAP04 lookup "THUSTR_4"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP05 lookup "THUSTR_5"
+map TN_MAP05 lookup "THUSTR_5"
 {
-	next = "TNT_MAP06"
-	secretnext = "TNT_MAP06"
+	next = "TN_MAP06"
+	secretnext = "TN_MAP06"
 	sky1 = "TNT_SKY1"
 	cluster = 12
 	par = 90
@@ -60,10 +60,10 @@ map TNT_MAP05 lookup "THUSTR_5"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP06 lookup "THUSTR_6"
+map TN_MAP06 lookup "THUSTR_6"
 {
-	next = "TNT_MAP07"
-	secretnext = "TNT_MAP07"
+	next = "TN_MAP07"
+	secretnext = "TN_MAP07"
 	sky1 = "TNT_SKY1"
 	cluster = 12
 	par = 150
@@ -72,10 +72,10 @@ map TNT_MAP06 lookup "THUSTR_6"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP07 lookup "THUSTR_7"
+map TN_MAP07 lookup "THUSTR_7"
 {
-	next = "TNT_MAP08"
-	secretnext = "TNT_MAP08"
+	next = "TN_MAP08"
+	secretnext = "TN_MAP08"
 	sky1 = "TNT_SKY1"
 	cluster = 13
 	par = 120
@@ -85,10 +85,10 @@ map TNT_MAP07 lookup "THUSTR_7"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP08 lookup "THUSTR_8"
+map TN_MAP08 lookup "THUSTR_8"
 {
-	next = "TNT_MAP09"
-	secretnext = "TNT_MAP09"
+	next = "TN_MAP09"
+	secretnext = "TN_MAP09"
 	sky1 = "TNT_SKY1"
 	cluster = 13
 	par = 120
@@ -97,10 +97,10 @@ map TNT_MAP08 lookup "THUSTR_8"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP09 lookup "THUSTR_9"
+map TN_MAP09 lookup "THUSTR_9"
 {
-	next = "TNT_MAP10"
-	secretnext = "TNT_MAP10"
+	next = "TN_MAP10"
+	secretnext = "TN_MAP10"
 	sky1 = "TNT_SKY1"
 	cluster = 13
 	par = 270
@@ -109,10 +109,10 @@ map TNT_MAP09 lookup "THUSTR_9"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP10 lookup "THUSTR_10"
+map TN_MAP10 lookup "THUSTR_10"
 {
-	next = "TNT_MAP11"
-	secretnext = "TNT_MAP11"
+	next = "TN_MAP11"
+	secretnext = "TN_MAP11"
 	sky1 = "TNT_SKY1"
 	cluster = 13
 	par = 90
@@ -121,10 +121,10 @@ map TNT_MAP10 lookup "THUSTR_10"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP11 lookup "THUSTR_11"
+map TN_MAP11 lookup "THUSTR_11"
 {
-	next = "TNT_MAP12"
-	secretnext = "TNT_MAP12"
+	next = "TN_MAP12"
+	secretnext = "TN_MAP12"
 	sky1 = "TNT_SKY1"
 	cluster = 13
 	par = 210
@@ -133,10 +133,10 @@ map TNT_MAP11 lookup "THUSTR_11"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP12 lookup "THUSTR_12"
+map TN_MAP12 lookup "THUSTR_12"
 {
-	next = "TNT_MAP13"
-	secretnext = "TNT_MAP13"
+	next = "TN_MAP13"
+	secretnext = "TN_MAP13"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 150
@@ -145,10 +145,10 @@ map TNT_MAP12 lookup "THUSTR_12"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP13 lookup "THUSTR_13"
+map TN_MAP13 lookup "THUSTR_13"
 {
-	next = "TNT_MAP14"
-	secretnext = "TNT_MAP14"
+	next = "TN_MAP14"
+	secretnext = "TN_MAP14"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 150
@@ -157,10 +157,10 @@ map TNT_MAP13 lookup "THUSTR_13"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP14 lookup "THUSTR_14"
+map TN_MAP14 lookup "THUSTR_14"
 {
-	next = "TNT_MAP15"
-	secretnext = "TNT_MAP15"
+	next = "TN_MAP15"
+	secretnext = "TN_MAP15"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 150
@@ -169,10 +169,10 @@ map TNT_MAP14 lookup "THUSTR_14"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP15 lookup "THUSTR_15"
+map TN_MAP15 lookup "THUSTR_15"
 {
-	next = "TNT_MAP16"
-	secretnext = "TNT_MAP31"
+	next = "TN_MAP16"
+	secretnext = "TN_MAP31"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 210
@@ -181,10 +181,10 @@ map TNT_MAP15 lookup "THUSTR_15"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP16 lookup "THUSTR_16"
+map TN_MAP16 lookup "THUSTR_16"
 {
-	next = "TNT_MAP17"
-	secretnext = "TNT_MAP17"
+	next = "TN_MAP17"
+	secretnext = "TN_MAP17"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 150
@@ -193,10 +193,10 @@ map TNT_MAP16 lookup "THUSTR_16"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP17 lookup "THUSTR_17"
+map TN_MAP17 lookup "THUSTR_17"
 {
-	next = "TNT_MAP18"
-	secretnext = "TNT_MAP18"
+	next = "TN_MAP18"
+	secretnext = "TN_MAP18"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 420
@@ -205,10 +205,10 @@ map TNT_MAP17 lookup "THUSTR_17"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP18 lookup "THUSTR_18"
+map TN_MAP18 lookup "THUSTR_18"
 {
-	next = "TNT_MAP19"
-	secretnext = "TNT_MAP19"
+	next = "TN_MAP19"
+	secretnext = "TN_MAP19"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 150
@@ -217,10 +217,10 @@ map TNT_MAP18 lookup "THUSTR_18"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP19 lookup "THUSTR_19"
+map TN_MAP19 lookup "THUSTR_19"
 {
-	next = "TNT_MAP20"
-	secretnext = "TNT_MAP20"
+	next = "TN_MAP20"
+	secretnext = "TN_MAP20"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 210
@@ -229,10 +229,10 @@ map TNT_MAP19 lookup "THUSTR_19"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP20 lookup "THUSTR_20"
+map TN_MAP20 lookup "THUSTR_20"
 {
-	next = "TNT_MAP21"
-	secretnext = "TNT_MAP21"
+	next = "TN_MAP21"
+	secretnext = "TN_MAP21"
 	sky1 = "TNT_SKY2"
 	cluster = 14
 	par = 150
@@ -241,10 +241,10 @@ map TNT_MAP20 lookup "THUSTR_20"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP21 lookup "THUSTR_21"
+map TN_MAP21 lookup "THUSTR_21"
 {
-	next = "TNT_MAP22"
-	secretnext = "TNT_MAP22"
+	next = "TN_MAP22"
+	secretnext = "TN_MAP22"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 240
@@ -253,10 +253,10 @@ map TNT_MAP21 lookup "THUSTR_21"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP22 lookup "THUSTR_22"
+map TN_MAP22 lookup "THUSTR_22"
 {
-	next = "TNT_MAP23"
-	secretnext = "TNT_MAP23"
+	next = "TN_MAP23"
+	secretnext = "TN_MAP23"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 150
@@ -265,10 +265,10 @@ map TNT_MAP22 lookup "THUSTR_22"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP23 lookup "THUSTR_23"
+map TN_MAP23 lookup "THUSTR_23"
 {
-	next = "TNT_MAP24"
-	secretnext = "TNT_MAP24"
+	next = "TN_MAP24"
+	secretnext = "TN_MAP24"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 180
@@ -277,10 +277,10 @@ map TNT_MAP23 lookup "THUSTR_23"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP24 lookup "THUSTR_24"
+map TN_MAP24 lookup "THUSTR_24"
 {
-	next = "TNT_MAP25"
-	secretnext = "TNT_MAP25"
+	next = "TN_MAP25"
+	secretnext = "TN_MAP25"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 150
@@ -289,10 +289,10 @@ map TNT_MAP24 lookup "THUSTR_24"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP25 lookup "THUSTR_25"
+map TN_MAP25 lookup "THUSTR_25"
 {
-	next = "TNT_MAP26"
-	secretnext = "TNT_MAP26"
+	next = "TN_MAP26"
+	secretnext = "TN_MAP26"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 150
@@ -301,10 +301,10 @@ map TNT_MAP25 lookup "THUSTR_25"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP26 lookup "THUSTR_26"
+map TN_MAP26 lookup "THUSTR_26"
 {
-	next = "TNT_MAP27"
-	secretnext = "TNT_MAP27"
+	next = "TN_MAP27"
+	secretnext = "TN_MAP27"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 300
@@ -313,10 +313,10 @@ map TNT_MAP26 lookup "THUSTR_26"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP27 lookup "THUSTR_27"
+map TN_MAP27 lookup "THUSTR_27"
 {
-	next = "TNT_MAP28"
-	secretnext = "TNT_MAP28"
+	next = "TN_MAP28"
+	secretnext = "TN_MAP28"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 330
@@ -325,10 +325,10 @@ map TNT_MAP27 lookup "THUSTR_27"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP28 lookup "THUSTR_28"
+map TN_MAP28 lookup "THUSTR_28"
 {
-	next = "TNT_MAP29"
-	secretnext = "TNT_MAP29"
+	next = "TN_MAP29"
+	secretnext = "TN_MAP29"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 420
@@ -337,10 +337,10 @@ map TNT_MAP28 lookup "THUSTR_28"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP29 lookup "THUSTR_29"
+map TN_MAP29 lookup "THUSTR_29"
 {
-	next = "TNT_MAP30"
-	secretnext = "TNT_MAP30"
+	next = "TN_MAP30"
+	secretnext = "TN_MAP30"
 	sky1 = "TNT_SKY3"
 	cluster = 15
 	par = 300
@@ -349,7 +349,7 @@ map TNT_MAP29 lookup "THUSTR_29"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP30 lookup "THUSTR_30"
+map TN_MAP30 lookup "THUSTR_30"
 {
 	sky1 = "TNT_SKY3"
 	cluster = 15
@@ -363,10 +363,10 @@ map TNT_MAP30 lookup "THUSTR_30"
 	}
 }
 
-map TNT_MAP31 lookup "THUSTR_31"
+map TN_MAP31 lookup "THUSTR_31"
 {
-	next = "TNT_MAP16"
-	secretnext = "TNT_MAP32"
+	next = "TN_MAP16"
+	secretnext = "TN_MAP32"
 	sky1 = "TNT_SKY3"
 	cluster = 16
 	par = 120
@@ -375,10 +375,10 @@ map TNT_MAP31 lookup "THUSTR_31"
 	InterMusic = "T_EVIL"
 }
 
-map TNT_MAP32 lookup "THUSTR_32"
+map TN_MAP32 lookup "THUSTR_32"
 {
-	next = "TNT_MAP16"
-	secretnext = "TNT_MAP16"
+	next = "TN_MAP16"
+	secretnext = "TN_MAP16"
 	sky1 = "TNT_SKY3"
 	cluster = 17
 	par = 30
