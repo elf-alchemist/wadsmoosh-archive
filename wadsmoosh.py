@@ -7,6 +7,7 @@ import omg
 
 # TODO:
 # tnt map23 switch (SW1BRN1 in SW corner) - find and substitute all doom1vs2 texture def conflicts?
+# same error also shows up in plutonia map30
 
 # if False, do a dry run with no actual file writing
 should_extract = True

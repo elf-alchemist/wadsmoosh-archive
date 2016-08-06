@@ -4,7 +4,8 @@
 # pre-authored resources to copy
 RES_FILES = [
     'mapinfo.txt', 'language.txt', 'endoom', 'smooshed.txt',
-    'textures.doom1', 'textures.doom2', 'textures.tnt', 'textures.plut',
+    'textures.common', 'textures.doom1', 'textures.doom2',
+    'textures.tnt', 'textures.plut',
     'graphics/M_DOOM.png', 'graphics/TITLEPIC.png',
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
     'mapinfo/masterlevels.txt', 'mapinfo/tnt_levels.txt',
