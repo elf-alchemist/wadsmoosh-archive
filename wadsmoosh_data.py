@@ -5,7 +5,7 @@
 RES_FILES = [
     'mapinfo.txt', 'language.txt', 'endoom', 'smooshed.txt',
     'textures.common', 'textures.doom1', 'textures.doom2',
-    'textures.tnt', 'textures.plut',
+    'textures.tnt', 'textures.plut', 'animdefs.txt',
     'graphics/M_DOOM.png', 'graphics/TITLEPIC.png',
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
     'mapinfo/masterlevels.txt', 'mapinfo/tnt_levels.txt',
@@ -53,7 +53,9 @@ TEXTURE_REPLACEMENTS = {
     'tnt': {
         'SW1GSTON': 'SW1GSTNT',
         'SW2GSTON': 'SW2GSTNT',
-        'SKY1': 'TNT_SKY1'
+        'SKY1': 'TNT_SKY1',
+        'SW1BRN1': 'SW1BRN1T',
+        'SW2BRN1': 'SW2BRN1T'
     },
     'plutonia': {
         'DBRAIN1': 'PBRAIN1',
@@ -62,7 +64,9 @@ TEXTURE_REPLACEMENTS = {
         'FIREBLU2': 'FIREPLU2',
         'SW1SKULL': 'SW1SKULP',
         'SW2SKULL': 'SW2SKULP',
-        'SKY3': 'PSKY3'
+        'SKY3': 'PSKY3',
+        'SW1BRN1': 'SW1BRN1T',
+        'SW2BRN1': 'SW2BRN1T'
     }
 }
 
