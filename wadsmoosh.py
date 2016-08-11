@@ -59,7 +59,7 @@ def extract_master_levels():
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         if not wad_filename:
-            logg("Couldn't find %s" % wad_filename)
+            logg("Couldn't find %s" % wad_name)
             continue
         in_wad.from_file(wad_filename)
         out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map'
