@@ -9,6 +9,8 @@ xcopy /E res\*.* dist\%PROJ_NAME%\res\
 xcopy /E omg\*.* dist\%PROJ_NAME%\omg\
 xcopy /E source_wads\delete_me.txt dist\%PROJ_NAME%\source_wads\
 xcopy %PROJ_NAME%.py dist\%PROJ_NAME%\
+xcopy %PROJ_NAME%_data.py dist\%PROJ_NAME%\
 xcopy %PROJ_NAME%.txt dist\%PROJ_NAME%\
 xcopy wadsmoo.sh dist\%PROJ_NAME%\
+xcopy license.txt dist\%PROJ_NAME%\
 %ZIP_EXE% a -r %PROJ_NAME%_win.zip .\dist\%PROJ_NAME%\*
