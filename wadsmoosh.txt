@@ -1,20 +1,22 @@
 ===========================================================================
-Advanced engine needed  : ZDoom / GZDoom
+Advanced engine needed  : ZDoom / ZDoom-derived eg GZDoom
 Primary purpose         : IWAD Combining Tool
 ===========================================================================
 Title                   : WadSmoosh
 Filename                : wadsmoosh.zip
-Release date            : 2016-08-06 (release candidate version)
+Release date            : 2016-08-11
 Author                  : JP LeBreton
-Email Address           : http://vectorpoem.com/contact.html
-Other Files By Author   : arcadia.wad, oakridge.wad
+Email Address           : jplebreton@gmail.com
+Other Files By Author   : oakridge.wad, arcadia.wad, jphouse.wad
 
 Description             : A tool for combining all official id release
                           WADs into a single PK3 file playable with ZDoom
                           and its derivatives. Drop your WADs into the
                           source_wads\ subfolder, then run. A new IWAD
                           file called "doom_complete.pk3" will be
-                          generated.
+                          generated. Program logs to wadsmoosh.log as it
+                          runs, any errors it encounters will show up
+                          there.
 
 Additional Credits to   : ZDoom forums folks for help testing and fixing!
 ===========================================================================
@@ -27,11 +29,11 @@ Graphics                : Yes (title art)
 Dehacked/BEX Patch      : No
 Demos                   : No
 Other                   : Yes (custom data files)
-Other files required    : Any/all official id release WADs:
+Other files required    : Any official id release WADs:
                           - Doom / Ultimate Doom
                           - Doom 2
                           - Master Levels for Doom 2
-                          - No Rest for the Living (extracted WAD)
+                          - No Rest for the Living (aka NERVE.WAD)
                           - Final Doom (TNT and Plutonia)
 
 
@@ -62,5 +64,5 @@ further distribution.
 
 * Where to get the file that this text file describes *
 
-The Usual: ftp://archives.gamers.org/pub/idgames/ (not yet!) and mirrors
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
 Web sites: https://bitbucket.org/JPLeBreton/wadsmoosh
