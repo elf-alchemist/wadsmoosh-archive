@@ -18,6 +18,8 @@ WadSmoosh will create a new file called `doom_complete.pk3` with all the game co
 
 If you've extracted the No Rest for the Living addon episode for Doom 2 from Doom 3: BFG Edition or the PSN or XBLA versions, make sure it's named `nerve.wad` in the `source_wads/` folder.
 
+In rare cases, you may need to uncheck the `source_wads/` folder's read-only status.
+
 ## Absolute Beginner's Guide
 
 1. [Download WadSmoosh](https://bitbucket.org/JPLeBreton/wadsmoosh/downloads) and extract it to a folder.
