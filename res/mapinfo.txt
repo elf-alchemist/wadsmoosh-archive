@@ -7,7 +7,7 @@ include mapinfo/plutonia_levels.txt
 gameinfo
 {
 	creditpage = "CREDIT"
-	titlemusic = "$MUSIC_INTRO"
+	titlemusic = "$MUSIC_DM2TTL"
 	titletime = 11
 	pagetime = 5
 	finalemusic = "$MUSIC_VICTOR"
