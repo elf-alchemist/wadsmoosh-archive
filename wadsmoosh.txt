@@ -3,10 +3,10 @@ Advanced engine needed  : ZDoom / ZDoom-derived eg GZDoom
 Primary purpose         : IWAD Combining Tool
 ===========================================================================
 Title                   : WadSmoosh
-Filename                : wadsmoosh.zip
+Filename                : wadsmush.zip
 Release date            : 2016-08-11
 Author                  : JP LeBreton
-Email Address           : jplebreton@gmail.com
+Email Address           : [redacted]
 Other Files By Author   : oakridge.wad, arcadia.wad, jphouse.wad
 
 Description             : A tool for combining all official id release
