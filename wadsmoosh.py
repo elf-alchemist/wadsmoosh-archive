@@ -106,6 +106,38 @@ def tnt_map31_fix():
     wad.to_file(wad_filename)
     logg('  TNT MAP31 fix applied.')
 
+def add_secret_exit(map_name, line_id):
+    # sets given line # in given map as a secret exit switch
+    wad = omg.WAD()
+    wad_filename = DEST_DIR + 'maps/%s.wad' % map_name
+    wad.from_file(wad_filename)
+    ed = omg.MapEditor(wad.maps[map_name])
+    ed.linedefs[line_id].__dict__['action'] = 51
+    wad.maps[map_name] = ed.to_lumps()
+    wad.to_file(wad_filename)
+
+def add_secret_level(map_src_filename, map_src_name, map_dest_name):
+    # copies given map file into dest dir and sets its map lump name
+    src_filename = get_wad_filename(map_src_filename)
+    dest_filename = DEST_DIR + 'maps/%s.wad' % map_dest_name
+    copyfile(src_filename, dest_filename)
+    wad = omg.WAD()
+    wad.from_file(dest_filename)
+    wad.maps.rename(map_src_name, map_dest_name)
+    wad.to_file(dest_filename)
+
+def add_xbox_levels():
+    # :P
+    logg('Adding Xbox bonus levels...')
+    logg('  Adding secret exit to E1M1')
+    add_secret_exit('E1M1', 268)
+    logg('  Adding SEWERS.WAD as E1M10')
+    add_secret_level('sewers', 'E3M1', 'E1M10')
+    logg('  Adding secret exit to MAP02')
+    add_secret_exit('MAP02', 283)
+    logg('  Adding BETRAY.WAD as MAP33')
+    add_secret_level('betray', 'MAP01', 'MAP33')
+
 def do_texture_replacements_in_map(map_filename, map_name, replacements):
     # replace textures in given table for given map in given wad
     wad = omg.WAD()
@@ -246,6 +278,9 @@ def main():
         logg('Skipping Master Levels as doom2.wad is not present')
     if get_wad_filename('tnt') and should_extract:
         tnt_map31_fix()
+    # only supported versions of these = http://classicdoom.com/xboxspec.htm
+    if get_wad_filename('sewers') and get_wad_filename('betray') and should_extract:
+        add_xbox_levels()
     # create pk3
     logg('Creating %s...' % DEST_FILENAME)
     pk3 = ZipFile(DEST_FILENAME, 'w')

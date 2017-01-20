@@ -87,11 +87,11 @@ class OrderedDict:
 
     def rename(self, old, new):
         """Rename an entry"""
-        print old, new
-        print old in self
-        print "K", self.keys()
+        #print old, new
+        #print old in self
+        #print "K", self.keys()
         self[new] = self[old]
-        print self[new]
+        #print self[new]
         del self[old]
 
     def __copy__(self):

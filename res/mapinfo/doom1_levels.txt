@@ -4,11 +4,24 @@ map E1M1 lookup "HUSTR_E1M1"
 {
 	levelnum = 1
 	next = "E1M2"
-	secretnext = "E1M9"
+	secretnext = "E1M10"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 30
 	music = "$MUSIC_E1M1"
+	InterMusic = "$MUSIC_INTER"
+	ExitPic = "$IN_EPI1"
+}
+
+map E1M10 lookup "HUSTR_E1M10"
+{
+	levelnum = 10
+	next = "E1M1"
+	secretnext = "E1M1"
+	sky1 = "SKY1"
+	cluster = 1
+	par = 30
+	music = "$MUSIC_E3M1"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI1"
 }

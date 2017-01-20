@@ -45,6 +45,10 @@ NHUSTR_7 = "baron's banquet";
 NHUSTR_8 = "tomb of malevolence";
 NHUSTR_9 = "march of the demons";
 
+// xbox bonus level names
+HUSTR_E1M10 = "Sewers";
+HUSTR_33 = "Betray";
+
 // tnt level names (sans level #)
 THUSTR_1 = "system control";
 THUSTR_2 = "human bbq";
