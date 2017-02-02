@@ -1,2 +1,3 @@
 // final doom BRN1 switch texture replacement
 switch doom 1 SW1BRN1T on pic SW2BRN1T tics 0
+switch doom 3 SW1SKULP on pic SW2SKULP tics 0
