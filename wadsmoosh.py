@@ -242,6 +242,12 @@ def copy_resources():
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
 
 def main():
+    # bail if SRC_WAD_DIR is empty
+    if not get_wad_filename('doom') and not get_wad_filename('doom2') and \
+       not get_wad_filename('tnt') and not get_wad_filename('plutonia'):
+        logg('No source WADs found!\nPlease place your WAD files into %s.' % os.path.realpath(SRC_WAD_DIR))
+        logfile.close()
+        return
     # make dirs if they don't exist
     if not os.path.exists(DEST_DIR):
         os.mkdir(DEST_DIR)
