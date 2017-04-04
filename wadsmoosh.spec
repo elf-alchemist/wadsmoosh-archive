@@ -1,16 +1,18 @@
 # -*- mode: python -*-
 
+import sys
+sys.modules['FixTk'] = None
+
 block_cipher = None
 
-
 a = Analysis(['wadsmoosh.py'],
-             pathex=['C:\\wadsmoosh'],
+             pathex=['c:\\wadsmoosh'],
              binaries=[],
              datas=[],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
-             excludes=[],
+             excludes=['FixTk', 'tcl', 'tk', '_tkinter', 'tkinter', 'Tkinter'],
              win_no_prefer_redirects=False,
              win_private_assemblies=False,
              cipher=block_cipher)
