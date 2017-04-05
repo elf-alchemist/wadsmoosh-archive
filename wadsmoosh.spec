@@ -12,7 +12,9 @@ a = Analysis(['wadsmoosh.py'],
              hiddenimports=[],
              hookspath=[],
              runtime_hooks=[],
-             excludes=['FixTk', 'tcl', 'tk', '_tkinter', 'tkinter', 'Tkinter', 'PIL'],
+             # junk we don't need - omg requires hashlib tho!
+             excludes=['FixTk', 'tcl', 'tk', '_tkinter', 'tkinter', 'Tkinter',
+                'PIL', 'bz2', 'ctypes', 'lzma', 'socket', 'ssl'],
              win_no_prefer_redirects=False,
              win_private_assemblies=False,
              cipher=block_cipher)
