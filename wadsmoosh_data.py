@@ -7,6 +7,9 @@ RES_FILES = [
     'textures.common', 'textures.doom1', 'textures.doom2',
     'textures.tnt', 'textures.plut', 'animdefs.txt',
     'graphics/M_DOOM.png', 'graphics/TITLEPIC.png',
+    'graphics/M_HELL.png', 'graphics/M_NOREST.png',
+    'graphics/M_MASTER.png', 'graphics/M_TNT.png',
+    'graphics/M_PLUT.png',
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
     'mapinfo/masterlevels.txt', 'mapinfo/tnt_levels.txt',
     'mapinfo/plutonia_levels.txt'

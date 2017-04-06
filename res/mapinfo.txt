@@ -25,9 +25,7 @@ gameinfo
 clearepisodes
 episode e1m1
 {
-	// print names instead of using graphic lump - looks weird next to
-	// episodes that don't have em
-	//picname = "M_EPI1"
+	picname = "M_EPI1"
 	name = "$D1EP1NAME"
 	key = "k"
 	optional
@@ -35,7 +33,7 @@ episode e1m1
 
 episode e2m1
 {
-	//picname = "M_EPI2"
+	picname = "M_EPI2"
 	name = "$D1EP2NAME"
 	key = "s"
 	optional
@@ -43,7 +41,7 @@ episode e2m1
 
 episode e3m1
 {
-	//picname = "M_EPI3"
+	picname = "M_EPI3"
 	name = "$D1EP3NAME"
 	key = "i"
 	optional
@@ -51,7 +49,7 @@ episode e3m1
 
 episode e4m1
 {
-	//picname = "M_EPI4"
+	picname = "M_EPI4"
 	name = "$D1EP4NAME"
 	key = "f"
 	optional
@@ -59,6 +57,7 @@ episode e4m1
 
 episode map01
 {
+	picname = "M_HELL"
 	name = "$D2EP1NAME"
 	key = "h"
 	optional
@@ -66,6 +65,7 @@ episode map01
 
 episode nv_map01
 {
+	picname = "M_NOREST"
 	name = "$D2EP2NAME"
 	key = "n"
 	optional
@@ -73,6 +73,7 @@ episode nv_map01
 
 episode ml_map01
 {
+	picname = "M_MASTER"
 	name = "$D2MLNAME"
 	key = "m"
 	optional
@@ -80,6 +81,7 @@ episode ml_map01
 
 episode tn_map01
 {
+	picname = "M_TNT"
 	name = "$TNTNAME"
 	key = "t"
 	optional
@@ -87,6 +89,7 @@ episode tn_map01
 
 episode pl_map01
 {
+	picname = "M_PLUT"
 	name = "$PLUNAME"
 	key = "p"
 	optional
