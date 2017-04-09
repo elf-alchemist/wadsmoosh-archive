@@ -58,7 +58,13 @@ TEXTURE_REPLACEMENTS = {
         'SW2GSTON': 'SW2GSTNT',
         'SKY1': 'TNT_SKY1',
         'SW1BRN1': 'SW1BRN1T',
-        'SW2BRN1': 'SW2BRN1T'
+        'SW2BRN1': 'SW2BRN1T',
+        'SW1SKULL': 'SW1SKULT',
+        'SW2SKULL': 'SW2SKULT',
+        'SLADRIP1': 'SLADRPT1',
+        'SLADRIP3': 'SLADRPT3',
+        'BLODGR1': 'BLODGRT1',
+        'BLODGR4': 'BLODGRT4'
     },
     'plutonia': {
         'DBRAIN1': 'PBRAIN1',
