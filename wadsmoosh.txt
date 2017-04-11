@@ -21,6 +21,8 @@ Description             : A tool for combining all official id release
                           errors it encounters will show up there.
 
 Additional Credits to   : ZDoom forums folks for help testing and fixing!
+                          Custom title art by Scalliano and Hellser.
+                          Episode name art by NightFright.
 ===========================================================================
 * What is included *
 
