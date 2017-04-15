@@ -23,6 +23,11 @@ Description             : A tool for combining all official id release
 Additional Credits to   : ZDoom forums folks for help testing and fixing!
                           Custom title art by Scalliano and Hellser.
                           Episode name art by NightFright.
+
+Inspirational Quote     : "As my son Steve says, just 'smoosh' it in there.
+                          It's not a real word, but people seem to know
+                          what it means." - Bob Ross
+         
 ===========================================================================
 * What is included *
 
@@ -50,6 +55,9 @@ Editor(s) used          : OMGIFOL, the excellent Python-based lump management
 Known Bugs              : Nope
 May Not Run With        : Any non-ZDoom-derived source port
 Tested With             : ZDoom and GZDoom in Windows, macOS, and Arch Linux
+
+
+* Inspiration *
 
 
 * Copyright / Permissions *
