@@ -181,3 +181,37 @@ pic SLAD8 tics 8
 pic SLAD9 tics 8
 pic SLAD10 tics 8
 pic SLAD11 tics 8
+
+// plutonia animated textures
+
+texture optional FIREPLU1
+pic AROCK2 tics 8
+pic AROCK3 tics 8
+pic AROCK4 tics 8
+pic AROCK5 tics 8
+pic FIREPLU2 tics 8
+
+texture optional PWFALL1
+pic PWFALL2 tics 8
+pic PWFALL3 tics 8
+pic PWFALL4 tics 8
+
+texture optional PBRAIN1
+pic MC2 tics 8
+pic MC3 tics 8
+pic MC4 tics 8
+pic MC5 tics 8
+pic MC6 tics 8
+pic MC7 tics 8
+pic MC8 tics 8
+pic MC10 tics 8
+pic MC11 tics 8
+pic MC12 tics 8
+pic MC13 tics 8
+pic MC14 tics 8
+pic MC15 tics 8
+pic MC16 tics 8
+pic MC17 tics 8
+pic MC18 tics 8
+pic MC19 tics 8
+pic PBRAIN4 tics 8

@@ -165,22 +165,22 @@ Texture "A-MYWOOD", 128, 128
 	Patch MYWOOD, 0, 0
 }
 
-Texture WFALL1, 64, 128
+Texture PWFALL1, 64, 128
 {
 	Patch WFALL1, 0, 0
 }
 
-Texture WFALL2, 64, 128
+Texture PWFALL2, 64, 128
 {
 	Patch WFALL2, 0, 0
 }
 
-Texture WFALL3, 64, 128
+Texture PWFALL3, 64, 128
 {
 	Patch WFALL3, 0, 0
 }
 
-Texture WFALL4, 64, 128
+Texture PWFALL4, 64, 128
 {
 	Patch WFALL4, 0, 0
 }

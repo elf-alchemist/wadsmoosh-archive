@@ -75,7 +75,11 @@ TEXTURE_REPLACEMENTS = {
         'SW2SKULL': 'SW2SKULP',
         'SKY3': 'PSKY3',
         'SW1BRN1': 'SW1BRN1T',
-        'SW2BRN1': 'SW2BRN1T'
+        'SW2BRN1': 'SW2BRN1T',
+        'WFALL1': 'PWFALL1',
+        'WFALL2': 'PWFALL2',
+        'WFALL3': 'PWFALL3',
+        'WFALL4': 'PWFALL4'
     }
 }
 
