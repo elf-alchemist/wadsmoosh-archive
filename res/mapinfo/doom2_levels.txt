@@ -8,6 +8,7 @@ map MAP01 lookup "HUSTR_1"
 {
 	next = "MAP02"
 	secretnext = "MAP02"
+	titlepatch = "CWILV00"
 	sky1 = "RSKY1"
 	cluster = 5
 	par = 30
@@ -18,6 +19,7 @@ map MAP02 lookup "HUSTR_2"
 {
 	next = "MAP03"
 	secretnext = "MAP33"
+	titlepatch = "CWILV01"
 	sky1 = "RSKY1"
 	cluster = 5
 	par = 90
@@ -38,6 +40,7 @@ map MAP03 lookup "HUSTR_3"
 {
 	next = "MAP04"
 	secretnext = "MAP04"
+	titlepatch = "CWILV02"
 	sky1 = "RSKY1"
 	cluster = 5
 	par = 120
@@ -48,6 +51,7 @@ map MAP04 lookup "HUSTR_4"
 {
 	next = "MAP05"
 	secretnext = "MAP05"
+	titlepatch = "CWILV03"
 	sky1 = "RSKY1"
 	cluster = 5
 	par = 120
@@ -58,6 +62,7 @@ map MAP05 lookup "HUSTR_5"
 {
 	next = "MAP06"
 	secretnext = "MAP06"
+	titlepatch = "CWILV04"
 	sky1 = "RSKY1"
 	cluster = 5
 	par = 90
@@ -68,6 +73,7 @@ map MAP06 lookup "HUSTR_6"
 {
 	next = "MAP07"
 	secretnext = "MAP07"
+	titlepatch = "CWILV05"
 	sky1 = "RSKY1"
 	cluster = 5
 	par = 150
@@ -79,6 +85,7 @@ map MAP07 lookup "HUSTR_7"
 {
 	next = "MAP08"
 	secretnext = "MAP08"
+	titlepatch = "CWILV06"
 	sky1 = "RSKY1"
 	cluster = 6
 	par = 120
@@ -90,6 +97,7 @@ map MAP08 lookup "HUSTR_8"
 {
 	next = "MAP09"
 	secretnext = "MAP09"
+	titlepatch = "CWILV07"
 	sky1 = "RSKY1"
 	cluster = 6
 	par = 120
@@ -100,6 +108,7 @@ map MAP09 lookup "HUSTR_9"
 {
 	next = "MAP10"
 	secretnext = "MAP10"
+	titlepatch = "CWILV08"
 	sky1 = "RSKY1"
 	cluster = 6
 	par = 270
@@ -110,6 +119,7 @@ map MAP10 lookup "HUSTR_10"
 {
 	next = "MAP11"
 	secretnext = "MAP11"
+	titlepatch = "CWILV09"
 	sky1 = "RSKY1"
 	cluster = 6
 	par = 90
@@ -120,6 +130,7 @@ map MAP11 lookup "HUSTR_11"
 {
 	next = "MAP12"
 	secretnext = "MAP12"
+	titlepatch = "CWILV10"
 	sky1 = "RSKY1"
 	cluster = 6
 	par = 210
@@ -130,6 +141,7 @@ map MAP12 lookup "HUSTR_12"
 {
 	next = "MAP13"
 	secretnext = "MAP13"
+	titlepatch = "CWILV11"
 	sky1 = "RSKY2"
 	cluster = 7
 	par = 150
@@ -140,6 +152,7 @@ map MAP13 lookup "HUSTR_13"
 {
 	next = "MAP14"
 	secretnext = "MAP14"
+	titlepatch = "CWILV12"
 	sky1 = "RSKY2"
 	cluster = 7
 	par = 150
@@ -150,6 +163,7 @@ map MAP14 lookup "HUSTR_14"
 {
 	next = "MAP15"
 	secretnext = "MAP15"
+	titlepatch = "CWILV13"
 	sky1 = "RSKY2"
 	cluster = 7
 	par = 150
@@ -160,6 +174,7 @@ map MAP15 lookup "HUSTR_15"
 {
 	next = "MAP16"
 	secretnext = "MAP31"
+	titlepatch = "CWILV14"
 	sky1 = "RSKY2"
 	cluster = 7
 	par = 210
@@ -170,6 +185,7 @@ map MAP16 lookup "HUSTR_16"
 {
 	next = "MAP17"
 	secretnext = "MAP17"
+	titlepatch = "CWILV15"
 	sky1 = "RSKY2"
 	cluster = 7
 	par = 150
@@ -180,6 +196,7 @@ map MAP17 lookup "HUSTR_17"
 {
 	next = "MAP18"
 	secretnext = "MAP18"
+	titlepatch = "CWILV16"
 	sky1 = "RSKY2"
 	cluster = 7
 	par = 420
@@ -190,6 +207,7 @@ map MAP18 lookup "HUSTR_18"
 {
 	next = "MAP19"
 	secretnext = "MAP19"
+	titlepatch = "CWILV17"
 	sky1 = "RSKY2"
 	cluster = 7
 	par = 150
@@ -200,6 +218,7 @@ map MAP19 lookup "HUSTR_19"
 {
 	next = "MAP20"
 	secretnext = "MAP20"
+	titlepatch = "CWILV18"
 	sky1 = "RSKY2"
 	cluster = 7
 	par = 210
@@ -210,6 +229,7 @@ map MAP20 lookup "HUSTR_20"
 {
 	next = "MAP21"
 	secretnext = "MAP21"
+	titlepatch = "CWILV19"
 	sky1 = "RSKY2"
 	cluster = 7
 	par = 150
@@ -220,6 +240,7 @@ map MAP21 lookup "HUSTR_21"
 {
 	next = "MAP22"
 	secretnext = "MAP22"
+	titlepatch = "CWILV20"
 	sky1 = "RSKY3"
 	cluster = 8
 	par = 240
@@ -230,6 +251,7 @@ map MAP22 lookup "HUSTR_22"
 {
 	next = "MAP23"
 	secretnext = "MAP23"
+	titlepatch = "CWILV21"
 	sky1 = "RSKY3"
 	cluster = 8
 	par = 150
@@ -240,6 +262,7 @@ map MAP23 lookup "HUSTR_23"
 {
 	next = "MAP24"
 	secretnext = "MAP24"
+	titlepatch = "CWILV22"
 	sky1 = "RSKY3"
 	cluster = 8
 	par = 180
@@ -250,6 +273,7 @@ map MAP24 lookup "HUSTR_24"
 {
 	next = "MAP25"
 	secretnext = "MAP25"
+	titlepatch = "CWILV23"
 	sky1 = "RSKY3"
 	cluster = 8
 	par = 150
@@ -260,6 +284,7 @@ map MAP25 lookup "HUSTR_25"
 {
 	next = "MAP26"
 	secretnext = "MAP26"
+	titlepatch = "CWILV24"
 	sky1 = "RSKY3"
 	cluster = 8
 	par = 150
@@ -270,6 +295,7 @@ map MAP26 lookup "HUSTR_26"
 {
 	next = "MAP27"
 	secretnext = "MAP27"
+	titlepatch = "CWILV25"
 	sky1 = "RSKY3"
 	cluster = 8
 	par = 300
@@ -280,6 +306,7 @@ map MAP27 lookup "HUSTR_27"
 {
 	next = "MAP28"
 	secretnext = "MAP28"
+	titlepatch = "CWILV26"
 	sky1 = "RSKY3"
 	cluster = 8
 	par = 330
@@ -290,6 +317,7 @@ map MAP28 lookup "HUSTR_28"
 {
 	next = "MAP29"
 	secretnext = "MAP29"
+	titlepatch = "CWILV27"
 	sky1 = "RSKY3"
 	cluster = 8
 	par = 420
@@ -300,6 +328,7 @@ map MAP29 lookup "HUSTR_29"
 {
 	next = "MAP30"
 	secretnext = "MAP30"
+	titlepatch = "CWILV28"
 	sky1 = "RSKY3"
 	cluster = 8
 	par = 300
@@ -308,6 +337,7 @@ map MAP29 lookup "HUSTR_29"
 
 map MAP30 lookup "HUSTR_30"
 {
+	titlepatch = "CWILV29"
 	next = "EndGameC"
 	secretnext = "EndGameC"
 	sky1 = "RSKY3"
@@ -321,6 +351,7 @@ map MAP31 lookup "HUSTR_31"
 {
 	next = "MAP16"
 	secretnext = "MAP32"
+	titlepatch = "CWILV30"
 	sky1 = "RSKY3"
 	cluster = 9
 	par = 120
@@ -331,6 +362,7 @@ map MAP32 lookup "HUSTR_32"
 {
 	next = "MAP16"
 	secretnext = "MAP16"
+	titlepatch = "CWILV31"
 	sky1 = "RSKY3"
 	cluster = 10
 	par = 30

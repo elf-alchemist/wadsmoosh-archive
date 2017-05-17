@@ -5,6 +5,7 @@ map E1M1 lookup "HUSTR_E1M1"
 	levelnum = 1
 	next = "E1M2"
 	secretnext = "E1M10"
+	titlepatch = "WILV00"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 30
@@ -31,6 +32,7 @@ map E1M2 lookup "HUSTR_E1M2"
 	levelnum = 2
 	next = "E1M3"
 	secretnext = "E1M9"
+	titlepatch = "WILV01"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 75
@@ -44,6 +46,7 @@ map E1M3 lookup "HUSTR_E1M3"
 	levelnum = 3
 	next = "E1M4"
 	secretnext = "E1M9"
+	titlepatch = "WILV02"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 120
@@ -57,6 +60,7 @@ map E1M4 lookup "HUSTR_E1M4"
 	levelnum = 4
 	next = "E1M5"
 	secretnext = "E1M9"
+	titlepatch = "WILV03"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 90
@@ -70,6 +74,7 @@ map E1M5 lookup "HUSTR_E1M5"
 	levelnum = 5
 	next = "E1M6"
 	secretnext = "E1M9"
+	titlepatch = "WILV04"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 165
@@ -83,6 +88,7 @@ map E1M6 lookup "HUSTR_E1M6"
 	levelnum = 6
 	next = "E1M7"
 	secretnext = "E1M9"
+	titlepatch = "WILV05"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 180
@@ -96,6 +102,7 @@ map E1M7 lookup "HUSTR_E1M7"
 	levelnum = 7
 	next = "E1M8"
 	secretnext = "E1M9"
+	titlepatch = "WILV06"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 180
@@ -109,6 +116,7 @@ map E1M8 lookup "HUSTR_E1M8"
 	levelnum = 8
 	next = "EndGame1"
 	secretnext = "E1M9"
+	titlepatch = "WILV07"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 30
@@ -126,6 +134,7 @@ map E1M9 lookup "HUSTR_E1M9"
 	levelnum = 9
 	next = "E1M4"
 	secretnext = "E1M4"
+	titlepatch = "WILV08"
 	sky1 = "SKY1"
 	cluster = 1
 	par = 165
@@ -141,6 +150,7 @@ map E2M1 lookup "HUSTR_E2M1"
 	levelnum = 11
 	next = "E2M2"
 	secretnext = "E2M9"
+	titlepatch = "WILV10"
 	sky1 = "SKY2"
 	cluster = 2
 	par = 90
@@ -154,6 +164,7 @@ map E2M2 lookup "HUSTR_E2M2"
 	levelnum = 12
 	next = "E2M3"
 	secretnext = "E2M9"
+	titlepatch = "WILV11"
 	sky1 = "SKY2"
 	cluster = 2
 	par = 90
@@ -167,6 +178,7 @@ map E2M3 lookup "HUSTR_E2M3"
 	levelnum = 13
 	next = "E2M4"
 	secretnext = "E2M9"
+	titlepatch = "WILV12"
 	sky1 = "SKY2"
 	cluster = 2
 	par = 90
@@ -180,6 +192,7 @@ map E2M4 lookup "HUSTR_E2M4"
 	levelnum = 14
 	next = "E2M5"
 	secretnext = "E2M9"
+	titlepatch = "WILV13"
 	sky1 = "SKY2"
 	cluster = 2
 	par = 120
@@ -193,6 +206,7 @@ map E2M5 lookup "HUSTR_E2M5"
 	levelnum = 15
 	next = "E2M6"
 	secretnext = "E2M9"
+	titlepatch = "WILV14"
 	sky1 = "SKY2"
 	cluster = 2
 	par = 90
@@ -206,6 +220,7 @@ map E2M6 lookup "HUSTR_E2M6"
 	levelnum = 16
 	next = "E2M7"
 	secretnext = "E2M9"
+	titlepatch = "WILV15"
 	sky1 = "SKY2"
 	cluster = 2
 	par = 360
@@ -219,6 +234,7 @@ map E2M7 lookup "HUSTR_E2M7"
 	levelnum = 17
 	next = "E2M8"
 	secretnext = "E2M9"
+	titlepatch = "WILV16"
 	sky1 = "SKY2"
 	cluster = 2
 	par = 240
@@ -232,6 +248,7 @@ map E2M8 lookup "HUSTR_E2M8"
 	levelnum = 18
 	next = "EndGame2"
 	secretnext = "E2M9"
+	titlepatch = "WILV17"
 	sky1 = "SKY2"
 	cluster = 2
 	par = 30
@@ -249,6 +266,7 @@ map E2M9 lookup "HUSTR_E2M9"
 	levelnum = 19
 	next = "E2M6"
 	secretnext = "E2M6"
+	titlepatch = "WILV18"
 	sky1 = "SKY2"
 	cluster = 2
 	par = 170
@@ -264,6 +282,7 @@ map E3M1 lookup "HUSTR_E3M1"
 	levelnum = 21
 	next = "E3M2"
 	secretnext = "E3M9"
+	titlepatch = "WILV20"
 	sky1 = "SKY3"
 	cluster = 3
 	par = 90
@@ -277,6 +296,7 @@ map E3M2 lookup "HUSTR_E3M2"
 	levelnum = 22
 	next = "E3M3"
 	secretnext = "E3M9"
+	titlepatch = "WILV21"
 	sky1 = "SKY3"
 	cluster = 3
 	par = 45
@@ -290,6 +310,7 @@ map E3M3 lookup "HUSTR_E3M3"
 	levelnum = 23
 	next = "E3M4"
 	secretnext = "E3M9"
+	titlepatch = "WILV22"
 	sky1 = "SKY3"
 	cluster = 3
 	par = 90
@@ -303,6 +324,7 @@ map E3M4 lookup "HUSTR_E3M4"
 	levelnum = 24
 	next = "E3M5"
 	secretnext = "E3M9"
+	titlepatch = "WILV23"
 	sky1 = "SKY3"
 	cluster = 3
 	par = 150
@@ -316,6 +338,7 @@ map E3M5 lookup "HUSTR_E3M5"
 	levelnum = 25
 	next = "E3M6"
 	secretnext = "E3M9"
+	titlepatch = "WILV24"
 	sky1 = "SKY3"
 	cluster = 3
 	par = 90
@@ -329,6 +352,7 @@ map E3M6 lookup "HUSTR_E3M6"
 	levelnum = 26
 	next = "E3M7"
 	secretnext = "E3M9"
+	titlepatch = "WILV25"
 	sky1 = "SKY3"
 	cluster = 3
 	par = 90
@@ -342,6 +366,7 @@ map E3M7 lookup "HUSTR_E3M7"
 	levelnum = 27
 	next = "E3M8"
 	secretnext = "E3M9"
+	titlepatch = "WILV26"
 	sky1 = "SKY3"
 	cluster = 3
 	par = 165
@@ -355,6 +380,7 @@ map E3M8 lookup "HUSTR_E3M8"
 	levelnum = 28
 	next = "endbunny"
 	secretnext = "E3M9"
+	titlepatch = "WILV27"
 	sky1 = "SKY3"
 	cluster = 3
 	par = 30
@@ -372,6 +398,7 @@ map E3M9 lookup "HUSTR_E3M9"
 	levelnum = 29
 	next = "E3M7"
 	secretnext = "E3M7"
+	titlepatch = "WILV28"
 	sky1 = "SKY3"
 	cluster = 3
 	par = 135
@@ -387,6 +414,7 @@ map E4M1 lookup "HUSTR_E4M1"
 	levelnum = 31
 	next = "E4M2"
 	secretnext = "E4M9"
+	titlepatch = "WILV30"
 	sky1 = "SKY4"
 	cluster = 4
 	music = "$MUSIC_E3M4"
@@ -399,6 +427,7 @@ map E4M2 lookup "HUSTR_E4M2"
 	levelnum = 32
 	next = "E4M3"
 	secretnext = "E4M9"
+	titlepatch = "WILV31"
 	sky1 = "SKY4"
 	cluster = 4
 	music = "$MUSIC_E3M2"
@@ -411,6 +440,7 @@ map E4M3 lookup "HUSTR_E4M3"
 	levelnum = 33
 	next = "E4M4"
 	secretnext = "E4M9"
+	titlepatch = "WILV32"
 	sky1 = "SKY4"
 	cluster = 4
 	music = "$MUSIC_E3M3"
@@ -423,6 +453,7 @@ map E4M4 lookup "HUSTR_E4M4"
 	levelnum = 34
 	next = "E4M5"
 	secretnext = "E4M9"
+	titlepatch = "WILV33"
 	sky1 = "SKY4"
 	cluster = 4
 	music = "$MUSIC_E1M5"
@@ -435,6 +466,7 @@ map E4M5 lookup "HUSTR_E4M5"
 	levelnum = 35
 	next = "E4M6"
 	secretnext = "E4M9"
+	titlepatch = "WILV34"
 	sky1 = "SKY4"
 	cluster = 4
 	music = "$MUSIC_E2M7"
@@ -447,6 +479,7 @@ map E4M6 lookup "HUSTR_E4M6"
 	levelnum = 36
 	next = "E4M7"
 	secretnext = "E4M9"
+	titlepatch = "WILV35"
 	sky1 = "SKY4"
 	cluster = 4
 	cyberdemonspecial
@@ -461,6 +494,7 @@ map E4M7 lookup "HUSTR_E4M7"
 	levelnum = 37
 	next = "E4M8"
 	secretnext = "E4M9"
+	titlepatch = "WILV36"
 	sky1 = "SKY4"
 	cluster = 4
 	music = "$MUSIC_E2M6"
@@ -473,6 +507,7 @@ map E4M8 lookup "HUSTR_E4M8"
 	levelnum = 38
 	next = "EndGame4"
 	secretnext = "E4M9"
+	titlepatch = "WILV37"
 	sky1 = "SKY4"
 	cluster = 4
 	nointermission
@@ -489,6 +524,7 @@ map E4M9 lookup "HUSTR_E4M9"
 	levelnum = 39
 	next = "E4M3"
 	secretnext = "E4M3"
+	titlepatch = "WILV38"
 	sky1 = "SKY4"
 	cluster = 4
 	music = "$MUSIC_E1M9"
