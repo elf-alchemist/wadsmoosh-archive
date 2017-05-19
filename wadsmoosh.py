@@ -68,7 +68,6 @@ def extract_master_levels():
         logg('  Extracting %s to %s' % (wad_filename, out_wad_filename))
         # grab first map we find in each wad
         map_name = in_wad.maps.find('*')[0]
-        ed = omg.MapEditor(in_wad.maps[map_name])
         extract_map(in_wad, map_name, out_wad_filename)
     # save teeth map32 to map21 wad
     out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map21' + '.wad'
@@ -91,7 +90,7 @@ def extract_master_levels():
         lump.to_file(out_filename)
 
 def tnt_map31_fix():
-    logg('Checking for TNT MAP31 fix...')
+    logg('Checking for TNT MAP31 missing yellow key fix...')
     wad = omg.WAD()
     wad_filename = DEST_DIR + 'maps/' + WAD_MAP_PREFIXES['tnt'] + 'MAP31.wad'
     wad.from_file(wad_filename)
@@ -105,6 +104,20 @@ def tnt_map31_fix():
     wad.maps['MAP31'] = maped.to_lumps()
     wad.to_file(wad_filename)
     logg('  TNT MAP31 fix applied.')
+
+def plut_map26_fix():
+    logg('Checking for Plutonia MAP26 unreachable secret fix...')
+    wad = omg.WAD()
+    wad_filename = DEST_DIR + 'maps/' + WAD_MAP_PREFIXES['plutonia'] + 'MAP26.wad'
+    wad.from_file(wad_filename)
+    maped = omg.MapEditor(wad.maps['MAP26'])
+    if maped.sectors[156].__dict__['type'] == 0:
+        logg('  Plutonia MAP26 already fixed.')
+        return
+    maped.sectors[156].__dict__['type'] = 0
+    wad.maps['MAP26'] = maped.to_lumps()
+    wad.to_file(wad_filename)
+    logg('  Plutonia MAP26 fix applied.')
 
 def add_secret_exit(map_name, line_id):
     # sets given line # in given map as a secret exit switch
@@ -159,8 +172,7 @@ def do_texture_replacements_in_map(map_filename, map_name, replacements):
 
 def extract_map(in_wad, map_name, out_filename):
     out_wad = omg.WAD()
-    ed = omg.MapEditor(in_wad.maps[map_name])
-    out_wad.maps[map_name] = ed.to_lumps()
+    out_wad.maps[map_name] = in_wad.maps[map_name]
     out_wad.to_file(out_filename)
 
 def extract_iwad_maps(wad_name, map_prefix):
@@ -282,9 +294,16 @@ def main():
             extract_master_levels()
     else:
         logg('Skipping Master Levels as doom2.wad is not present')
-    if get_wad_filename('tnt') and should_extract:
-        tnt_map31_fix()
-    # only supported versions of these = http://classicdoom.com/xboxspec.htm
+    # perform map-specific fixes:
+    # ZDoom patches vanilla maps on load (see compatibility.txt in zdoom.pk3)
+    # so fixes are only needed for maps whose md5 sums differ from vanilla,
+    # eg final doom maps with texture replacements.
+    if should_extract:
+        if get_wad_filename('tnt'):
+            tnt_map31_fix()
+        if get_wad_filename('plutonia'):
+            plut_map26_fix()
+    # only supported versions of these @ http://classicdoom.com/xboxspec.htm
     if get_wad_filename('sewers') and get_wad_filename('betray') and should_extract:
         add_xbox_levels()
     # create pk3

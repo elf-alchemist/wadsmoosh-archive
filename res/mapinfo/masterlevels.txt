@@ -17,7 +17,7 @@ map ML_MAP02 lookup "ML02"
 	next = "ML_MAP03"
 	secretnext = "ML_MAP03"
 	sky1 = "RSKY1"
-	music = "$MUSIC_RUNNIN"
+	music = "$MUSIC_STALKS"
 	ResetHealth
 	ResetInventory
 }
@@ -28,7 +28,7 @@ map ML_MAP03 lookup "ML03"
 	next = "ML_MAP04"
 	secretnext = "ML_MAP04"
 	sky1 = "RSKY1"
-	music = "$MUSIC_RUNNIN"
+	music = "$MUSIC_COUNTD"
 	ResetHealth
 	ResetInventory
 }
@@ -39,7 +39,7 @@ map ML_MAP04 lookup "ML04"
 	next = "ML_MAP05"
 	secretnext = "ML_MAP05"
 	sky1 = "ML_SKY1"
-	music = "$MUSIC_RUNNIN"
+	music = "$MUSIC_BETWEE"
 	ResetHealth
 	ResetInventory
 }
@@ -50,7 +50,7 @@ map ML_MAP05 lookup "ML05"
 	next = "ML_MAP06"
 	secretnext = "ML_MAP06"
 	sky1 = "ML_SKY1"
-	music = "$MUSIC_RUNNIN"
+	music = "$MUSIC_DOOM"
 	ResetHealth
 	ResetInventory
 }
@@ -61,7 +61,7 @@ map ML_MAP06 lookup "ML06"
 	next = "ML_MAP07"
 	secretnext = "ML_MAP07"
 	sky1 = "RSKY1"
-	music = "$MUSIC_RUNNIN"
+	music = "$MUSIC_THE_DA"
 	ResetHealth
 	ResetInventory
 }
@@ -72,7 +72,7 @@ map ML_MAP07 lookup "ML07"
 	next = "ML_MAP08"
 	secretnext = "ML_MAP08"
 	sky1 = "ML_SKY2"
-	music = "$MUSIC_RUNNIN"
+	music = "$MUSIC_SHAWN"
 	ResetHealth
 	ResetInventory
 }
@@ -83,7 +83,7 @@ map ML_MAP08 lookup "ML08"
 	next = "ML_MAP09"
 	secretnext = "ML_MAP09"
 	sky1 = "RSKY1"
-	music = "$MUSIC_RUNNIN"
+	music = "$MUSIC_DDTBLU"
 	ResetHealth
 	ResetInventory
 }
@@ -94,7 +94,7 @@ map ML_MAP09 lookup "ML09"
 	next = "ML_MAP10"
 	secretnext = "ML_MAP10"
 	sky1 = "RSKY1"
-	music = "$MUSIC_RUNNIN"
+	music = "$MUSIC_IN_CIT"
 	ResetHealth
 	ResetInventory
 }
@@ -105,7 +105,7 @@ map ML_MAP10 lookup "ML10"
 	next = "ML_MAP11"
 	secretnext = "ML_MAP11"
 	sky1 = "RSKY1"
-	music = "$MUSIC_RUNNIN"
+	music = "$MUSIC_DEAD"
 	ResetHealth
 	ResetInventory
 }
@@ -116,7 +116,7 @@ map ML_MAP11 lookup "ML11"
 	next = "ML_MAP12"
 	secretnext = "ML_MAP12"
 	sky1 = "ML_SKY2"
-	music = "$MUSIC_RUNNIN"
+	music = "$MUSIC_STLKS2"
 	ResetHealth
 	ResetInventory
 }
