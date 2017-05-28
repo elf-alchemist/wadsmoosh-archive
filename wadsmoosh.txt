@@ -53,11 +53,11 @@ Build Time              : One weekend + a few hours here and there to bugfix
 Editor(s) used          : OMGIFOL, the excellent Python-based lump management
                           library. Playscii for the custom ENDOOM.
 Known Bugs              : Nope
-May Not Run With        : Any non-ZDoom-derived source port
+May Not Run With        : Any non-ZDoom-derived source port.
+                          Mods designed specifically for TNT or Plutonia may
+                          have texture errors, as WadSmoosh renames some of
+                          the originals to prevent name conflicts.
 Tested With             : ZDoom and GZDoom in Windows, macOS, and Arch Linux
-
-
-* Inspiration *
 
 
 * Copyright / Permissions *
