@@ -615,7 +615,7 @@ Texture "BLODGRT4", 512, 128
 	Patch "CYAN", 488, 0
 }
 
-Texture "WFALL1", 512, 128
+Texture "TWFALL1", 512, 128
 {
 	Patch "RW48_2", 0, 0
 	Patch "RW48_2", 64, 0
@@ -652,7 +652,7 @@ Texture "FALL3", 512, 128
 	Patch "CYAN", 488, 0
 }
 
-Texture "WFALL4", 512, 128
+Texture "TWFALL4", 512, 128
 {
 	Patch "RW48_2", 0, 0
 	Patch "RW48_2", 64, 0

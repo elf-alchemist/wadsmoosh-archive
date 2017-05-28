@@ -64,7 +64,8 @@ TEXTURE_REPLACEMENTS = {
         'SLADRIP1': 'SLADRPT1',
         'SLADRIP3': 'SLADRPT3',
         'BLODGR1': 'BLODGRT1',
-        'BLODGR4': 'BLODGRT4'
+        'BLODGR4': 'BLODGRT4',
+	'WFALL1': 'TWFALL1'
     },
     'plutonia': {
         'DBRAIN1': 'PBRAIN1',

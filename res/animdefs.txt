@@ -13,18 +13,18 @@ pic BLODGRT1 tics 8
 
 texture optional SW2SKULT
 pic FALL3 tics 8
-pic WFALL4 tics 8
-pic WFALL1 tics 8
+pic TWFALL4 tics 8
+pic TWFALL1 tics 8
 
 texture optional BLODGRT1
 pic SW1SKULT tics 8
 pic BLOD3 tics 8
 pic BLODGRT4 tics 8
 
-texture optional WFALL1
+texture optional TWFALL1
 pic SW2SKULT tics 8
 pic FALL3 tics 8
-pic WFALL4 tics 8
+pic TWFALL4 tics 8
 
 texture optional SLADRPT1
 pic SLAD2 tics 8
