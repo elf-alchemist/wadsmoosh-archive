@@ -12,7 +12,7 @@ RES_FILES = [
     'graphics/M_PLUT.png',
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
     'mapinfo/masterlevels.txt', 'mapinfo/tnt_levels.txt',
-    'mapinfo/plutonia_levels.txt', 'PNAMES', 'TEXTURE1'
+    'mapinfo/plutonia_levels.txt'
 ]
 
 IWADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve']
@@ -29,7 +29,7 @@ DOOM1_LUMPS = [
 
 DOOM2_LUMPS = [
     'flats_doom2', 'graphics_doom2', 'music_doom2', 'patches_doom2',
-    'sounds_doom2', 'sprites_doom2'
+    'sounds_doom2', 'sprites_doom2', 'txdefs_doom2'
 ]
 
 # lists of lumps to extract from each IWAD

@@ -52,14 +52,14 @@ def extract_master_levels():
     # check if present first
     first_ml_wad = get_wad_filename(MASTER_LEVELS_MAP_ORDER[0])
     if not first_ml_wad:
-        logg('Master Levels not found.')
+        logg('ERROR: Master Levels not found.')
         return
     logg('Processing Master Levels...')
     for i,wad_name in enumerate(MASTER_LEVELS_MAP_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         if not wad_filename:
-            logg("Couldn't find %s" % wad_name)
+            logg("ERROR: Couldn't find %s" % wad_name)
             continue
         in_wad.from_file(wad_filename)
         out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map'
@@ -201,15 +201,15 @@ def extract_lumps(wad_name):
         try:
             lump_type = lump_list[:lump_list.index('_')]
         except ValueError:
-            logg("Couldn't identify type of lump list %s" % lump_list)
+            logg("ERROR: Couldn't identify type of lump list %s" % lump_list)
             continue
         lump_table = getattr(wad, lump_type, None)
         if not lump_table:
-            logg('  Lump type %s not found' % lump_type)
+            logg('  ERROR: Lump type %s not found' % lump_type)
             continue
         logg('  extracting %s...' % lump_list)
-        # write PLAYPAL etc to pk3 root
-        if lump_type == 'data':
+        # write PLAYPAL, TEXTURE1 etc to pk3 root
+        if lump_type in ['data', 'txdefs']:
             lump_subdir = DEST_DIR
         else:
             lump_subdir = DEST_DIR + lump_type + '/'
@@ -230,7 +230,7 @@ def extract_lumps(wad_name):
                 lump_name = lump_name.strip()
                 out_filename = out_filename.strip()
             if not lump_name in lump_table:
-                logg("  Couldn't find lump with name %s" % lump_name)
+                logg("  ERROR: Couldn't find lump with name %s" % lump_name)
                 continue
             lump = lump_table[lump_name]
             out_filename += '.lmp' if lump_type != 'music' else '.mus'
@@ -280,7 +280,7 @@ def main():
     for iwad_name in IWADS:
         wad_filename = get_wad_filename(iwad_name)
         if not wad_filename:
-            logg('IWAD %s not found' % iwad_name)
+            logg('ERROR: IWAD %s not found' % iwad_name)
             continue
         if iwad_name == 'nerve' and not get_wad_filename('doom2'):
             logg('Skipping nerve.wad as doom2.wad is not present')
