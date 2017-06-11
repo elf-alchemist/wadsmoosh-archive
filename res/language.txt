@@ -34,6 +34,19 @@ ML19 = "Black Tower";
 ML20 = "The Express Elevator To Hell";
 ML21 = "Bad Dream";
 
+// master levels victory text (from PSX doom)
+M1TEXT =
+	"You have assaulted and triumphed over the\n"
+	"most vicious realms that the demented minds\n"
+	"of our designers could devise.\n"
+	"\n"
+	"The havoc you left behind you as you\n"
+	"smashed your way through the Master Levels\n"
+	"is mute tribute to your prowess.\n"
+	"\n"
+	"You have earned the title of\n"
+	"\"Master of Destruction\".";
+
 // nerve level names (sans level #)
 NHUSTR_1 = "the earth base";
 NHUSTR_2 = "the pain labs";

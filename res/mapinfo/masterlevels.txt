@@ -7,6 +7,7 @@ map ML_MAP01 lookup "ML01"
 	secretnext = "ML_MAP02"
 	sky1 = "RSKY1"
 	music = "$MUSIC_RUNNIN"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -18,6 +19,7 @@ map ML_MAP02 lookup "ML02"
 	secretnext = "ML_MAP03"
 	sky1 = "RSKY1"
 	music = "$MUSIC_STALKS"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -29,6 +31,7 @@ map ML_MAP03 lookup "ML03"
 	secretnext = "ML_MAP04"
 	sky1 = "RSKY1"
 	music = "$MUSIC_COUNTD"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -40,6 +43,7 @@ map ML_MAP04 lookup "ML04"
 	secretnext = "ML_MAP05"
 	sky1 = "ML_SKY1"
 	music = "$MUSIC_BETWEE"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -51,6 +55,7 @@ map ML_MAP05 lookup "ML05"
 	secretnext = "ML_MAP06"
 	sky1 = "ML_SKY1"
 	music = "$MUSIC_DOOM"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -62,6 +67,7 @@ map ML_MAP06 lookup "ML06"
 	secretnext = "ML_MAP07"
 	sky1 = "RSKY1"
 	music = "$MUSIC_THE_DA"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -73,6 +79,7 @@ map ML_MAP07 lookup "ML07"
 	secretnext = "ML_MAP08"
 	sky1 = "ML_SKY2"
 	music = "$MUSIC_SHAWN"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -84,6 +91,7 @@ map ML_MAP08 lookup "ML08"
 	secretnext = "ML_MAP09"
 	sky1 = "RSKY1"
 	music = "$MUSIC_DDTBLU"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -95,6 +103,7 @@ map ML_MAP09 lookup "ML09"
 	secretnext = "ML_MAP10"
 	sky1 = "RSKY1"
 	music = "$MUSIC_IN_CIT"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -106,6 +115,7 @@ map ML_MAP10 lookup "ML10"
 	secretnext = "ML_MAP11"
 	sky1 = "RSKY1"
 	music = "$MUSIC_DEAD"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -117,6 +127,7 @@ map ML_MAP11 lookup "ML11"
 	secretnext = "ML_MAP12"
 	sky1 = "ML_SKY2"
 	music = "$MUSIC_STLKS2"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -129,6 +140,7 @@ map ML_MAP12 lookup "ML12"
 	sky1 = "ML_SKY3"
 	// map03 music
 	music = "$MUSIC_COUNTD"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -141,6 +153,7 @@ map ML_MAP13 lookup "ML13"
 	sky1 = "ML_SKY3"
 	// map05 music
 	music = "$MUSIC_DOOM"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -153,6 +166,7 @@ map ML_MAP14 lookup "ML14"
 	sky1 = "RSKY1"
 	// map07 music
 	music = "$MUSIC_SHAWN"
+	cluster = 24
 	map07special
 	ResetHealth
 	ResetInventory
@@ -166,6 +180,7 @@ map ML_MAP15 lookup "ML15"
 	sky1 = "RSKY1"
 	// map07 music
 	music = "$MUSIC_SHAWN"
+	cluster = 24
 	map07special
 	ResetHealth
 	ResetInventory
@@ -179,6 +194,7 @@ map ML_MAP16 lookup "ML16"
 	sky1 = "ML_SKY3"
 	// map07 music	
 	music = "$MUSIC_SHAWN"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -191,6 +207,7 @@ map ML_MAP17 lookup "ML17"
 	sky1 = "ML_SKY3"
 	// map08 music
 	music = "$MUSIC_DDTBLU"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -203,6 +220,7 @@ map ML_MAP18 lookup "ML18"
 	sky1 = "ML_SKY3"
 	// map09 music
 	music = "$MUSIC_IN_CIT"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -215,6 +233,7 @@ map ML_MAP19 lookup "ML19"
 	sky1 = "RSKY1"
 	// map25 music
 	music = "$MUSIC_ADRIAN"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -228,6 +247,7 @@ map ML_MAP20 lookup "ML20"
 	sky1 = "RSKY1"
 	// map31 music
 	music = "$MUSIC_EVIL"
+	cluster = 24
 	ResetHealth
 	ResetInventory
 }
@@ -239,6 +259,25 @@ map ML_MAP21 lookup "ML21"
 	next = "EndGameC"
 	secretnext = "EndGameC"
 	sky1 = "RSKY1"
+	cluster = 25
 	// map32 music
 	music = "$MUSIC_ULTIMA"
+}
+
+// Master Levels main cluster (up through level 20)
+
+cluster 24
+{
+	flat = "$BGFLAT06"
+	music = "$MUSIC_READ_M"
+	exittext = lookup, "M1TEXT"
+}
+
+// Master Levels secret level cluster (level 21)
+
+cluster 25
+{
+	flat = "$BGFLAT06"
+	music = "$MUSIC_READ_M"
+	exittext = lookup, "M1TEXT"
 }
