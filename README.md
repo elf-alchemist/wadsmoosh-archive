@@ -14,11 +14,13 @@ If you're in Windows, click `wadsmoosh.exe`.
 
 If you're in macOS or Linux, run the `wadsmoo.sh` shell script - Python 2 and 3 are both supported now.
 
-WadSmoosh will create a new file called `doom_complete.pk3` with all the game content in it. You can run this in GZDoom with `-iwad doom_complete.pk3` at the command line, or even rename it to `doom2.wad` and run without any command line needed.
+WadSmoosh will create a new file called `doom_complete.pk3` with all the game content in it. You can run this in GZDoom with `-iwad doom_complete.pk3` at the command line, or even rename it to `doom2.wad` and run without any command line needed. GZDoom 2.4 and later will recognize the `doom_complete.pk3` file as a valid IWAD without any name change needed.
 
 If you've extracted the No Rest for the Living addon episode for Doom 2 from Doom 3: BFG Edition or the PSN or XBLA versions, make sure it's named `nerve.wad` in the `source_wads/` folder.
 
 In rare cases, you may need to uncheck the `source_wads/` folder's read-only status.
+
+Advanced users can edit `wadsmoosh_data.py` to customize how and what WadSmoosh extracts. This file is Python code, read by the main program at runtime, so no recompile is required.
 
 ## Absolute Beginner's Guide
 
@@ -28,7 +30,7 @@ In rare cases, you may need to uncheck the `source_wads/` folder's read-only sta
 4. Double-click `wadsmoosh.exe`. A console window will pop up to show progress.
 5. When it closes, you should have a file in the WadSmoosh folder called `doom_complete.pk3`.
 6. Download [GZDoom](http://gzdoom.drdteam.org) and extract it to a folder.
-7. Copy the `doom_complete.pk3` file to GZDoom's folder and rename it to `doom2.wad`.
+7. Copy the `doom_complete.pk3` file to GZDoom's folder.
 8. Launch GZDoom and play!
 
 If you have any issues, the [How_to_download_and_run_Doom](http://doomwiki.org/wiki/How_to_download_and_run_Doom) page on the [Doom wiki](http://doomwiki.org) might be helpful.
