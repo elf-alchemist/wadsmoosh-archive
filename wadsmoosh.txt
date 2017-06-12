@@ -19,6 +19,8 @@ Description             : A tool for combining all official id release
                           source with "python wadsmoosh.py".
                           Program logs to wadsmoosh.log as it runs, any
                           errors it encounters will show up there.
+                          Advanced users can edit wadsmoosh_data.py to
+                          customize what and how WadSmoosh extracts.
 
 Additional Credits to   : ZDoom forums folks for help testing and fixing!
                           Custom title art by Scalliano and Hellser.
