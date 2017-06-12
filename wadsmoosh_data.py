@@ -90,6 +90,14 @@ MASTER_LEVELS_MAP_ORDER = [
     'mephisto', 'nessus', 'geryon', 'vesperas', 'blacktwr', 'teeth'
 ]
 
+# the "Xaser Ordering" - uncomment the following for an alternative order.
+# make sure to also switch around the map names (ML## strings) in language.txt.
+#MASTER_LEVELS_MAP_ORDER = [
+#    'attack', 'canyon', 'catwalk', 'fistula', 'combine', 'subspace', 'paradox',
+#    'subterra', 'garrison', 'blacktwr', 'virgil', 'minos', 'nessus', 'geryon',
+#    'vesperas', 'manor', 'ttrap', 'teeth', 'bloodsea', 'mephisto'
+#]
+
 # texture patches to extract from specific master levels PWADs
 MASTER_LEVELS_PATCHES = {
     'combine': ('RSKY1', 'ML_SKY1'),
