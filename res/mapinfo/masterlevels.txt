@@ -242,9 +242,7 @@ map ML_MAP19 lookup "ML19"
 map ML_MAP20 lookup "ML20"
 {
 	// finish if normal exit pressed
-	// (custom intermission is a workaround; separate cluster for secret
-	// level will display unwanted end text between map20 and map21)
-	next = endsequence, "MasterLevels_NonSecretEnd"
+	next = "EndGameC"
 	secretnext = "ML_MAP21"
 	sky1 = "RSKY1"
 	// map31 music
@@ -257,7 +255,6 @@ map ML_MAP20 lookup "ML20"
 // bad dream
 map ML_MAP21 lookup "ML21"
 {
-	// finish if exit pressed
 	next = "EndGameC"
 	secretnext = "EndGameC"
 	sky1 = "RSKY1"
@@ -273,19 +270,4 @@ cluster 24
 	flat = "$BGFLAT06"
 	music = "$MUSIC_READ_M"
 	exittext = lookup, "M1TEXT"
-}
-
-Intermission MasterLevels_NonSecretEnd
-{
-	// exiting to this sequence counts as exiting the cluster, so outro text
-	// has already displayed
-	Image
-	{
-		// This is only here to initialize the background and the music
-		Background = "$bgcastcall"
-		Time = -1
-		Music = "$MUSIC_EVIL"
-	}
-	Link = Doom2Cast
-	
 }
