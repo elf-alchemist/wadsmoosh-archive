@@ -355,6 +355,9 @@ map TN_MAP30 lookup "THUSTR_30"
 	cluster = 15
 	par = 180
 	allowmonstertelefrags
+	// depends on broken vanilla stair builder behavior, which ZDoom
+	// hardcodes for TNT.wad but must be manually specified here
+	compat_stairs
 	music = "T_OPENIN"
 	ExitPic = "TNTINTER"
 	next = endgame {
