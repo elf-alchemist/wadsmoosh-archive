@@ -34,6 +34,28 @@ ML19 = "Black Tower";
 ML20 = "The Express Elevator To Hell";
 ML21 = "Bad Dream";
 
+ML_ATTACK = "Attack";
+ML_CANYON = "Canyon";
+ML_CATWALK = "The Catwalk";
+ML_COMBINE = "The Combine";
+ML_FISTULA = "The Fistula";
+ML_GARRISON = "The Garrison";
+ML_MANOR = "Titan Manor";
+ML_PARADOX = "Paradox";
+ML_SUBSPACE = "Subspace";
+ML_SUBTERRA = "Subterra";
+ML_TTRAP = "Trapped on Titan";
+ML_VIRGIL = "Virgil's Lead";
+ML_MINOS = "Minos' Judgement";
+ML_BLOODSEA = "Bloodsea Keep";
+ML_MEPHISTO = "Mephisto's Maosoleum";
+ML_NESSUS = "Nessus";
+ML_GERYON = "Geryon";
+ML_VESPERAS = "Vesperas";
+ML_BLACKTWR = "Black Tower";
+ML_TEETH = "The Express Elevator To Hell";
+ML_TEETH_SECRET = "Bad Dream";
+
 // master levels victory text (from PSX doom)
 M1TEXT =
 	"You have assaulted and triumphed over the\n"

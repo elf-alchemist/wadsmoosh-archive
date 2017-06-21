@@ -104,3 +104,44 @@ MASTER_LEVELS_PATCHES = {
     'manor': ('STARS', 'ML_SKY2'),
     'virgil': ('RSKY1', 'ML_SKY3')
 }
+
+# RSKY1 unless defined here
+MASTER_LEVELS_SKIES = {
+    'combine': 'ML_SKY1',
+    'fistula': 'ML_SKY1',
+    'manor': 'ML_SKY2',
+    'ttrap': 'ML_SKY2',
+    'virgil': 'ML_SKY3',
+    'minos': 'ML_SKY3',
+    'nessus': 'ML_SKY3',
+    'geryon': 'ML_SKY3',
+    'vesperas': 'ML_SKY3'
+}
+
+# doom2 music lumps for each map
+MASTER_LEVELS_MUSIC = {
+    'attack': 'RUNNIN',
+    'canyon': 'STALKS',
+    'catwalk': 'COUNTD',
+    'combine': 'BETWEE',
+    'fistula': 'DOOM',
+    'garrison': 'THE_DA',
+    'manor': 'SHAWN',
+    'paradox': 'DDTBLU',
+    'subspace': 'IN_CIT',
+    'subterra': 'DEAD',
+    'ttrap': 'STLKS2',
+    'virgil': 'COUNTD',
+    'minos': 'DOOM',
+    'bloodsea': 'SHAWN',
+    'mephisto': 'OPENIN',
+    'nessus': 'SHAWN',
+    'geryon': 'DDTBLU',
+    'vesperas': 'IN_CIT',
+    'blacktwr': 'ADRIAN',
+    'teeth': 'EVIL',
+    'teeth2': 'ULTIMA'
+}
+
+# maps in this list use the map07 special (trigger on last mancubus death)
+MASTER_LEVELS_MAP07_SPECIAL = ['bloodsea', 'mephisto']
