@@ -1,4 +1,5 @@
 // alternate "Xaser ordering" for master levels
+// (see masterlevels_order.txt for details on using this)
 attack
 canyon
 catwalk

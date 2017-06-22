@@ -12,28 +12,7 @@ TNTNAME = "TNT: Evilution";
 PLUNAME = "The Plutonia Experiment";
 
 // master levels names
-ML01 = "Attack";
-ML02 = "Canyon";
-ML03 = "The Catwalk";
-ML04 = "The Combine";
-ML05 = "The Fistula";
-ML06 = "The Garrison";
-ML07 = "Titan Manor";
-ML08 = "Paradox";
-ML09 = "Subspace";
-ML10 = "Subterra";
-ML11 = "Trapped On Titan";
-ML12 = "Virgil's Lead";
-ML13 = "Minos' Judgement";
-ML14 = "Bloodsea Keep";
-ML15 = "Mephisto's Maosoleum";
-ML16 = "Nessus";
-ML17 = "Geryon";
-ML18 = "Vesperas";
-ML19 = "Black Tower";
-ML20 = "The Express Elevator To Hell";
-ML21 = "Bad Dream";
-
+// (map order defined in masterlevels_order.txt)
 ML_ATTACK = "Attack";
 ML_CANYON = "Canyon";
 ML_CATWALK = "The Catwalk";
