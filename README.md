@@ -20,7 +20,7 @@ If you've extracted the No Rest for the Living addon episode for Doom 2 from Doo
 
 In rare cases, you may need to uncheck the `source_wads/` folder's read-only status.
 
-Advanced users can edit `wadsmoosh_data.py` to customize how and what WadSmoosh extracts. This file is Python code, read by the main program at runtime, so no recompile is required.
+Advanced users can edit `wadsmoosh_data.py` to customize how and what WadSmoosh extracts. This file is Python code, read by the main program at runtime, so no recompile is required. You can also customize the ordering of the Master Levels in `masterlevels_order.txt`.
 
 ## Absolute Beginner's Guide
 
