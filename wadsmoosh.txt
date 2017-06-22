@@ -15,10 +15,16 @@ Description             : A tool for combining all official id release
                           source_wads\ subfolder, then run wadsmoosh.exe.
                           A new IWAD file called "doom_complete.pk3" will
                           be generated.
+                          
                           Linux and macOS users can run from included
                           source with "python wadsmoosh.py".
+                          
                           Program logs to wadsmoosh.log as it runs, any
                           errors it encounters will show up there.
+                          
+                          Master Levels map order can be customized in
+                          masterlevels_order.txt.
+                          
                           Advanced users can edit wadsmoosh_data.py to
                           customize what and how WadSmoosh extracts.
 
