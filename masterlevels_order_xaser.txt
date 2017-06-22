@@ -1,0 +1,21 @@
+// alternate "Xaser ordering" for master levels
+attack
+canyon
+catwalk
+fistula
+combine
+subspace
+paradox
+subterra
+garrison
+blacktwr
+virgil
+minos
+nessus
+geryon
+vesperas
+manor
+ttrap
+teeth
+bloodsea
+mephisto

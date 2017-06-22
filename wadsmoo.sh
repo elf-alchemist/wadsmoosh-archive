@@ -1,3 +1,3 @@
 #!/bin/sh
-python wadsmoosh.py 
+python wadsmoosh.py "$1"
 

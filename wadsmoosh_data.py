@@ -84,20 +84,6 @@ TEXTURE_REPLACEMENTS = {
     }
 }
 
-MASTER_LEVELS_MAP_ORDER = [
-    'attack', 'canyon', 'catwalk', 'combine', 'fistula', 'garrison', 'manor',
-    'paradox', 'subspace', 'subterra', 'ttrap', 'virgil', 'minos', 'bloodsea',
-    'mephisto', 'nessus', 'geryon', 'vesperas', 'blacktwr', 'teeth'
-]
-
-# the "Xaser Ordering" - uncomment the following for an alternative order.
-# make sure to also switch around the map names (ML## strings) in language.txt.
-#MASTER_LEVELS_MAP_ORDER = [
-#    'attack', 'canyon', 'catwalk', 'fistula', 'combine', 'subspace', 'paradox',
-#    'subterra', 'garrison', 'blacktwr', 'virgil', 'minos', 'nessus', 'geryon',
-#    'vesperas', 'manor', 'ttrap', 'teeth', 'bloodsea', 'mephisto'
-#]
-
 # texture patches to extract from specific master levels PWADs
 MASTER_LEVELS_PATCHES = {
     'combine': ('RSKY1', 'ML_SKY1'),
@@ -131,17 +117,37 @@ MASTER_LEVELS_MUSIC = {
     'subspace': 'IN_CIT',
     'subterra': 'DEAD',
     'ttrap': 'STLKS2',
-    'virgil': 'COUNTD',
-    'minos': 'DOOM',
-    'bloodsea': 'SHAWN',
-    'mephisto': 'OPENIN',
-    'nessus': 'SHAWN',
-    'geryon': 'DDTBLU',
-    'vesperas': 'IN_CIT',
-    'blacktwr': 'ADRIAN',
-    'teeth': 'EVIL',
-    'teeth2': 'ULTIMA'
+    'virgil': 'COUNTD', # map03
+    'minos': 'DOOM', # map05
+    'bloodsea': 'SHAWN', # map07
+    'mephisto': 'OPENIN', # (normally SHAWN)
+    'nessus': 'SHAWN', # map07
+    'geryon': 'DDTBLU', # map08
+    'vesperas': 'IN_CIT', # map09
+    'blacktwr': 'ADRIAN', # map25
+    'teeth': 'EVIL', # map31
+    'teeth2': 'ULTIMA' # map32
 }
 
 # maps in this list use the map07 special (trigger on last mancubus death)
 MASTER_LEVELS_MAP07_SPECIAL = ['bloodsea', 'mephisto']
+
+# substitutions done in wadsmoosh.extract_master_levels()
+MASTER_LEVELS_SECRET_DEF = """
+map ML_MAP21 lookup "ML_TEETH_SECRET"
+{
+    next = "%s"
+    sky1 = "RSKY1"
+    music = "$MUSIC_%s"
+    cluster = 24
+}
+"""
+
+MASTER_LEVELS_CLUSTER_DEF = """
+cluster 24
+{
+	flat = "$BGFLAT06"
+	music = "$MUSIC_READ_M"
+	exittext = lookup, "M1TEXT"
+}
+"""

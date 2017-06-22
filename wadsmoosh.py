@@ -1,5 +1,5 @@
 
-import os
+import os, sys
 from shutil import copyfile
 from zipfile import ZipFile
 
@@ -15,6 +15,8 @@ DEST_FILENAME = 'doom_complete.pk3'
 LOG_FILENAME = 'wadsmoosh.log'
 RES_DIR = 'res/'
 DATA_TABLES_FILE = 'wadsmoosh_data.py'
+ML_ORDER_FILENAME = 'masterlevels_order.txt'
+ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/masterlevels.txt'
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
 RES_FILES = []
@@ -25,7 +27,10 @@ DOOM2_LUMPS = []
 WAD_LUMP_LISTS = {}
 WAD_MAP_PREFIXES = {}
 TEXTURE_REPLACEMENTS = {}
-MASTER_LEVELS_MAP_ORDER = []
+MASTER_LEVELS_PATCHES = {}
+MASTER_LEVELS_SKIES = {}
+MASTER_LEVELS_MUSIC = {}
+MASTER_LEVELS_MAP07_SPECIAL = []
 
 logfile = None
 
@@ -48,14 +53,65 @@ def get_wad_filename(wad_name):
             return SRC_WAD_DIR + filename
     return None
 
+def get_master_levels_map_order():
+    order = []
+    if len(sys.argv) > 1:
+        order_file = ' '.join(sys.argv[1:])
+        if not os.path.exists(order_file):
+            order_file = ML_ORDER_FILENAME
+    else:
+        order_file = ML_ORDER_FILENAME
+    if not os.path.exists(order_file):
+        return
+    logg('Using Master Levels ordering from %s' % order_file)
+    for line in open(order_file).readlines():
+        line = line.strip().lower()
+        if line.startswith('//') or line == '':
+            continue
+        if not line in MASTER_LEVELS_MUSIC:
+            logg('ERROR: Unrecognized Master Level %s' % line)
+            continue
+        order.append(line)
+    return order
+
+def get_ml_mapinfo(wad_name, map_number):
+    lines = []
+    prefix = MASTER_LEVELS_MAP_PREFIX.upper()
+    mapnum = str(map_number).rjust(2, '0')
+    nextnum = str(map_number + 1).rjust(2, '0')
+    lines.append('map %sMAP%s lookup "%s%s"' % (prefix, mapnum, prefix, wad_name.upper()))
+    lines.append('{')
+    next_map = '%sMAP%s' % (prefix, nextnum) if map_number < 20 else 'EndGameC'
+    sky = MASTER_LEVELS_SKIES.get(wad_name, None) or 'RSKY1'
+    music = MASTER_LEVELS_MUSIC[wad_name]
+    lines.append('    next = "%s"' % next_map)
+    if wad_name == 'teeth':
+        lines.append('    secretnext = "ML_MAP21"')
+    lines.append('    sky1 = "%s"' % sky)
+    lines.append('    music = "$MUSIC_%s"' % music)
+    lines.append('    cluster = 24')
+    if wad_name in MASTER_LEVELS_MAP07_SPECIAL:
+        lines.append('    map07special')
+    # don't reset player for secret level
+    if map_number != 21:
+        lines.append('    ResetHealth')
+        lines.append('    ResetInventory')
+    lines.append('}')
+    return lines
+
 def extract_master_levels():
     # check if present first
-    first_ml_wad = get_wad_filename(MASTER_LEVELS_MAP_ORDER[0])
+    ml_map_order = get_master_levels_map_order()
+    if len(ml_map_order) == 0:
+        return
+    first_ml_wad = get_wad_filename(ml_map_order[0])
     if not first_ml_wad:
         logg('ERROR: Master Levels not found.')
         return
     logg('Processing Master Levels...')
-    for i,wad_name in enumerate(MASTER_LEVELS_MAP_ORDER):
+    mapinfo = open(ML_MAPINFO_FILENAME, 'w')
+    mapinfo.write('// master levels for doom 2\n\n')
+    for i,wad_name in enumerate(ml_map_order):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         if not wad_filename:
@@ -69,10 +125,26 @@ def extract_master_levels():
         # grab first map we find in each wad
         map_name = in_wad.maps.find('*')[0]
         extract_map(in_wad, map_name, out_wad_filename)
-    # save teeth map32 to map21 wad
+        # write data to mapinfo based on ordering
+        mapinfo.writelines('\n'.join(get_ml_mapinfo(wad_name, i+1)))
+        mapinfo.write('\n\n')
+    # save teeth map32 to map21
+    wad_filename = get_wad_filename('teeth')
     out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map21' + '.wad'
     logg('  Extracting %s map32 to %s' % (wad_filename, out_wad_filename))
+    in_wad = omg.WAD()
+    in_wad.from_file(wad_filename)
     extract_map(in_wad, in_wad.maps.find('*')[1], out_wad_filename)
+    # write map21 mapinfo
+    if ml_map_order.index('teeth') == 19:
+        next_map = 'EndGameC'
+    else:
+        next_map = '%sMAP%s' % (MASTER_LEVELS_MAP_PREFIX.upper(),
+                                ml_map_order.index('teeth') + 2)
+    mapinfo.write(MASTER_LEVELS_SECRET_DEF % (next_map, MASTER_LEVELS_MUSIC['teeth2']))
+    # finish mapinfo
+    mapinfo.writelines([MASTER_LEVELS_CLUSTER_DEF])
+    mapinfo.close()
     # extract sky lumps
     for wad_name,patch_replace in MASTER_LEVELS_PATCHES.items():
         wad = omg.WAD()
@@ -280,7 +352,7 @@ def main():
     for iwad_name in IWADS:
         wad_filename = get_wad_filename(iwad_name)
         if not wad_filename:
-            logg('ERROR: IWAD %s not found' % iwad_name)
+            logg('IWAD %s not found' % iwad_name)
             continue
         if iwad_name == 'nerve' and not get_wad_filename('doom2'):
             logg('Skipping nerve.wad as doom2.wad is not present')
