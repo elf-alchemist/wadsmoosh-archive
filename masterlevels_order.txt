@@ -1,4 +1,6 @@
 // doom 2 master levels ordering
+// based on "PSN order" from PS3 Doom Classic Complete
+// ( https://doomwiki.org/wiki/Master_Levels_for_Doom_II#Level_progression )
 // to change, modify this file or specify another when running wadsmoosh, eg:
 // wadsmoosh.exe masterlevels_order_xaser.txt
 attack
