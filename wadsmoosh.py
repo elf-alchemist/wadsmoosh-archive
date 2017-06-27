@@ -26,7 +26,6 @@ DOOM1_LUMPS = []
 DOOM2_LUMPS = []
 WAD_LUMP_LISTS = {}
 WAD_MAP_PREFIXES = {}
-TEXTURE_REPLACEMENTS = {}
 MASTER_LEVELS_PATCHES = {}
 MASTER_LEVELS_SKIES = {}
 MASTER_LEVELS_MUSIC = {}
@@ -161,36 +160,6 @@ def extract_master_levels():
                                                    patch_replace[1]))
         lump.to_file(out_filename)
 
-def tnt_map31_fix():
-    logg('Checking for TNT MAP31 missing yellow key fix...')
-    wad = omg.WAD()
-    wad_filename = DEST_DIR + 'maps/' + WAD_MAP_PREFIXES['tnt'] + 'MAP31.wad'
-    wad.from_file(wad_filename)
-    maped = omg.MapEditor(wad.maps['MAP31'])
-    yellow_key = maped.things[470]
-    if yellow_key.type != 6 or \
-       (yellow_key.type == 6 and not yellow_key.get_multiplayer()):
-        logg('  TNT MAP31 already fixed.')
-        return
-    yellow_key.set_multiplayer(False)
-    wad.maps['MAP31'] = maped.to_lumps()
-    wad.to_file(wad_filename)
-    logg('  TNT MAP31 fix applied.')
-
-def plut_map26_fix():
-    logg('Checking for Plutonia MAP26 unreachable secret fix...')
-    wad = omg.WAD()
-    wad_filename = DEST_DIR + 'maps/' + WAD_MAP_PREFIXES['plutonia'] + 'MAP26.wad'
-    wad.from_file(wad_filename)
-    maped = omg.MapEditor(wad.maps['MAP26'])
-    if maped.sectors[156].__dict__['type'] == 0:
-        logg('  Plutonia MAP26 already fixed.')
-        return
-    maped.sectors[156].__dict__['type'] = 0
-    wad.maps['MAP26'] = maped.to_lumps()
-    wad.to_file(wad_filename)
-    logg('  Plutonia MAP26 fix applied.')
-
 def add_secret_exit(map_name, line_id):
     # sets given line # in given map as a secret exit switch
     wad = omg.WAD()
@@ -223,25 +192,6 @@ def add_xbox_levels():
     logg('  Adding BETRAY.WAD as MAP33')
     add_secret_level('betray', 'MAP01', 'MAP33')
 
-def do_texture_replacements_in_map(map_filename, map_name, replacements):
-    # replace textures in given table for given map in given wad
-    wad = omg.WAD()
-    wad.from_file(map_filename)
-    maped = omg.MapEditor(wad.maps[map_name])
-    for i,sidedef in enumerate(maped.sidedefs):
-        for src,dest in replacements.items():
-            if sidedef.tx_low == src:
-                sidedef.tx_low = dest
-                logg('    Replaced %s with %s on sidedef #%s lower' % (src, dest, i))
-            if sidedef.tx_mid == src:
-                sidedef.tx_mid = dest
-                logg('    Replaced %s with %s on sidedef #%s mid' % (src, dest, i))
-            if sidedef.tx_up == src:
-                sidedef.tx_up = dest
-                logg('    Replaced %s with %s on sidedef #%s upper' % (src, dest, i))
-    wad.maps[map_name] = maped.to_lumps()
-    wad.to_file(map_filename)
-
 def extract_map(in_wad, map_name, out_filename):
     out_wad = omg.WAD()
     out_wad.maps[map_name] = in_wad.maps[map_name]
@@ -255,11 +205,6 @@ def extract_iwad_maps(wad_name, map_prefix):
         logg('  Extracting map %s...' % map_name)
         out_wad_filename = DEST_DIR + 'maps/' + map_prefix + map_name + '.wad'
         extract_map(in_wad, map_name, out_wad_filename)
-        # do any texture replacements
-        replacements = TEXTURE_REPLACEMENTS.get(wad_name, None)
-        if replacements:
-            do_texture_replacements_in_map(out_wad_filename, map_name,
-                                           replacements)
         #logg('  Saved map %s' % out_wad_filename)
 
 def extract_lumps(wad_name):
@@ -336,7 +281,7 @@ def main():
     if not os.path.exists(DEST_DIR):
         os.mkdir(DEST_DIR)
     for dirname in ['flats', 'graphics', 'music', 'maps', 'mapinfo', 'patches',
-                    'sounds', 'sprites']:
+                    'sounds', 'sprites', 'acs', 'scripts']:
         if not os.path.exists(DEST_DIR + dirname):
             os.mkdir(DEST_DIR + dirname)
     # copy pre-authored lumps eg mapinfo
@@ -366,15 +311,6 @@ def main():
             extract_master_levels()
     else:
         logg('Skipping Master Levels as doom2.wad is not present')
-    # perform map-specific fixes:
-    # ZDoom patches vanilla maps on load (see compatibility.txt in zdoom.pk3)
-    # so fixes are only needed for maps whose md5 sums differ from vanilla,
-    # eg final doom maps with texture replacements.
-    if should_extract:
-        if get_wad_filename('tnt'):
-            tnt_map31_fix()
-        if get_wad_filename('plutonia'):
-            plut_map26_fix()
     # only supported versions of these @ http://classicdoom.com/xboxspec.htm
     if get_wad_filename('sewers') and get_wad_filename('betray') and should_extract:
         add_xbox_levels()

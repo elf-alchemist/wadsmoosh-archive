@@ -1,0 +1,69 @@
+
+#library "ws_fixes"
+
+#include "zcommon.acs"
+
+// ACS fixes for WadSmoosh
+
+#define TNT_TEX_REPLACEMENTS 12
+// two arrays; a dict type would be nice :/
+str TNT_TEX_SRC[TNT_TEX_REPLACEMENTS] = {
+	"SW1GSTON", "SW2GSTON",
+	"SKY1",
+	"SW1BRN1", "SW2BRN1",
+	"SW1SKULL", "SW2SKULL",
+	"SLADRIP1", "SLADRIP3",
+	"BLODGR1", "BLODGR4",
+	"WFALL1"
+};
+str TNT_TEX_DEST[TNT_TEX_REPLACEMENTS] = {
+	"SW1GSTNT", "SW2GSTNT",
+	"TNT_SKY1",
+	"SW1BRN1T", "SW2BRN1T",
+	"SW1SKULT", "SW2SKULT",
+	"SLADRPT1", "SLADRPT3",
+	"BLODGRT1", "BLODGRT4",
+	"TWFALL1"
+};
+
+#define PLUT_TEX_REPLACEMENTS 13
+str PLUT_TEX_SRC[PLUT_TEX_REPLACEMENTS] = {
+	"DBRAIN1", "DBRAIN4",
+	"FIREBLU1", "FIREBLU2",
+	"SW1SKULL", "SW2SKULL",
+	"SKY3",
+	"SW1BRN1", "SW2BRN1",
+	"WFALL1", "WFALL2",
+	"WFALL3", "WFALL4"
+};
+str PLUT_TEX_DEST[PLUT_TEX_REPLACEMENTS] = {
+	"PBRAIN1", "PBRAIN4",
+	"FIREPLU1", "FIREPLU2",
+	"SW1SKULP", "SW2SKULP",
+	"PSKY3",
+	"SW1BRN1T", "SW2BRN1T",
+	"PWFALL1", "PWFALL2",
+	"PWFALL3", "PWFALL4"
+};
+
+script "WS_TexFix" ENTER
+{
+	// replace textures in TNT and Plutonia maps
+	str s = StrParam(n:PRINTNAME_LEVEL);
+	s = StrLeft(s, 3);
+	if ( StrIcmp(s, "tn_") == 0 )
+	{
+		for (int i = 0; i <= TNT_TEX_REPLACEMENTS; i++)
+		{
+			// ReplaceTextures(str oldtexturename, str newtexturename [, int flags]);
+			ReplaceTextures(TNT_TEX_SRC[i], TNT_TEX_DEST[i]);
+		}
+	}
+	else if ( StrIcmp(s, "pl_") == 0 )
+	{
+		for (i = 0; i < PLUT_TEX_REPLACEMENTS; i++)
+		{
+			ReplaceTextures(PLUT_TEX_SRC[i], PLUT_TEX_DEST[i]);
+		}
+	}
+}

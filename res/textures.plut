@@ -165,6 +165,28 @@ Texture "A-MYWOOD", 128, 128
 	Patch MYWOOD, 0, 0
 }
 
+// define WFALL1-4 here even though they get replaced, to suppress errors
+Texture WFALL1, 64, 128
+{
+	Patch PWFALL1, 0, 0
+}
+
+Texture WFALL2, 64, 128
+{
+	Patch PWFALL2, 0, 0
+}
+
+Texture WFALL3, 64, 128
+{
+	Patch PWFALL3, 0, 0
+}
+
+Texture WFALL4, 64, 128
+{
+	Patch PWFALL4, 0, 0
+}
+
+// plutonia WFALL replacements
 Texture PWFALL1, 64, 128
 {
 	Patch PWFALL1, 0, 0

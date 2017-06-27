@@ -12,7 +12,8 @@ RES_FILES = [
     'graphics/M_PLUT.png',
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
     'mapinfo/masterlevels.txt', 'mapinfo/tnt_levels.txt',
-    'mapinfo/plutonia_levels.txt'
+    'mapinfo/plutonia_levels.txt',
+    'acs/ws_fixes.o', 'scripts/ws_fixes.acs'
 ]
 
 IWADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve']
@@ -41,6 +42,8 @@ WAD_LUMP_LISTS = {
 }
 
 # prefixes for filenames of maps extracted from IWADs
+# warning: changing prefixes for TNT and Plutonia map files will
+# short-circuit the ACS texture fixes
 WAD_MAP_PREFIXES = {
     'doom': '',
     'doom2': '',
@@ -49,39 +52,6 @@ WAD_MAP_PREFIXES = {
     'nerve': 'nv_',
     # master levels not processed like other wads, bespoke prefix lookup
     'masterlevels': 'ml_'
-}
-
-# replacements for final doom textures that conflict with doom2 textures
-TEXTURE_REPLACEMENTS = {
-    'tnt': {
-        'SW1GSTON': 'SW1GSTNT',
-        'SW2GSTON': 'SW2GSTNT',
-        'SKY1': 'TNT_SKY1',
-        'SW1BRN1': 'SW1BRN1T',
-        'SW2BRN1': 'SW2BRN1T',
-        'SW1SKULL': 'SW1SKULT',
-        'SW2SKULL': 'SW2SKULT',
-        'SLADRIP1': 'SLADRPT1',
-        'SLADRIP3': 'SLADRPT3',
-        'BLODGR1': 'BLODGRT1',
-        'BLODGR4': 'BLODGRT4',
-	'WFALL1': 'TWFALL1'
-    },
-    'plutonia': {
-        'DBRAIN1': 'PBRAIN1',
-        'DBRAIN4': 'PBRAIN4',
-        'FIREBLU1': 'FIREPLU1',
-        'FIREBLU2': 'FIREPLU2',
-        'SW1SKULL': 'SW1SKULP',
-        'SW2SKULL': 'SW2SKULP',
-        'SKY3': 'PSKY3',
-        'SW1BRN1': 'SW1BRN1T',
-        'SW2BRN1': 'SW2BRN1T',
-        'WFALL1': 'PWFALL1',
-        'WFALL2': 'PWFALL2',
-        'WFALL3': 'PWFALL3',
-        'WFALL4': 'PWFALL4'
-    }
 }
 
 # texture patches to extract from specific master levels PWADs
