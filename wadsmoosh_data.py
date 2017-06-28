@@ -13,7 +13,8 @@ RES_FILES = [
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
     'mapinfo/masterlevels.txt', 'mapinfo/tnt_levels.txt',
     'mapinfo/plutonia_levels.txt',
-    'acs/ws_fixes.o', 'scripts/ws_fixes.acs'
+    'loadacs.txt', 'acs/ws_fixes.o', 'scripts/ws_fixes.acs',
+    'menudef.txt', 'cvarinfo.txt'
 ]
 
 IWADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve']
