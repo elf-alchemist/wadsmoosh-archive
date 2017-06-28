@@ -28,6 +28,10 @@ Description             : A tool for combining all official id release
                           Advanced users can edit wadsmoosh_data.py to
                           customize what and how WadSmoosh extracts.
 
+                          If a Doom2 PWAD's sky isn't showing up properly,
+                          try "Legacy Doom2 Sky Compatibility" in the
+                          WadSmoosh Options menu.
+
 Additional Credits to   : ZDoom forums folks for help testing and fixing!
                           Custom title art by Scalliano and Hellser.
                           Episode name art by NightFright.
@@ -65,7 +69,7 @@ May Not Run With        : Any non-ZDoom-derived source port.
                           Mods designed specifically for TNT or Plutonia may
                           have texture errors, as WadSmoosh renames some of
                           the originals to prevent name conflicts.
-Tested With             : ZDoom and GZDoom in Windows, macOS, and Arch Linux
+Tested With             : GZDoom in Windows, macOS, and Arch Linux
 
 
 * Copyright / Permissions *
