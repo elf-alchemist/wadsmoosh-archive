@@ -7,7 +7,6 @@ AddOptionMenu "OptionsMenu"
 OptionMenu "WadSmooshOptions"
 {
     Title "$WS_MENU_TITLE"
-    //Command "$WS_MENU_SKY_COMPAT", "pukename WS_ToggleSky"
     Option "$WS_MENU_SKY_COMPAT", "ws_sky_compat", "OnOff"
     Option "$WS_MENU_FD_TEXSWAP", "ws_finaldoom_texswap", "OnOff"
 }
