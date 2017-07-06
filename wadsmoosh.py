@@ -1,7 +1,7 @@
 
 import os, sys
 from shutil import copyfile
-from zipfile import ZipFile
+from zipfile import ZipFile, ZIP_DEFLATED
 
 import omg
 
@@ -316,7 +316,7 @@ def main():
         add_xbox_levels()
     # create pk3
     logg('Creating %s...' % DEST_FILENAME)
-    pk3 = ZipFile(DEST_FILENAME, 'w')
+    pk3 = ZipFile(DEST_FILENAME, 'w', ZIP_DEFLATED)
     for dir_name, x, filenames in os.walk(DEST_DIR):
         for filename in filenames:
             src_name = dir_name + '/' + filename
