@@ -32,7 +32,6 @@ map MAP33 lookup "HUSTR_33"
 	secretnext = "MAP03"
 	sky1 = "RSKY1"
 	cluster = 5
-	par = 90
 	music = "D_READ_M"
 }
 

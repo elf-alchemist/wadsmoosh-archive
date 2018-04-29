@@ -21,8 +21,7 @@ map E1M10 lookup "HUSTR_E1M10"
 	secretnext = "E1M1"
 	sky1 = "SKY1"
 	cluster = 1
-	par = 30
-	music = "$MUSIC_E3M1"
+	music = "$MUSIC_E2M1"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI1"
 }
@@ -417,6 +416,7 @@ map E4M1 lookup "HUSTR_E4M1"
 	titlepatch = "WILV30"
 	sky1 = "SKY4"
 	cluster = 4
+	par = 165
 	music = "$MUSIC_E3M4"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
@@ -430,6 +430,7 @@ map E4M2 lookup "HUSTR_E4M2"
 	titlepatch = "WILV31"
 	sky1 = "SKY4"
 	cluster = 4
+	par = 255
 	music = "$MUSIC_E3M2"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
@@ -443,6 +444,7 @@ map E4M3 lookup "HUSTR_E4M3"
 	titlepatch = "WILV32"
 	sky1 = "SKY4"
 	cluster = 4
+	par = 135
 	music = "$MUSIC_E3M3"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
@@ -456,6 +458,7 @@ map E4M4 lookup "HUSTR_E4M4"
 	titlepatch = "WILV33"
 	sky1 = "SKY4"
 	cluster = 4
+	par = 150
 	music = "$MUSIC_E1M5"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
@@ -469,6 +472,7 @@ map E4M5 lookup "HUSTR_E4M5"
 	titlepatch = "WILV34"
 	sky1 = "SKY4"
 	cluster = 4
+	par = 180
 	music = "$MUSIC_E2M7"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
@@ -482,6 +486,7 @@ map E4M6 lookup "HUSTR_E4M6"
 	titlepatch = "WILV35"
 	sky1 = "SKY4"
 	cluster = 4
+	par = 390
 	cyberdemonspecial
 	specialaction_opendoor
 	music = "$MUSIC_E2M4"
@@ -497,6 +502,7 @@ map E4M7 lookup "HUSTR_E4M7"
 	titlepatch = "WILV36"
 	sky1 = "SKY4"
 	cluster = 4
+	par = 135
 	music = "$MUSIC_E2M6"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
@@ -510,6 +516,7 @@ map E4M8 lookup "HUSTR_E4M8"
 	titlepatch = "WILV37"
 	sky1 = "SKY4"
 	cluster = 4
+	par = 360
 	nointermission
 	nosoundclipping
 	spidermastermindspecial
@@ -527,6 +534,7 @@ map E4M9 lookup "HUSTR_E4M9"
 	titlepatch = "WILV38"
 	sky1 = "SKY4"
 	cluster = 4
+	par = 180
 	music = "$MUSIC_E1M9"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
