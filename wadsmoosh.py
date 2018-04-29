@@ -183,14 +183,16 @@ def add_secret_level(map_src_filename, map_src_name, map_dest_name):
 def add_xbox_levels():
     # :P
     logg('Adding Xbox bonus levels...')
-    logg('  Adding secret exit to E1M1')
-    add_secret_exit('E1M1', 268)
-    logg('  Adding SEWERS.WAD as E1M10')
-    add_secret_level('sewers', 'E3M1', 'E1M10')
-    logg('  Adding secret exit to MAP02')
-    add_secret_exit('MAP02', 283)
-    logg('  Adding BETRAY.WAD as MAP33')
-    add_secret_level('betray', 'MAP01', 'MAP33')
+    if get_wad_filename('doom'):
+        logg('  Adding secret exit to E1M1')
+        add_secret_exit('E1M1', 268)
+        logg('  Adding SEWERS.WAD as E1M10')
+        add_secret_level('sewers', 'E3M1', 'E1M10')
+    if get_wad_filename('doom2'):
+        logg('  Adding secret exit to MAP02')
+        add_secret_exit('MAP02', 283)
+        logg('  Adding BETRAY.WAD as MAP33')
+        add_secret_level('betray', 'MAP01', 'MAP33')
 
 def extract_map(in_wad, map_name, out_filename):
     out_wad = omg.WAD()
@@ -269,6 +271,21 @@ def copy_resources():
             continue
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
+    # doom2 vs doom2bfg map31/32 names differ, different mapinfos with same name
+    wad = omg.WAD()
+    d2_wad_filename = get_wad_filename('doom2')
+    # neither doom2: mapinfo still wants a file for the secret levels
+    if not d2_wad_filename:
+        copyfile(RES_DIR + 'mapinfo/doom2_nonbfg_levels.txt',
+                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
+        return
+    wad.from_file(d2_wad_filename)
+    if wad.graphics.get('M_ACPT', None):
+        copyfile(RES_DIR + 'mapinfo/doom2_bfg_levels.txt',
+                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
+    else:
+        copyfile(RES_DIR + 'mapinfo/doom2_nonbfg_levels.txt',
+                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
 
 def main():
     # bail if SRC_WAD_DIR is empty

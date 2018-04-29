@@ -1,5 +1,6 @@
 include mapinfo/doom1_levels.txt
 include mapinfo/doom2_levels.txt
+include mapinfo/doom2_secret_levels.txt
 include mapinfo/masterlevels.txt
 include mapinfo/tnt_levels.txt
 include mapinfo/plutonia_levels.txt
