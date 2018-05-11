@@ -9,7 +9,7 @@ map TN_MAP01 lookup "THUSTR_1"
 	par = 30
 	music = "T_RUNNIN"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP02 lookup "THUSTR_2"
@@ -21,7 +21,7 @@ map TN_MAP02 lookup "THUSTR_2"
 	par = 90
 	music = "T_STALKS"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP03 lookup "THUSTR_3"
@@ -33,7 +33,7 @@ map TN_MAP03 lookup "THUSTR_3"
 	par = 120
 	music = "T_COUNTD"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP04 lookup "THUSTR_4"
@@ -45,7 +45,7 @@ map TN_MAP04 lookup "THUSTR_4"
 	par = 120
 	music = "T_BETWEE"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP05 lookup "THUSTR_5"
@@ -57,7 +57,7 @@ map TN_MAP05 lookup "THUSTR_5"
 	par = 90
 	music = "T_DOOM"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP06 lookup "THUSTR_6"
@@ -69,7 +69,7 @@ map TN_MAP06 lookup "THUSTR_6"
 	par = 150
 	music = "T_THE_DA"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP07 lookup "THUSTR_7"
@@ -82,7 +82,7 @@ map TN_MAP07 lookup "THUSTR_7"
 	map07special
 	music = "T_SHAWN"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP08 lookup "THUSTR_8"
@@ -94,7 +94,7 @@ map TN_MAP08 lookup "THUSTR_8"
 	par = 120
 	music = "T_DDTBLU"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP09 lookup "THUSTR_9"
@@ -106,7 +106,7 @@ map TN_MAP09 lookup "THUSTR_9"
 	par = 270
 	music = "T_IN_CIT"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP10 lookup "THUSTR_10"
@@ -118,7 +118,7 @@ map TN_MAP10 lookup "THUSTR_10"
 	par = 90
 	music = "T_DEAD"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP11 lookup "THUSTR_11"
@@ -130,7 +130,7 @@ map TN_MAP11 lookup "THUSTR_11"
 	par = 210
 	music = "T_STLKS2"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP12 lookup "THUSTR_12"
@@ -142,7 +142,7 @@ map TN_MAP12 lookup "THUSTR_12"
 	par = 150
 	music = "T_THEDA2"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP13 lookup "THUSTR_13"
@@ -154,7 +154,7 @@ map TN_MAP13 lookup "THUSTR_13"
 	par = 150
 	music = "T_DOOM2"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP14 lookup "THUSTR_14"
@@ -166,7 +166,7 @@ map TN_MAP14 lookup "THUSTR_14"
 	par = 150
 	music = "T_DDTBL2"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP15 lookup "THUSTR_15"
@@ -178,7 +178,7 @@ map TN_MAP15 lookup "THUSTR_15"
 	par = 210
 	music = "T_RUNNI2"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP16 lookup "THUSTR_16"
@@ -190,7 +190,7 @@ map TN_MAP16 lookup "THUSTR_16"
 	par = 150
 	music = "T_DEAD2"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP17 lookup "THUSTR_17"
@@ -202,7 +202,7 @@ map TN_MAP17 lookup "THUSTR_17"
 	par = 420
 	music = "T_STLKS3"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP18 lookup "THUSTR_18"
@@ -214,7 +214,7 @@ map TN_MAP18 lookup "THUSTR_18"
 	par = 150
 	music = "T_ROMERO"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP19 lookup "THUSTR_19"
@@ -226,7 +226,7 @@ map TN_MAP19 lookup "THUSTR_19"
 	par = 210
 	music = "T_SHAWN2"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP20 lookup "THUSTR_20"
@@ -238,7 +238,7 @@ map TN_MAP20 lookup "THUSTR_20"
 	par = 150
 	music = "T_MESSAG"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP21 lookup "THUSTR_21"
@@ -250,7 +250,7 @@ map TN_MAP21 lookup "THUSTR_21"
 	par = 240
 	music = "T_COUNT2"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP22 lookup "THUSTR_22"
@@ -262,7 +262,7 @@ map TN_MAP22 lookup "THUSTR_22"
 	par = 150
 	music = "T_DDTBL3"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP23 lookup "THUSTR_23"
@@ -274,7 +274,7 @@ map TN_MAP23 lookup "THUSTR_23"
 	par = 180
 	music = "T_AMPIE"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP24 lookup "THUSTR_24"
@@ -286,7 +286,7 @@ map TN_MAP24 lookup "THUSTR_24"
 	par = 150
 	music = "T_THEDA3"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP25 lookup "THUSTR_25"
@@ -298,7 +298,7 @@ map TN_MAP25 lookup "THUSTR_25"
 	par = 150
 	music = "T_ADRIAN"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP26 lookup "THUSTR_26"
@@ -310,7 +310,7 @@ map TN_MAP26 lookup "THUSTR_26"
 	par = 300
 	music = "T_MESSG2"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP27 lookup "THUSTR_27"
@@ -322,7 +322,7 @@ map TN_MAP27 lookup "THUSTR_27"
 	par = 330
 	music = "T_ROMER2"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP28 lookup "THUSTR_28"
@@ -334,7 +334,7 @@ map TN_MAP28 lookup "THUSTR_28"
 	par = 420
 	music = "T_TENSE"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP29 lookup "THUSTR_29"
@@ -346,7 +346,7 @@ map TN_MAP29 lookup "THUSTR_29"
 	par = 300
 	music = "T_SHAWN3"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP30 lookup "THUSTR_30"
@@ -375,7 +375,7 @@ map TN_MAP31 lookup "THUSTR_31"
 	par = 120
 	music = "T_EVIL"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 map TN_MAP32 lookup "THUSTR_32"
@@ -387,7 +387,7 @@ map TN_MAP32 lookup "THUSTR_32"
 	par = 30
 	music = "T_ULTIMA"
 	ExitPic = "TNTINTER"
-	InterMusic = "T_EVIL"
+	InterMusic = "T_DM2INT"
 }
 
 // TNT first cluster (up thru level 6)
