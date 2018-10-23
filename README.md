@@ -4,7 +4,7 @@ WadSmoosh merges your provided Ultimate Doom, Doom 2, Master Levels, No Rest for
 
 It's fine if you don't have all of the Doom games, eg you have Doom 2 but not Final Doom - WadSmoosh will package up everything it can find.
 
-If you're not a Doom expert and just bought these games off [Steam](http://store.steampowered.com/sub/18397/), [GoG](https://www.gog.com/game/doom_ii_final_doom), etc, see the **Absolute Beginner's Guide** section below.
+If you're not a Doom expert and just bought these games off [Steam](http://store.steampowered.com/sub/18397/) etc, see the **Absolute Beginner's Guide** section below.
 
 ## Usage
 
