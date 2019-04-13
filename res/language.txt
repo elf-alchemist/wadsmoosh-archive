@@ -6,15 +6,7 @@ WS_MENU_SKY_COMPAT = "Legacy Doom2 Sky Compatibility";
 WS_MENU_FD_TEXSWAP = "Final Doom Texture Substitutions";
 
 // episode names
-D1EP1NAME = "Knee-Deep in the Dead";
-D1EP2NAME = "The Shores of Hell";
-D1EP3NAME = "Inferno";
-D1EP4NAME = "Thy Flesh Consumed";
-D2EP1NAME = "Hell on Earth";
-D2EP2NAME = "No Rest for the Living";
 D2MLNAME = "The Master Levels";
-TNTNAME = "TNT: Evilution";
-PLUNAME = "The Plutonia Experiment";
 
 // master levels names
 // (map order defined in masterlevels_order.txt)

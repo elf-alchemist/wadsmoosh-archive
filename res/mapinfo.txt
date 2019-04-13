@@ -27,7 +27,7 @@ clearepisodes
 episode e1m1
 {
 	picname = "M_EPI1"
-	name = "$D1EP1NAME"
+	name = "$TXT_D1E1"
 	key = "k"
 	optional
 }
@@ -35,7 +35,7 @@ episode e1m1
 episode e2m1
 {
 	picname = "M_EPI2"
-	name = "$D1EP2NAME"
+	name = "$TXT_D1E2"
 	key = "s"
 	optional
 }
@@ -43,7 +43,7 @@ episode e2m1
 episode e3m1
 {
 	picname = "M_EPI3"
-	name = "$D1EP3NAME"
+	name = "$TXT_D1E3"
 	key = "i"
 	optional
 }
@@ -51,7 +51,7 @@ episode e3m1
 episode e4m1
 {
 	picname = "M_EPI4"
-	name = "$D1EP4NAME"
+	name = "$TXT_D1E4"
 	key = "f"
 	optional
 }
@@ -59,7 +59,7 @@ episode e4m1
 episode map01
 {
 	picname = "M_HELL"
-	name = "$D2EP1NAME"
+	name = "$TXT_D2E1"
 	key = "h"
 	optional
 }
@@ -67,7 +67,7 @@ episode map01
 episode nv_map01
 {
 	picname = "M_NOREST"
-	name = "$D2EP2NAME"
+	name = "$TXT_D2E2"
 	key = "n"
 	optional
 }
@@ -83,7 +83,7 @@ episode ml_map01
 episode tn_map01
 {
 	picname = "M_TNT"
-	name = "$TNTNAME"
+	name = "$TXT_TNT_EP"
 	key = "t"
 	optional
 }
@@ -91,7 +91,7 @@ episode tn_map01
 episode pl_map01
 {
 	picname = "M_PLUT"
-	name = "$PLUNAME"
+	name = "$TXT_PLUT_EP"
 	key = "p"
 	optional
 }
