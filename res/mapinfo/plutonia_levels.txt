@@ -6,6 +6,7 @@ map PL_MAP01 lookup "PHUSTR_1"
 	secretnext = "PL_MAP02"
 	sky1 = "PSKY1"
 	cluster = 18
+	titlepatch = "PWILV00"
 	par = 30
 	music = "P_RUNNIN"
 	ExitPic = "PLUINTER"
@@ -18,6 +19,7 @@ map PL_MAP02 lookup "PHUSTR_2"
 	secretnext = "PL_MAP03"
 	sky1 = "PSKY1"
 	cluster = 18
+	titlepatch = "PWILV01"
 	par = 90
 	music = "P_STALKS"
 	ExitPic = "PLUINTER"
@@ -30,6 +32,7 @@ map PL_MAP03 lookup "PHUSTR_3"
 	secretnext = "PL_MAP04"
 	sky1 = "PSKY1"
 	cluster = 18
+	titlepatch = "PWILV02"
 	par = 120
 	music = "P_COUNTD"
 	ExitPic = "PLUINTER"
@@ -42,6 +45,7 @@ map PL_MAP04 lookup "PHUSTR_4"
 	secretnext = "PL_MAP05"
 	sky1 = "PSKY1"
 	cluster = 18
+	titlepatch = "PWILV03"
 	par = 120
 	music = "P_BETWEE"
 	ExitPic = "PLUINTER"
@@ -54,6 +58,7 @@ map PL_MAP05 lookup "PHUSTR_5"
 	secretnext = "PL_MAP06"
 	sky1 = "PSKY1"
 	cluster = 18
+	titlepatch = "PWILV04"
 	par = 90
 	music = "P_DOOM"
 	ExitPic = "PLUINTER"
@@ -66,6 +71,7 @@ map PL_MAP06 lookup "PHUSTR_6"
 	secretnext = "PL_MAP07"
 	sky1 = "PSKY1"
 	cluster = 18
+	titlepatch = "PWILV05"
 	par = 150
 	music = "P_THE_DA"
 	ExitPic = "PLUINTER"
@@ -78,6 +84,7 @@ map PL_MAP07 lookup "PHUSTR_7"
 	secretnext = "PL_MAP08"
 	sky1 = "PSKY1"
 	cluster = 19
+	titlepatch = "PWILV06"
 	par = 120
 	map07special
 	music = "P_SHAWN"
@@ -91,6 +98,7 @@ map PL_MAP08 lookup "PHUSTR_8"
 	secretnext = "PL_MAP09"
 	sky1 = "PSKY1"
 	cluster = 19
+	titlepatch = "PWILV07"
 	par = 120
 	music = "P_DDTBLU"
 	ExitPic = "PLUINTER"
@@ -103,6 +111,7 @@ map PL_MAP09 lookup "PHUSTR_9"
 	secretnext = "PL_MAP10"
 	sky1 = "PSKY1"
 	cluster = 19
+	titlepatch = "PWILV08"
 	par = 270
 	music = "P_IN_CIT"
 	ExitPic = "PLUINTER"
@@ -115,6 +124,7 @@ map PL_MAP10 lookup "PHUSTR_10"
 	secretnext = "PL_MAP11"
 	sky1 = "PSKY1"
 	cluster = 19
+	titlepatch = "PWILV09"
 	par = 90
 	music = "P_DEAD"
 	ExitPic = "PLUINTER"
@@ -127,6 +137,7 @@ map PL_MAP11 lookup "PHUSTR_11"
 	secretnext = "PL_MAP12"
 	sky1 = "PSKY1"
 	cluster = 19
+	titlepatch = "PWILV10"
 	par = 210
 	music = "P_STLKS2"
 	ExitPic = "PLUINTER"
@@ -139,6 +150,7 @@ map PL_MAP12 lookup "PHUSTR_12"
 	secretnext = "PL_MAP13"
 	sky1 = "PSKY2"
 	cluster = 20
+	titlepatch = "PWILV11"
 	par = 150
 	music = "P_THEDA2"
 	ExitPic = "PLUINTER"
@@ -151,6 +163,7 @@ map PL_MAP13 lookup "PHUSTR_13"
 	secretnext = "PL_MAP14"
 	sky1 = "PSKY2"
 	cluster = 20
+	titlepatch = "PWILV12"
 	par = 150
 	music = "P_DOOM2"
 	ExitPic = "PLUINTER"
@@ -163,6 +176,7 @@ map PL_MAP14 lookup "PHUSTR_14"
 	secretnext = "PL_MAP15"
 	sky1 = "PSKY2"
 	cluster = 20
+	titlepatch = "PWILV13"
 	par = 150
 	music = "P_DDTBL2"
 	ExitPic = "PLUINTER"
@@ -175,6 +189,7 @@ map PL_MAP15 lookup "PHUSTR_15"
 	secretnext = "PL_MAP31"
 	sky1 = "PSKY2"
 	cluster = 20
+	titlepatch = "PWILV14"
 	par = 210
 	music = "P_RUNNI2"
 	ExitPic = "PLUINTER"
@@ -187,6 +202,7 @@ map PL_MAP16 lookup "PHUSTR_16"
 	secretnext = "PL_MAP17"
 	sky1 = "PSKY2"
 	cluster = 20
+	titlepatch = "PWILV15"
 	par = 150
 	music = "P_DEAD2"
 	ExitPic = "PLUINTER"
@@ -199,6 +215,7 @@ map PL_MAP17 lookup "PHUSTR_17"
 	secretnext = "PL_MAP18"
 	sky1 = "PSKY2"
 	cluster = 20
+	titlepatch = "PWILV16"
 	par = 420
 	music = "P_STLKS3"
 	ExitPic = "PLUINTER"
@@ -211,6 +228,7 @@ map PL_MAP18 lookup "PHUSTR_18"
 	secretnext = "PL_MAP19"
 	sky1 = "PSKY2"
 	cluster = 20
+	titlepatch = "PWILV17"
 	par = 150
 	music = "P_ROMERO"
 	ExitPic = "PLUINTER"
@@ -223,6 +241,7 @@ map PL_MAP19 lookup "PHUSTR_19"
 	secretnext = "PL_MAP20"
 	sky1 = "PSKY2"
 	cluster = 20
+	titlepatch = "PWILV18"
 	par = 210
 	music = "P_SHAWN2"
 	ExitPic = "PLUINTER"
@@ -235,6 +254,7 @@ map PL_MAP20 lookup "PHUSTR_20"
 	secretnext = "PL_MAP21"
 	sky1 = "PSKY2"
 	cluster = 20
+	titlepatch = "PWILV19"
 	par = 150
 	music = "P_MESSAG"
 	ExitPic = "PLUINTER"
@@ -247,6 +267,7 @@ map PL_MAP21 lookup "PHUSTR_21"
 	secretnext = "PL_MAP22"
 	sky1 = "PSKY3"
 	cluster = 21
+	titlepatch = "PWILV20"
 	par = 240
 	music = "P_COUNT2"
 	ExitPic = "PLUINTER"
@@ -259,6 +280,7 @@ map PL_MAP22 lookup "PHUSTR_22"
 	secretnext = "PL_MAP23"
 	sky1 = "PSKY3"
 	cluster = 21
+	titlepatch = "PWILV21"
 	par = 150
 	music = "P_DDTBL3"
 	ExitPic = "PLUINTER"
@@ -271,6 +293,7 @@ map PL_MAP23 lookup "PHUSTR_23"
 	secretnext = "PL_MAP24"
 	sky1 = "PSKY3"
 	cluster = 21
+	titlepatch = "PWILV22"
 	par = 180
 	music = "P_AMPIE"
 	ExitPic = "PLUINTER"
@@ -283,6 +306,7 @@ map PL_MAP24 lookup "PHUSTR_24"
 	secretnext = "PL_MAP25"
 	sky1 = "PSKY3"
 	cluster = 21
+	titlepatch = "PWILV23"
 	par = 150
 	music = "P_THEDA3"
 	ExitPic = "PLUINTER"
@@ -295,6 +319,7 @@ map PL_MAP25 lookup "PHUSTR_25"
 	secretnext = "PL_MAP26"
 	sky1 = "PSKY3"
 	cluster = 21
+	titlepatch = "PWILV24"
 	par = 150
 	music = "P_ADRIAN"
 	ExitPic = "PLUINTER"
@@ -307,6 +332,7 @@ map PL_MAP26 lookup "PHUSTR_26"
 	secretnext = "PL_MAP27"
 	sky1 = "PSKY3"
 	cluster = 21
+	titlepatch = "PWILV25"
 	par = 300
 	music = "P_MESSG2"
 	ExitPic = "PLUINTER"
@@ -319,6 +345,7 @@ map PL_MAP27 lookup "PHUSTR_27"
 	secretnext = "PL_MAP28"
 	sky1 = "PSKY3"
 	cluster = 21
+	titlepatch = "PWILV26"
 	par = 330
 	music = "P_ROMER2"
 	ExitPic = "PLUINTER"
@@ -331,6 +358,7 @@ map PL_MAP28 lookup "PHUSTR_28"
 	secretnext = "PL_MAP29"
 	sky1 = "PSKY3"
 	cluster = 21
+	titlepatch = "PWILV27"
 	par = 420
 	music = "P_TENSE"
 	ExitPic = "PLUINTER"
@@ -343,6 +371,7 @@ map PL_MAP29 lookup "PHUSTR_29"
 	secretnext = "PL_MAP30"
 	sky1 = "PSKY3"
 	cluster = 21
+	titlepatch = "PWILV28"
 	par = 300
 	music = "P_SHAWN3"
 	ExitPic = "PLUINTER"
@@ -353,6 +382,7 @@ map PL_MAP30 lookup "PHUSTR_30"
 {
 	sky1 = "PSKY3"
 	cluster = 21
+	titlepatch = "PWILV29"
 	par = 180
 	allowmonstertelefrags
 	music = "P_OPENIN"
@@ -369,6 +399,7 @@ map PL_MAP31 lookup "PHUSTR_31"
 	secretnext = "PL_MAP32"
 	sky1 = "PSKY3"
 	cluster = 22
+	titlepatch = "PWILV30"
 	par = 120
 	music = "P_EVIL"
 	ExitPic = "PLUINTER"
@@ -381,6 +412,7 @@ map PL_MAP32 lookup "PHUSTR_32"
 	secretnext = "PL_MAP16"
 	sky1 = "PSKY3"
 	cluster = 23
+	titlepatch = "PWILV31"
 	par = 30
 	music = "P_ULTIMA"
 	ExitPic = "PLUINTER"

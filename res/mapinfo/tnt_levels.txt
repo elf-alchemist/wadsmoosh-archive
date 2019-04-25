@@ -6,6 +6,7 @@ map TN_MAP01 lookup "THUSTR_1"
 	secretnext = "TN_MAP02"
 	sky1 = "TNT_SKY1"
 	cluster = 12
+	titlepatch = "TWILV00"
 	par = 30
 	music = "T_RUNNIN"
 	ExitPic = "TNTINTER"
@@ -18,6 +19,7 @@ map TN_MAP02 lookup "THUSTR_2"
 	secretnext = "TN_MAP03"
 	sky1 = "TNT_SKY1"
 	cluster = 12
+	titlepatch = "TWILV01"
 	par = 90
 	music = "T_STALKS"
 	ExitPic = "TNTINTER"
@@ -30,6 +32,7 @@ map TN_MAP03 lookup "THUSTR_3"
 	secretnext = "TN_MAP04"
 	sky1 = "TNT_SKY1"
 	cluster = 12
+	titlepatch = "TWILV02"
 	par = 120
 	music = "T_COUNTD"
 	ExitPic = "TNTINTER"
@@ -42,6 +45,7 @@ map TN_MAP04 lookup "THUSTR_4"
 	secretnext = "TN_MAP05"
 	sky1 = "TNT_SKY1"
 	cluster = 12
+	titlepatch = "TWILV03"
 	par = 120
 	music = "T_BETWEE"
 	ExitPic = "TNTINTER"
@@ -54,6 +58,7 @@ map TN_MAP05 lookup "THUSTR_5"
 	secretnext = "TN_MAP06"
 	sky1 = "TNT_SKY1"
 	cluster = 12
+	titlepatch = "TWILV04"
 	par = 90
 	music = "T_DOOM"
 	ExitPic = "TNTINTER"
@@ -66,6 +71,7 @@ map TN_MAP06 lookup "THUSTR_6"
 	secretnext = "TN_MAP07"
 	sky1 = "TNT_SKY1"
 	cluster = 12
+	titlepatch = "TWILV05"
 	par = 150
 	music = "T_THE_DA"
 	ExitPic = "TNTINTER"
@@ -78,6 +84,7 @@ map TN_MAP07 lookup "THUSTR_7"
 	secretnext = "TN_MAP08"
 	sky1 = "TNT_SKY1"
 	cluster = 13
+	titlepatch = "TWILV06"
 	par = 120
 	map07special
 	music = "T_SHAWN"
@@ -91,6 +98,7 @@ map TN_MAP08 lookup "THUSTR_8"
 	secretnext = "TN_MAP09"
 	sky1 = "TNT_SKY1"
 	cluster = 13
+	titlepatch = "TWILV07"
 	par = 120
 	music = "T_DDTBLU"
 	ExitPic = "TNTINTER"
@@ -103,6 +111,7 @@ map TN_MAP09 lookup "THUSTR_9"
 	secretnext = "TN_MAP10"
 	sky1 = "TNT_SKY1"
 	cluster = 13
+	titlepatch = "TWILV08"
 	par = 270
 	music = "T_IN_CIT"
 	ExitPic = "TNTINTER"
@@ -115,6 +124,7 @@ map TN_MAP10 lookup "THUSTR_10"
 	secretnext = "TN_MAP11"
 	sky1 = "TNT_SKY1"
 	cluster = 13
+	titlepatch = "TWILV09"
 	par = 90
 	music = "T_DEAD"
 	ExitPic = "TNTINTER"
@@ -127,6 +137,7 @@ map TN_MAP11 lookup "THUSTR_11"
 	secretnext = "TN_MAP12"
 	sky1 = "TNT_SKY1"
 	cluster = 13
+	titlepatch = "TWILV10"
 	par = 210
 	music = "T_STLKS2"
 	ExitPic = "TNTINTER"
@@ -139,6 +150,7 @@ map TN_MAP12 lookup "THUSTR_12"
 	secretnext = "TN_MAP13"
 	sky1 = "TNT_SKY2"
 	cluster = 14
+	titlepatch = "TWILV11"
 	par = 150
 	music = "T_THEDA2"
 	ExitPic = "TNTINTER"
@@ -151,6 +163,7 @@ map TN_MAP13 lookup "THUSTR_13"
 	secretnext = "TN_MAP14"
 	sky1 = "TNT_SKY2"
 	cluster = 14
+	titlepatch = "TWILV12"
 	par = 150
 	music = "T_DOOM2"
 	ExitPic = "TNTINTER"
@@ -163,6 +176,7 @@ map TN_MAP14 lookup "THUSTR_14"
 	secretnext = "TN_MAP15"
 	sky1 = "TNT_SKY2"
 	cluster = 14
+	titlepatch = "TWILV13"
 	par = 150
 	music = "T_DDTBL2"
 	ExitPic = "TNTINTER"
@@ -175,6 +189,7 @@ map TN_MAP15 lookup "THUSTR_15"
 	secretnext = "TN_MAP31"
 	sky1 = "TNT_SKY2"
 	cluster = 14
+	titlepatch = "TWILV14"
 	par = 210
 	music = "T_RUNNI2"
 	ExitPic = "TNTINTER"
@@ -187,6 +202,7 @@ map TN_MAP16 lookup "THUSTR_16"
 	secretnext = "TN_MAP17"
 	sky1 = "TNT_SKY2"
 	cluster = 14
+	titlepatch = "TWILV15"
 	par = 150
 	music = "T_DEAD2"
 	ExitPic = "TNTINTER"
@@ -199,6 +215,7 @@ map TN_MAP17 lookup "THUSTR_17"
 	secretnext = "TN_MAP18"
 	sky1 = "TNT_SKY2"
 	cluster = 14
+	titlepatch = "TWILV16"
 	par = 420
 	music = "T_STLKS3"
 	ExitPic = "TNTINTER"
@@ -211,6 +228,7 @@ map TN_MAP18 lookup "THUSTR_18"
 	secretnext = "TN_MAP19"
 	sky1 = "TNT_SKY2"
 	cluster = 14
+	titlepatch = "TWILV17"
 	par = 150
 	music = "T_ROMERO"
 	ExitPic = "TNTINTER"
@@ -223,6 +241,7 @@ map TN_MAP19 lookup "THUSTR_19"
 	secretnext = "TN_MAP20"
 	sky1 = "TNT_SKY2"
 	cluster = 14
+	titlepatch = "TWILV18"
 	par = 210
 	music = "T_SHAWN2"
 	ExitPic = "TNTINTER"
@@ -235,6 +254,7 @@ map TN_MAP20 lookup "THUSTR_20"
 	secretnext = "TN_MAP21"
 	sky1 = "TNT_SKY2"
 	cluster = 14
+	titlepatch = "TWILV19"
 	par = 150
 	music = "T_MESSAG"
 	ExitPic = "TNTINTER"
@@ -247,6 +267,7 @@ map TN_MAP21 lookup "THUSTR_21"
 	secretnext = "TN_MAP22"
 	sky1 = "TNT_SKY3"
 	cluster = 15
+	titlepatch = "TWILV20"
 	par = 240
 	music = "T_COUNT2"
 	ExitPic = "TNTINTER"
@@ -259,6 +280,7 @@ map TN_MAP22 lookup "THUSTR_22"
 	secretnext = "TN_MAP23"
 	sky1 = "TNT_SKY3"
 	cluster = 15
+	titlepatch = "TWILV21"
 	par = 150
 	music = "T_DDTBL3"
 	ExitPic = "TNTINTER"
@@ -271,6 +293,7 @@ map TN_MAP23 lookup "THUSTR_23"
 	secretnext = "TN_MAP24"
 	sky1 = "TNT_SKY3"
 	cluster = 15
+	titlepatch = "TWILV22"
 	par = 180
 	music = "T_AMPIE"
 	ExitPic = "TNTINTER"
@@ -283,6 +306,7 @@ map TN_MAP24 lookup "THUSTR_24"
 	secretnext = "TN_MAP25"
 	sky1 = "TNT_SKY3"
 	cluster = 15
+	titlepatch = "TWILV23"
 	par = 150
 	music = "T_THEDA3"
 	ExitPic = "TNTINTER"
@@ -295,6 +319,7 @@ map TN_MAP25 lookup "THUSTR_25"
 	secretnext = "TN_MAP26"
 	sky1 = "TNT_SKY3"
 	cluster = 15
+	titlepatch = "TWILV24"
 	par = 150
 	music = "T_ADRIAN"
 	ExitPic = "TNTINTER"
@@ -307,6 +332,7 @@ map TN_MAP26 lookup "THUSTR_26"
 	secretnext = "TN_MAP27"
 	sky1 = "TNT_SKY3"
 	cluster = 15
+	titlepatch = "TWILV25"
 	par = 300
 	music = "T_MESSG2"
 	ExitPic = "TNTINTER"
@@ -319,6 +345,7 @@ map TN_MAP27 lookup "THUSTR_27"
 	secretnext = "TN_MAP28"
 	sky1 = "TNT_SKY3"
 	cluster = 15
+	titlepatch = "TWILV26"
 	par = 330
 	music = "T_ROMER2"
 	ExitPic = "TNTINTER"
@@ -331,6 +358,7 @@ map TN_MAP28 lookup "THUSTR_28"
 	secretnext = "TN_MAP29"
 	sky1 = "TNT_SKY3"
 	cluster = 15
+	titlepatch = "TWILV27"
 	par = 420
 	music = "T_TENSE"
 	ExitPic = "TNTINTER"
@@ -342,6 +370,7 @@ map TN_MAP29 lookup "THUSTR_29"
 	next = "TN_MAP30"
 	secretnext = "TN_MAP30"
 	sky1 = "TNT_SKY3"
+	titlepatch = "TWILV28"
 	cluster = 15
 	par = 300
 	music = "T_SHAWN3"
@@ -353,6 +382,7 @@ map TN_MAP30 lookup "THUSTR_30"
 {
 	sky1 = "TNT_SKY3"
 	cluster = 15
+	titlepatch = "TWILV29"
 	par = 180
 	allowmonstertelefrags
 	// depends on broken vanilla stair builder behavior, which ZDoom
@@ -372,6 +402,7 @@ map TN_MAP31 lookup "THUSTR_31"
 	secretnext = "TN_MAP32"
 	sky1 = "TNT_SKY3"
 	cluster = 16
+	titlepatch = "TWILV30"
 	par = 120
 	music = "T_EVIL"
 	ExitPic = "TNTINTER"
@@ -384,6 +415,7 @@ map TN_MAP32 lookup "THUSTR_32"
 	secretnext = "TN_MAP16"
 	sky1 = "TNT_SKY3"
 	cluster = 17
+	titlepatch = "TWILV31"
 	par = 30
 	music = "T_ULTIMA"
 	ExitPic = "TNTINTER"

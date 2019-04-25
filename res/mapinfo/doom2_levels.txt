@@ -410,6 +410,7 @@ map NV_MAP01 lookup "NHUSTR_1"
 	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
+	titlepatch = "NWILV00"
 	par = 75
 	music = "$MUSIC_MESSAG"
 }
@@ -420,6 +421,7 @@ map NV_MAP02 lookup "NHUSTR_2"
 	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
+	titlepatch = "NWILV01"
 	par = 105
 	music = "$MUSIC_DDTBLU"
 }
@@ -430,6 +432,7 @@ map NV_MAP03 lookup "NHUSTR_3"
 	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
+	titlepatch = "NWILV02"
 	par = 120
 	music = "$MUSIC_DOOM"
 }
@@ -440,6 +443,7 @@ map NV_MAP04 lookup "NHUSTR_4"
 	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
+	titlepatch = "NWILV03"
 	par = 105
 	music = "$MUSIC_SHAWN"
 }
@@ -450,6 +454,7 @@ map NV_MAP05 lookup "NHUSTR_5"
 	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
+	titlepatch = "NWILV04"
 	par = 210
 	music = "$MUSIC_IN_CIT"
 }
@@ -460,6 +465,7 @@ map NV_MAP06 lookup "NHUSTR_6"
 	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
+	titlepatch = "NWILV05"
 	par = 105
 	sucktime = 1
 	music = "$MUSIC_THE_DA"
@@ -471,6 +477,7 @@ map NV_MAP07 lookup "NHUSTR_7"
 	secretnext = "NV_MAP09"
 	sky1 = "RSKY1"
 	cluster = 11
+	titlepatch = "NWILV06"
 	par = 165
 	map07special
 	music = "$MUSIC_IN_CIT"
@@ -482,6 +489,7 @@ map NV_MAP08 lookup "NHUSTR_8"
 	secretnext = "EndGameC"
 	sky1 = "RSKY1"
 	cluster = 11
+	titlepatch = "NWILV07"
 	par = 105
 	music = "$MUSIC_SHAWN"
 }
@@ -491,6 +499,7 @@ map NV_MAP09 lookup "NHUSTR_9"
 	next = "NV_MAP05"
 	secretnext = "NV_MAP05"
 	sky1 = "RSKY1"
+	titlepatch = "NWILV08"
 	cluster = 11
 	par = 135
 	music = "$MUSIC_DDTBLU"

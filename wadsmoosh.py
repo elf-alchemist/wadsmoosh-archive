@@ -15,7 +15,7 @@ DEST_FILENAME = 'doom_complete.pk3'
 LOG_FILENAME = 'wadsmoosh.log'
 RES_DIR = 'res/'
 DATA_TABLES_FILE = 'wadsmoosh_data.py'
-ML_ORDER_FILENAME = 'masterlevels_order.txt'
+ML_ORDER_FILENAME = 'masterlevels_order_xaser.txt'
 ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/masterlevels.txt'
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
@@ -77,6 +77,7 @@ def get_ml_mapinfo(wad_name, map_number):
     lines = []
     prefix = MASTER_LEVELS_MAP_PREFIX.upper()
     mapnum = str(map_number).rjust(2, '0')
+    picnum = str(map_number - 1).rjust(2, '0')
     nextnum = str(map_number + 1).rjust(2, '0')
     lines.append('map %sMAP%s lookup "%s%s"' % (prefix, mapnum, prefix, wad_name.upper()))
     lines.append('{')
@@ -89,6 +90,7 @@ def get_ml_mapinfo(wad_name, map_number):
     lines.append('    sky1 = "%s"' % sky)
     lines.append('    music = "$MUSIC_%s"' % music)
     lines.append('    cluster = 24')
+    lines.append('    titlepatch = "MWILV%s"' % picnum)
     if wad_name in MASTER_LEVELS_MAP07_SPECIAL:
         lines.append('    map07special')
     # don't reset player for secret level
@@ -271,6 +273,13 @@ def copy_resources():
             continue
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
+    # special handling for level name lumps
+    for dirname in ['doom1', 'doom2', 'nerve', 'masterlevels', 'tnt', 'plutonia']:
+        os.mkdir(DEST_DIR + 'graphics/' + dirname)
+        for filename in os.listdir(RES_DIR + 'graphics/' + dirname + '/'):
+            src_file = 'graphics/%s/%s' % (dirname, filename)
+            logg('Copying %s' % src_file)
+            copyfile(RES_DIR + src_file, DEST_DIR + src_file)
     # doom2 vs doom2bfg map31/32 names differ, different mapinfos with same name
     wad = omg.WAD()
     d2_wad_filename = get_wad_filename('doom2')
