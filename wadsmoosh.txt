@@ -46,7 +46,7 @@ Inspirational Quote     : "As my son Steve says, just 'smoosh' it in there.
 New levels              : None
 Sounds                  : No
 Music                   : No
-Graphics                : Yes (title art)
+Graphics                : Yes (title art, map credits)
 Dehacked/BEX Patch      : No
 Demos                   : No
 Other                   : Yes (custom data files)
@@ -90,3 +90,4 @@ further distribution.
 
 The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
 Web sites: https://bitbucket.org/JPLeBreton/wadsmoosh
+           https://jp.itch.io/wadsmoosh
