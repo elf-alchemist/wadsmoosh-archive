@@ -275,7 +275,9 @@ def copy_resources():
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
     # special handling for level name lumps
     for dirname in ['doom1', 'doom2', 'nerve', 'masterlevels', 'tnt', 'plutonia']:
-        os.mkdir(DEST_DIR + 'graphics/' + dirname)
+        newdir = DEST_DIR + 'graphics/' + dirname
+        if not os.path.exists(newdir):
+            os.mkdir(newdir)
         for filename in os.listdir(RES_DIR + 'graphics/' + dirname + '/'):
             src_file = 'graphics/%s/%s' % (dirname, filename)
             logg('Copying %s' % src_file)

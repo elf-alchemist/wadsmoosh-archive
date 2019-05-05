@@ -12,6 +12,7 @@ RES_FILES = [
     'graphics/M_PLUT.png',
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
     'mapinfo/tnt_levels.txt', 'mapinfo/plutonia_levels.txt',
+    'mapinfo/masterlevels.txt',
     'loadacs.txt', 'acs/ws_fixes.o', 'scripts/ws_fixes.acs',
     'menudef.txt', 'cvarinfo.txt'
 ]
