@@ -111,6 +111,7 @@ map ML_MAP21 lookup "ML_TEETH_SECRET"
     sky1 = "RSKY1"
     music = "$MUSIC_%s"
     cluster = 24
+    titlepatch = "MWILV20"
 }
 """
 
