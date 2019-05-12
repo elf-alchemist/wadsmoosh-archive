@@ -30,6 +30,7 @@ map MAP33 lookup "HUSTR_33"
 {
 	next = "MAP03"
 	secretnext = "MAP03"
+	titlepatch = "CWILV32"
 	sky1 = "RSKY1"
 	cluster = 5
 	music = "D_READ_M"

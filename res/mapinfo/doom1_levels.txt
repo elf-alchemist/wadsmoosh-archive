@@ -19,6 +19,7 @@ map E1M10 lookup "HUSTR_E1M10"
 	levelnum = 10
 	next = "E1M1"
 	secretnext = "E1M1"
+	titlepatch = "WILV39"
 	sky1 = "SKY1"
 	cluster = 1
 	music = "$MUSIC_E2M1"
