@@ -314,9 +314,9 @@ def get_eps(wads_found):
             eps += ['Knee Deep in the Dead', 'The Shores of Hell', 'Inferno', 'Thy Flesh Consumed']
         elif wadname == 'doom2':
             eps += ['Hell on Earth']
-        elif wadname == 'nerve':
+        elif wadname == 'nerve' and 'doom2' in wads_found:
             eps += ['No Rest for the Living']
-        elif wadname == 'attack':
+        elif wadname == 'attack' and 'doom2' in wads_found:
             eps += ['The Master Levels']
         elif wadname == 'tnt':
             eps += ['TNT: Evilution']
