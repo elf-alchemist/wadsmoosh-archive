@@ -5,6 +5,8 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 import omg
 
+WADSMOOSH_VERSION = 1.0
+
 # if False, do a dry run with no actual file writing
 should_extract = True
 
@@ -298,11 +300,46 @@ def copy_resources():
         copyfile(RES_DIR + 'mapinfo/doom2_nonbfg_levels.txt',
                  DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
 
+def get_report_found():
+    found = []
+    for wadname in ['doom', 'doom2', 'nerve', 'attack', 'tnt', 'plutonia', 'sewers', 'betray']:
+        if get_wad_filename(wadname):
+            found.append(wadname)
+    return found
+
+def get_eps(wads_found):
+    eps = []
+    for wadname in wads_found:
+        if wadname == 'doom':
+            eps += ['Knee Deep in the Dead', 'The Shores of Hell', 'Inferno', 'Thy Flesh Consumed']
+        elif wadname == 'doom2':
+            eps += ['Hell on Earth']
+        elif wadname == 'nerve':
+            eps += ['No Rest for the Living']
+        elif wadname == 'attack':
+            eps += ['The Master Levels']
+        elif wadname == 'tnt':
+            eps += ['TNT: Evilution']
+        elif wadname == 'plutonia':
+            eps += ['The Plutonia Experiment']
+    return eps
+
 def main():
-    # bail if SRC_WAD_DIR is empty
-    if not get_wad_filename('doom') and not get_wad_filename('doom2') and \
-       not get_wad_filename('tnt') and not get_wad_filename('plutonia'):
+    title_line = 'WadSmoosh v%s' % WADSMOOSH_VERSION
+    logg(title_line + '\n' + '-' * len(title_line))
+    found = get_report_found()
+    # bail if no wads in SRC_WAD_DIR
+    if len(found) == 0:
         logg('No source WADs found!\nPlease place your WAD files into %s.' % os.path.realpath(SRC_WAD_DIR))
+        logfile.close()
+        return
+    logg('Found in %s: ' % SRC_WAD_DIR + ', '.join(found))
+    logg('A new PK3 format IWAD will be generated with the following episodes:')
+    for ep_name in get_eps(found):
+        logg('- %s' % ep_name)
+    i = input('Press Y and then Enter to proceed, anything else to cancel: ')
+    if i.lower() != 'y':
+        logg('Canceled.')
         logfile.close()
         return
     # make dirs if they don't exist
