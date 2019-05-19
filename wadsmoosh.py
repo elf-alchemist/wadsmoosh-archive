@@ -337,7 +337,8 @@ def main():
     logg('A new PK3 format IWAD will be generated with the following episodes:')
     for ep_name in get_eps(found):
         logg('- %s' % ep_name)
-    i = input('Press Y and then Enter to proceed, anything else to cancel: ')
+    input_func = raw_input if sys.version_info.major < 3 else input
+    i = input_func('Press Y and then Enter to proceed, anything else to cancel: ')
     if i.lower() != 'y':
         logg('Canceled.')
         logfile.close()
