@@ -4,9 +4,39 @@
 WS_MENU_TITLE = "WadSmoosh Options";
 WS_MENU_SKY_COMPAT = "Legacy Doom2 Sky Compatibility";
 WS_MENU_FD_TEXSWAP = "Final Doom Texture Substitutions";
+WS_MENU_CREDITS = "WadSmoosh Credits";
+WS_NAME = "WadSmoosh";
+
+// credits headings
+WS_CRED_DEVPUB = "Developed and Published by";
+WS_CRED_CODE = "Programmers";
+WS_CRED_ART = "Artists";
+WS_CRED_BIZ = "Business";
+WS_CRED_SUPPORT = "Software Support";
+WS_CRED_AUDIO = "Music and Sound";
+WS_CRED_AUDIO_CODE = "Sound Code";
+WS_CRED_LD = "Level Designers";
+WS_CRED_THANKS = "Special Thanks";
+WS_CRED_DEV = "Developed by";
+WS_CRED_PUB = "Published by";
+WS_CRED_ORIG = "Original Code and Art Assets";
+WS_CRED_MUSIC = "Original Compositions";
+WS_CRED_ORIG_MUSIC = "Music From Doom and Doom II";
+WS_CRED_COVER = "Cover Art";
+WS_CRED_WS = "Concept and Implementation";
+WS_CRED_WS_TITLE_ART = "Custom Title Art";
+WS_CRED_WS_EP_ART = "Episode Name Art";
+WS_CRED_WS_CREDITS = "Credits Implementation";
 
 // episode names
+UD1NAME = "The Ultimate Doom";
+D2E1NAME = "Doom II: Hell on Earth";
+D2E2NAME = "Doom II: No Rest for the Living";
 D2MLNAME = "The Master Levels";
+D2MLEPNAME = "The Master Levels for Doom II";
+TNTEPNAME = "Final Doom: TNT Evilution";
+PLUTEPNAME = "Final Doom: The Plutonia Experiment";
+EP5NAME = "Sigil";
 
 // master levels names
 // (map order defined in masterlevels_order.txt)
