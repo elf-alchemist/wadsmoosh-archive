@@ -28,6 +28,7 @@ DOOM1_LUMPS = []
 DOOM2_LUMPS = []
 WAD_LUMP_LISTS = {}
 WAD_MAP_PREFIXES = {}
+MAP_NAME_GRAPHICS_DIRS = []
 MASTER_LEVELS_PATCHES = {}
 MASTER_LEVELS_SKIES = {}
 MASTER_LEVELS_MUSIC = {}
@@ -226,13 +227,20 @@ def extract_lumps(wad_name):
         except ValueError:
             logg("ERROR: Couldn't identify type of lump list %s" % lump_list)
             continue
+        # sigil sky lump isn't in patch namespace
+        if lump_list == 'patches_sigil':
+            lump_type = 'data'
         lump_table = getattr(wad, lump_type, None)
         if not lump_table:
             logg('  ERROR: Lump type %s not found' % lump_type)
             continue
         logg('  extracting %s...' % lump_list)
+        # sigil screens aren't in graphics namespace but belong in that dir
+        if wad_name == 'sigil' and lump_type == 'data':
+            lump_subdir = DEST_DIR + 'graphics/'
+        #elif wad_name == 'sigil'
         # write PLAYPAL, TEXTURE1 etc to pk3 root
-        if lump_type in ['data', 'txdefs']:
+        elif lump_type in ['data', 'txdefs']:
             lump_subdir = DEST_DIR
         else:
             lump_subdir = DEST_DIR + lump_type + '/'
@@ -276,7 +284,7 @@ def copy_resources():
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
     # special handling for level name lumps
-    for dirname in ['doom1', 'doom2', 'nerve', 'masterlevels', 'tnt', 'plutonia']:
+    for dirname in MAP_NAME_GRAPHICS_DIRS:
         newdir = DEST_DIR + 'graphics/' + dirname
         if not os.path.exists(newdir):
             os.mkdir(newdir)
@@ -302,7 +310,7 @@ def copy_resources():
 
 def get_report_found():
     found = []
-    for wadname in ['doom', 'doom2', 'nerve', 'attack', 'tnt', 'plutonia', 'sewers', 'betray']:
+    for wadname in ['doom', 'sigil', 'doom2', 'nerve', 'attack', 'tnt', 'plutonia', 'sewers', 'betray']:
         if get_wad_filename(wadname):
             found.append(wadname)
     return found
@@ -322,6 +330,8 @@ def get_eps(wads_found):
             eps += ['TNT: Evilution']
         elif wadname == 'plutonia':
             eps += ['The Plutonia Experiment']
+        elif wadname == 'sigil':
+            eps += ['Sigil']
     return eps
 
 def main():
@@ -367,6 +377,9 @@ def main():
             continue
         if iwad_name == 'nerve' and not get_wad_filename('doom2'):
             logg('Skipping nerve.wad as doom2.wad is not present')
+            continue
+        if iwad_name == 'sigil' and not get_wad_filename('doom'):
+            logg('Skipping SIGIL.wad as doom.wad is not present')
             continue
         logg('Processing IWAD %s...' % iwad_name)
         if should_extract:

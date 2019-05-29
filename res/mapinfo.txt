@@ -4,6 +4,7 @@ include mapinfo/doom2_secret_levels.txt
 include mapinfo/masterlevels.txt
 include mapinfo/tnt_levels.txt
 include mapinfo/plutonia_levels.txt
+include mapinfo/sigil_levels.txt
 
 gameinfo
 {
@@ -53,6 +54,14 @@ episode e4m1
 	picname = "M_EPI4"
 	name = "$TXT_D1E4"
 	key = "f"
+	optional
+}
+
+episode e5m1
+{
+	picname = "M_EPI5"
+	name = "$HUSTR_EPI5"
+	key = "s"
 	optional
 }
 
