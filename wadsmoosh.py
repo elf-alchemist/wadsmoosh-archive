@@ -332,7 +332,7 @@ def get_eps(wads_found):
             eps += ['TNT: Evilution']
         elif wadname == 'plutonia':
             eps += ['The Plutonia Experiment']
-        elif wadname == 'sigil':
+        elif wadname == 'sigil' and 'doom' in wads_found:
             eps += ['Sigil']
     return eps
 
