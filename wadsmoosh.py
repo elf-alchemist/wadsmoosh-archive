@@ -235,10 +235,12 @@ def extract_lumps(wad_name):
             logg('  ERROR: Lump type %s not found' % lump_type)
             continue
         logg('  extracting %s...' % lump_list)
+        # sigil sky is in data namespace but we want it in patches dir
+        if wad_name == 'sigil' and lump_list == 'patches_sigil':
+            lump_subdir = DEST_DIR + 'patches/'
         # sigil screens aren't in graphics namespace but belong in that dir
-        if wad_name == 'sigil' and lump_type == 'data':
+        elif wad_name == 'sigil' and lump_type == 'data':
             lump_subdir = DEST_DIR + 'graphics/'
-        #elif wad_name == 'sigil'
         # write PLAYPAL, TEXTURE1 etc to pk3 root
         elif lump_type in ['data', 'txdefs']:
             lump_subdir = DEST_DIR

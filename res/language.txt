@@ -28,6 +28,8 @@ WS_CRED_WS_TITLE_ART = "Custom Title Art";
 WS_CRED_WS_EP_ART = "Episode Name Art";
 WS_CRED_WS_CREDITS = "Credits Implementation";
 WS_CRED_WS_LIBRARY = "Omgifol Library";
+WS_CRED_LD1 = "Level Designer";
+WS_CRED_TEST = "Playtesters";
 
 // episode names
 UD1NAME = "The Ultimate Doom";

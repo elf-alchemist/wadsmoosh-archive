@@ -285,6 +285,11 @@ Texture "SKY4", 256, 128
 	Patch "SKY4", 0, 0
 }
 
+Texture "SKY5", 256, 240
+{
+	Patch "SKY5", 0, 0
+}
+
 Texture "SLADRIP1", 64, 128
 {
 	Patch "WALL57_2", 0, 0
