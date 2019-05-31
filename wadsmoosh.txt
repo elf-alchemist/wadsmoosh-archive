@@ -35,6 +35,7 @@ Description             : A tool for combining all official id release
 Additional Credits to   : ZDoom forums folks for help testing and fixing!
                           Custom title art by Scalliano and Hellser.
                           Episode name art by NightFright.
+                          Credits data by Shockwave_S08.
 
 Inspirational Quote     : "As my son Steve says, just 'smoosh' it in there.
                           It's not a real word, but people seem to know
@@ -56,6 +57,7 @@ Other files required    : Any official id release WADs:
                           - Master Levels for Doom 2
                           - No Rest for the Living (aka NERVE.WAD)
                           - Final Doom (TNT and Plutonia)
+                          - Sigil
 
 
 * Construction *
