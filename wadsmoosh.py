@@ -1,11 +1,11 @@
 
-import os, sys
+import os, sys, time
 from shutil import copyfile
 from zipfile import ZipFile, ZIP_DEFLATED
 
 import omg
 
-WADSMOOSH_VERSION = 1.0
+WADSMOOSH_VERSION = 1.1
 
 # if False, do a dry run with no actual file writing
 should_extract = True
@@ -39,6 +39,8 @@ logfile = None
 exec(open(DATA_TABLES_FILE).read())
 
 MASTER_LEVELS_MAP_PREFIX = WAD_MAP_PREFIXES.get('masterlevels', '')
+
+num_maps = 0
 
 def logg(line):
     global logfile
@@ -200,9 +202,11 @@ def add_xbox_levels():
         add_secret_level('betray', 'MAP01', 'MAP33')
 
 def extract_map(in_wad, map_name, out_filename):
+    global num_maps
     out_wad = omg.WAD()
     out_wad.maps[map_name] = in_wad.maps[map_name]
     out_wad.to_file(out_filename)
+    num_maps += 1
 
 def extract_iwad_maps(wad_name, map_prefix):
     in_wad = omg.WAD()
@@ -337,6 +341,7 @@ def get_eps(wads_found):
     return eps
 
 def main():
+    start_time = time.time()
     title_line = 'WadSmoosh v%s' % WADSMOOSH_VERSION
     logg(title_line + '\n' + '-' * len(title_line))
     found = get_report_found()
@@ -347,8 +352,9 @@ def main():
         return
     logg('Found in %s: ' % SRC_WAD_DIR + ', '.join(found))
     logg('A new PK3 format IWAD will be generated with the following episodes:')
-    for ep_name in get_eps(found):
+    for num_eps,ep_name in enumerate(get_eps(found)):
         logg('- %s' % ep_name)
+    num_eps += 1
     input_func = raw_input if sys.version_info.major < 3 else input
     i = input_func('Press Y and then Enter to proceed, anything else to cancel: ')
     if i.lower() != 'y':
@@ -406,6 +412,9 @@ def main():
             pk3.write(src_name, dest_name)
     pk3.close()
     logg('Done!')
+    elapsed_time = time.time() - start_time
+    logg('Generated %s with %s episodes and %s maps in %.2f seconds.' % (DEST_FILENAME, num_eps, num_maps, elapsed_time))
+    input_func('Press Enter to exit.\n')
     logfile.close()
 
 if __name__ == "__main__":
