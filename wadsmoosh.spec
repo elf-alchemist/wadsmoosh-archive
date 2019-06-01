@@ -6,7 +6,7 @@ sys.modules['FixTk'] = None
 block_cipher = None
 
 a = Analysis(['wadsmoosh.py'],
-             pathex=['c:\\wadsmoosh'],
+             pathex=['e:\\wadsmoosh'],
              binaries=[],
              datas=[],
              hiddenimports=[],

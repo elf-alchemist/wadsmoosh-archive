@@ -358,9 +358,9 @@ def main():
         input_func('Press Enter to exit.\n')
         return
     logg('Found in %s: ' % SRC_WAD_DIR + ', '.join(found))
-    logg('A new PK3 format IWAD will be generated with the following episodes:')
+    print('A new PK3 format IWAD will be generated with the following episodes:')
     for num_eps,ep_name in enumerate(get_eps(found)):
-        logg('- %s' % ep_name)
+        print('- %s' % ep_name)
     num_eps += 1
     i = input_func('Press Y and then Enter to proceed, anything else to cancel: ')
     if i.lower() != 'y':
