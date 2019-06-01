@@ -40,14 +40,19 @@ exec(open(DATA_TABLES_FILE).read())
 
 MASTER_LEVELS_MAP_PREFIX = WAD_MAP_PREFIXES.get('masterlevels', '')
 
+# track # of maps extracted
 num_maps = 0
+num_errors = 0
 
-def logg(line):
-    global logfile
+
+def logg(line, error=False):
+    global logfile, num_errors
     if not logfile:
         logfile = open(LOG_FILENAME, 'w')
     print(line)
     logfile.write(line + '\n')
+    if error:
+        num_errors += 1
 
 def get_wad_filename(wad_name):
     # return filename of first case-insensitive match
@@ -73,7 +78,7 @@ def get_master_levels_map_order():
         if line.startswith('//') or line == '':
             continue
         if not line in MASTER_LEVELS_MUSIC:
-            logg('ERROR: Unrecognized Master Level %s' % line)
+            logg('ERROR: Unrecognized Master Level %s' % line, error=True)
             continue
         order.append(line)
     return order
@@ -112,7 +117,7 @@ def extract_master_levels():
         return
     first_ml_wad = get_wad_filename(ml_map_order[0])
     if not first_ml_wad:
-        logg('ERROR: Master Levels not found.')
+        logg('ERROR: Master Levels not found.', error=True)
         return
     logg('Processing Master Levels...')
     mapinfo = open(ML_MAPINFO_FILENAME, 'w')
@@ -121,7 +126,7 @@ def extract_master_levels():
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         if not wad_filename:
-            logg("ERROR: Couldn't find %s" % wad_name)
+            logg("ERROR: Couldn't find %s" % wad_name, error=True)
             continue
         in_wad.from_file(wad_filename)
         out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map'
@@ -229,14 +234,14 @@ def extract_lumps(wad_name):
         try:
             lump_type = lump_list[:lump_list.index('_')]
         except ValueError:
-            logg("ERROR: Couldn't identify type of lump list %s" % lump_list)
+            logg("ERROR: Couldn't identify type of lump list %s" % lump_list, error=True)
             continue
         # sigil sky lump isn't in patch namespace
         if lump_list == 'patches_sigil':
             lump_type = 'data'
         lump_table = getattr(wad, lump_type, None)
         if not lump_table:
-            logg('  ERROR: Lump type %s not found' % lump_type)
+            logg('  ERROR: Lump type %s not found' % lump_type, error=True)
             continue
         logg('  extracting %s...' % lump_list)
         # sigil sky is in data namespace but we want it in patches dir
@@ -267,7 +272,7 @@ def extract_lumps(wad_name):
                 lump_name = lump_name.strip()
                 out_filename = out_filename.strip()
             if not lump_name in lump_table:
-                logg("  ERROR: Couldn't find lump with name %s" % lump_name)
+                logg("  ERROR: Couldn't find lump with name %s" % lump_name, error=True)
                 continue
             lump = lump_table[lump_name]
             out_filename += '.lmp' if lump_type != 'music' else '.mus'
@@ -349,6 +354,7 @@ def main():
     if len(found) == 0:
         logg('No source WADs found!\nPlease place your WAD files into %s.' % os.path.realpath(SRC_WAD_DIR))
         logfile.close()
+        input_func('Press Enter to exit.\n')
         return
     logg('Found in %s: ' % SRC_WAD_DIR + ', '.join(found))
     logg('A new PK3 format IWAD will be generated with the following episodes:')
@@ -384,10 +390,10 @@ def main():
             logg('IWAD %s not found' % iwad_name)
             continue
         if iwad_name == 'nerve' and not get_wad_filename('doom2'):
-            logg('Skipping nerve.wad as doom2.wad is not present')
+            logg('Skipping nerve.wad as doom2.wad is not present', error=True)
             continue
         if iwad_name == 'sigil' and not get_wad_filename('doom'):
-            logg('Skipping SIGIL.wad as doom.wad is not present')
+            logg('Skipping SIGIL.wad as doom.wad is not present', error=True)
             continue
         logg('Processing IWAD %s...' % iwad_name)
         if should_extract:
@@ -397,7 +403,7 @@ def main():
         if should_extract:
             extract_master_levels()
     else:
-        logg('Skipping Master Levels as doom2.wad is not present')
+        logg('Skipping Master Levels as doom2.wad is not present', error=True)
     # only supported versions of these @ http://classicdoom.com/xboxspec.htm
     if get_wad_filename('sewers') and get_wad_filename('betray') and should_extract:
         add_xbox_levels()
@@ -414,6 +420,8 @@ def main():
     logg('Done!')
     elapsed_time = time.time() - start_time
     logg('Generated %s with %s episodes and %s maps in %.2f seconds.' % (DEST_FILENAME, num_eps, num_maps, elapsed_time))
+    if num_errors > 0:
+        logg('%s errors found, see %s for details.' % (num_errors, LOG_FILENAME))
     input_func('Press Enter to exit.\n')
     logfile.close()
 
