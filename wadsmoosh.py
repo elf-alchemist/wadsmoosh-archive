@@ -350,6 +350,7 @@ def main():
     title_line = 'WadSmoosh v%s' % WADSMOOSH_VERSION
     logg(title_line + '\n' + '-' * len(title_line))
     found = get_report_found()
+    input_func = raw_input if sys.version_info.major < 3 else input
     # bail if no wads in SRC_WAD_DIR
     if len(found) == 0:
         logg('No source WADs found!\nPlease place your WAD files into %s.' % os.path.realpath(SRC_WAD_DIR))
@@ -361,7 +362,6 @@ def main():
     for num_eps,ep_name in enumerate(get_eps(found)):
         logg('- %s' % ep_name)
     num_eps += 1
-    input_func = raw_input if sys.version_info.major < 3 else input
     i = input_func('Press Y and then Enter to proceed, anything else to cancel: ')
     if i.lower() != 'y':
         logg('Canceled.')
