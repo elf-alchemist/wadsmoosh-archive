@@ -17,7 +17,7 @@ RES_FILES = [
     'menudef.txt', 'cvarinfo.txt'
 ]
 
-IWADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve', 'sigil']
+IWADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve', 'sigil', 'sigil_shreds']
 
 # lists of lumps common to doom 1+2
 COMMON_LUMPS = [
@@ -40,7 +40,9 @@ WAD_LUMP_LISTS = {
     'doom2': COMMON_LUMPS + DOOM2_LUMPS,
     'tnt': ['graphics_tnt', 'music_tnt', 'patches_tnt'],
     'plutonia': ['graphics_plutonia', 'music_plutonia', 'patches_plutonia'],
-    'sigil': ['graphics_sigil', 'music_sigil', 'patches_sigil', 'data_sigil']
+    'sigil': ['graphics_sigil', 'music_sigil', 'patches_sigil', 'data_sigil'],
+    # (buckethead tracks use the same names as jimmy's midi)
+    'sigil_shreds': ['music_sigil']
 }
 
 # prefixes for filenames of maps extracted from IWADs

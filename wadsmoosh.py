@@ -321,7 +321,7 @@ def copy_resources():
 
 def get_report_found():
     found = []
-    for wadname in ['doom', 'sigil', 'doom2', 'nerve', 'attack', 'tnt', 'plutonia', 'sewers', 'betray']:
+    for wadname in ['doom', 'sigil', 'sigil_shreds', 'doom2', 'nerve', 'attack', 'tnt', 'plutonia', 'sewers', 'betray']:
         if get_wad_filename(wadname):
             found.append(wadname)
     return found
@@ -395,10 +395,16 @@ def main():
         if iwad_name == 'sigil' and not get_wad_filename('doom'):
             logg('Skipping SIGIL.wad as doom.wad is not present', error=True)
             continue
+        if iwad_name == 'sigil_shreds' and not get_wad_filename('sigil'):
+            logg('Skipping SIGIL_SHREDS.wad as SIGIL.wad is not present', error=True)
+            continue
         logg('Processing IWAD %s...' % iwad_name)
         if should_extract:
             extract_lumps(iwad_name)
-            extract_iwad_maps(iwad_name, WAD_MAP_PREFIXES[iwad_name])
+            prefix = WAD_MAP_PREFIXES.get(iwad_name, None)
+            # check None, not empty string!
+            if prefix is not None:
+                extract_iwad_maps(iwad_name, prefix)
     if get_wad_filename('doom2'):
         if should_extract:
             extract_master_levels()
@@ -408,7 +414,7 @@ def main():
     if get_wad_filename('sewers') and get_wad_filename('betray') and should_extract:
         add_xbox_levels()
     # create pk3
-    logg('Creating %s...' % DEST_FILENAME)
+    logg('Compressing %s...' % DEST_FILENAME)
     pk3 = ZipFile(DEST_FILENAME, 'w', ZIP_DEFLATED)
     for dir_name, x, filenames in os.walk(DEST_DIR):
         for filename in filenames:
@@ -419,7 +425,8 @@ def main():
     pk3.close()
     logg('Done!')
     elapsed_time = time.time() - start_time
-    logg('Generated %s with %s episodes and %s maps in %.2f seconds.' % (DEST_FILENAME, num_eps, num_maps, elapsed_time))
+    ipk3_size =  os.path.getsize(DEST_FILENAME) / 1000000
+    logg('Generated %s (%.1f MB) with %s maps in %s episodes in %.2f seconds.' % (DEST_FILENAME, ipk3_size, num_maps, num_eps, elapsed_time))
     if num_errors > 0:
         logg('%s errors found, see %s for details.' % (num_errors, LOG_FILENAME))
     input_func('Press Enter to exit.\n')
