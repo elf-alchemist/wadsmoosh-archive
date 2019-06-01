@@ -109,7 +109,7 @@ map E5M8 "$HUSTR_E5M8"
 {
 	levelnum = 48
 	titlepatch = "WILV47"
-	next = EndPic, "CREDIT"
+	next = EndPic, "SCREDIT"
 	nosoundclipping
 	music = "D_E5M8"
 	nocrouch
