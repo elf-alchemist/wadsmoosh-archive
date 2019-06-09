@@ -8,7 +8,7 @@ map E5M1 "$HUSTR_E5M1"
 	nocrouch
 	nojump
 	sky1 = "SKY5"
-	cluster = 24
+	cluster = 25
 	enterpic = "SIGILINT"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
@@ -23,7 +23,7 @@ map E5M2 "$HUSTR_E5M2"
 	nocrouch
 	nojump
 	sky1 = "SKY5"
-	cluster = 24
+	cluster = 25
 	enterpic = "SIGILINT"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
@@ -38,7 +38,7 @@ map E5M3 "$HUSTR_E5M3"
 	nocrouch
 	nojump
 	sky1 = "SKY5"
-	cluster = 24
+	cluster = 25
 	enterpic = "SIGILINT"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
@@ -53,7 +53,7 @@ map E5M4 "$HUSTR_E5M4"
 	nocrouch
 	nojump
 	sky1 = "SKY5"
-	cluster = 24
+	cluster = 25
 	enterpic = "SIGILINT"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
@@ -68,7 +68,7 @@ map E5M5 "$HUSTR_E5M5"
 	nocrouch
 	nojump
 	sky1 = "SKY5"
-	cluster = 24
+	cluster = 25
 	enterpic = "SIGILINT"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
@@ -84,7 +84,7 @@ map E5M6 "$HUSTR_E5M6"
 	nocrouch
 	nojump
 	sky1 = "SKY5"
-	cluster = 24
+	cluster = 25
 	enterpic = "SIGILINT"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
@@ -99,7 +99,7 @@ map E5M7 "$HUSTR_E5M7"
 	nocrouch
 	nojump
 	sky1 = "SKY5"
-	cluster = 24
+	cluster = 25
 	enterpic = "SIGILINT"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
@@ -115,7 +115,7 @@ map E5M8 "$HUSTR_E5M8"
 	nocrouch
 	nojump
 	sky1 = "SKY5"
-	cluster = 24
+	cluster = 25
 	enterpic = "SIGILINT"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
@@ -130,13 +130,13 @@ map E5M9 "$HUSTR_E5M9"
 	nocrouch
 	nojump
 	sky1 = "SKY5"
-	cluster = 24
+	cluster = 25
 	enterpic = "SIGILINT"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
 }
 
-cluster 24
+cluster 25
 {
 	flat = "FLOOR7_2"
 	music = "S_INTRO"
