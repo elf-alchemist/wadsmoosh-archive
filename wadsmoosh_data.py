@@ -76,14 +76,14 @@ MASTER_LEVELS_PATCHES = {
 # RSKY1 unless defined here
 MASTER_LEVELS_SKIES = {
     'combine': 'ML_SKY1',
-    'fistula': 'ML_SKY1',
     'manor': 'ML_SKY2',
     'ttrap': 'ML_SKY2',
     'virgil': 'ML_SKY3',
     'minos': 'ML_SKY3',
     'nessus': 'ML_SKY3',
     'geryon': 'ML_SKY3',
-    'vesperas': 'ML_SKY3'
+    'vesperas': 'ML_SKY3',
+    'blacktwr': 'RSKY3' # map25
 }
 
 # doom2 music lumps for each map
