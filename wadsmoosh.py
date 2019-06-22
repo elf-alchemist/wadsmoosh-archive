@@ -5,7 +5,7 @@ from zipfile import ZipFile, ZIP_DEFLATED
 
 import omg
 
-WADSMOOSH_VERSION = 1.1
+VERSION_FILENAME = 'version'
 
 # if False, do a dry run with no actual file writing
 should_extract = True
@@ -347,7 +347,8 @@ def get_eps(wads_found):
 
 def main():
     start_time = time.time()
-    title_line = 'WadSmoosh v%s' % WADSMOOSH_VERSION
+    version = open(VERSION_FILENAME).readlines()[0].strip()
+    title_line = 'WadSmoosh v%s' % version
     logg(title_line + '\n' + '-' * len(title_line))
     found = get_report_found()
     input_func = raw_input if sys.version_info.major < 3 else input
