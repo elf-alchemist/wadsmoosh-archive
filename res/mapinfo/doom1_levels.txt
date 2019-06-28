@@ -25,6 +25,7 @@ map E1M10 lookup "HUSTR_E1M10"
 	music = "$MUSIC_E2M1"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI1"
+	par = 150
 }
 
 map E1M2 lookup "HUSTR_E1M2"
