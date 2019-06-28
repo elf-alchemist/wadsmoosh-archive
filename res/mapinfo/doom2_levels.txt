@@ -34,6 +34,7 @@ map MAP33 lookup "HUSTR_33"
 	sky1 = "RSKY1"
 	cluster = 5
 	music = "D_READ_M"
+	par = 120
 }
 
 map MAP03 lookup "HUSTR_3"
