@@ -196,6 +196,21 @@ pic PWFALL2 tics 8
 pic PWFALL3 tics 8
 pic PWFALL4 tics 8
 
+texture optional PWFALL2
+pic PWFALL3 tics 8
+pic PWFALL4 tics 8
+pic PWFALL1 tics 8
+
+texture optional PWFALL3
+pic PWFALL4 tics 8
+pic PWFALL1 tics 8
+pic PWFALL2 tics 8
+
+texture optional PWFALL4
+pic PWFALL1 tics 8
+pic PWFALL2 tics 8
+pic PWFALL3 tics 8
+
 texture optional PBRAIN1
 pic MC2 tics 8
 pic MC3 tics 8
