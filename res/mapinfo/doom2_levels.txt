@@ -22,7 +22,7 @@ map MAP02 lookup "HUSTR_2"
 	titlepatch = "CWILV01"
 	sky1 = "RSKY1"
 	cluster = 5
-	par = 120
+	par = 90
 	music = "$MUSIC_STALKS"
 }
 

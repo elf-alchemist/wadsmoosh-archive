@@ -99,6 +99,7 @@ def get_ml_mapinfo(wad_name, map_number):
         lines.append('    secretnext = "ML_MAP21"')
     lines.append('    sky1 = "%s"' % sky)
     lines.append('    music = "$MUSIC_%s"' % music)
+    # cluster # here should match the defs near bottom of wadsmoosh_data.py
     lines.append('    cluster = 24')
     lines.append('    titlepatch = "MWILV%s"' % picnum)
     if wad_name in MASTER_LEVELS_MAP07_SPECIAL:
