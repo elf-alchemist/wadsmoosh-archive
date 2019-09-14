@@ -11,6 +11,7 @@ map PL_MAP01 lookup "PHUSTR_1"
 	music = "P_RUNNIN"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP02 lookup "PHUSTR_2"
@@ -24,6 +25,7 @@ map PL_MAP02 lookup "PHUSTR_2"
 	music = "P_STALKS"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP03 lookup "PHUSTR_3"
@@ -37,6 +39,7 @@ map PL_MAP03 lookup "PHUSTR_3"
 	music = "P_COUNTD"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP04 lookup "PHUSTR_4"
@@ -50,6 +53,7 @@ map PL_MAP04 lookup "PHUSTR_4"
 	music = "P_BETWEE"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP05 lookup "PHUSTR_5"
@@ -63,6 +67,7 @@ map PL_MAP05 lookup "PHUSTR_5"
 	music = "P_DOOM"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP06 lookup "PHUSTR_6"
@@ -76,6 +81,7 @@ map PL_MAP06 lookup "PHUSTR_6"
 	music = "P_THE_DA"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP07 lookup "PHUSTR_7"
@@ -90,6 +96,7 @@ map PL_MAP07 lookup "PHUSTR_7"
 	music = "P_SHAWN"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP08 lookup "PHUSTR_8"
@@ -103,6 +110,7 @@ map PL_MAP08 lookup "PHUSTR_8"
 	music = "P_DDTBLU"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP09 lookup "PHUSTR_9"
@@ -116,6 +124,7 @@ map PL_MAP09 lookup "PHUSTR_9"
 	music = "P_IN_CIT"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP10 lookup "PHUSTR_10"
@@ -129,6 +138,7 @@ map PL_MAP10 lookup "PHUSTR_10"
 	music = "P_DEAD"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP11 lookup "PHUSTR_11"
@@ -142,6 +152,7 @@ map PL_MAP11 lookup "PHUSTR_11"
 	music = "P_STLKS2"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP12 lookup "PHUSTR_12"
@@ -155,6 +166,7 @@ map PL_MAP12 lookup "PHUSTR_12"
 	music = "P_THEDA2"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP13 lookup "PHUSTR_13"
@@ -168,6 +180,7 @@ map PL_MAP13 lookup "PHUSTR_13"
 	music = "P_DOOM2"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP14 lookup "PHUSTR_14"
@@ -181,6 +194,7 @@ map PL_MAP14 lookup "PHUSTR_14"
 	music = "P_DDTBL2"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP15 lookup "PHUSTR_15"
@@ -194,6 +208,7 @@ map PL_MAP15 lookup "PHUSTR_15"
 	music = "P_RUNNI2"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP16 lookup "PHUSTR_16"
@@ -207,6 +222,7 @@ map PL_MAP16 lookup "PHUSTR_16"
 	music = "P_DEAD2"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP17 lookup "PHUSTR_17"
@@ -220,6 +236,7 @@ map PL_MAP17 lookup "PHUSTR_17"
 	music = "P_STLKS3"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP18 lookup "PHUSTR_18"
@@ -233,6 +250,7 @@ map PL_MAP18 lookup "PHUSTR_18"
 	music = "P_ROMERO"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP19 lookup "PHUSTR_19"
@@ -246,6 +264,7 @@ map PL_MAP19 lookup "PHUSTR_19"
 	music = "P_SHAWN2"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP20 lookup "PHUSTR_20"
@@ -259,6 +278,7 @@ map PL_MAP20 lookup "PHUSTR_20"
 	music = "P_MESSAG"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP21 lookup "PHUSTR_21"
@@ -272,6 +292,7 @@ map PL_MAP21 lookup "PHUSTR_21"
 	music = "P_COUNT2"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP22 lookup "PHUSTR_22"
@@ -285,6 +306,7 @@ map PL_MAP22 lookup "PHUSTR_22"
 	music = "P_DDTBL3"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP23 lookup "PHUSTR_23"
@@ -298,6 +320,7 @@ map PL_MAP23 lookup "PHUSTR_23"
 	music = "P_AMPIE"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP24 lookup "PHUSTR_24"
@@ -311,6 +334,7 @@ map PL_MAP24 lookup "PHUSTR_24"
 	music = "P_THEDA3"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP25 lookup "PHUSTR_25"
@@ -324,6 +348,7 @@ map PL_MAP25 lookup "PHUSTR_25"
 	music = "P_ADRIAN"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP26 lookup "PHUSTR_26"
@@ -337,6 +362,7 @@ map PL_MAP26 lookup "PHUSTR_26"
 	music = "P_MESSG2"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP27 lookup "PHUSTR_27"
@@ -350,6 +376,7 @@ map PL_MAP27 lookup "PHUSTR_27"
 	music = "P_ROMER2"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP28 lookup "PHUSTR_28"
@@ -363,6 +390,7 @@ map PL_MAP28 lookup "PHUSTR_28"
 	music = "P_TENSE"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP29 lookup "PHUSTR_29"
@@ -376,6 +404,7 @@ map PL_MAP29 lookup "PHUSTR_29"
 	music = "P_SHAWN3"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP30 lookup "PHUSTR_30"
@@ -391,6 +420,7 @@ map PL_MAP30 lookup "PHUSTR_30"
 		pic = "PLUBOSS"
 		cast
 	}
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP31 lookup "PHUSTR_31"
@@ -404,6 +434,7 @@ map PL_MAP31 lookup "PHUSTR_31"
 	music = "P_EVIL"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP32 lookup "PHUSTR_32"
@@ -417,6 +448,7 @@ map PL_MAP32 lookup "PHUSTR_32"
 	music = "P_ULTIMA"
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	Author = "$WS_AU_CASALIS"
 }
 
 // Plutonia first cluster (up thru level 6)

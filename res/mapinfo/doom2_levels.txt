@@ -13,6 +13,7 @@ map MAP01 lookup "HUSTR_1"
 	cluster = 5
 	par = 30
 	music = "$MUSIC_RUNNIN"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP02 lookup "HUSTR_2"
@@ -24,6 +25,7 @@ map MAP02 lookup "HUSTR_2"
 	cluster = 5
 	par = 90
 	music = "$MUSIC_STALKS"
+	Author = "$WS_AU_MCGEE"
 }
 
 map MAP33 lookup "HUSTR_33"
@@ -35,6 +37,7 @@ map MAP33 lookup "HUSTR_33"
 	cluster = 5
 	music = "D_READ_M"
 	par = 120
+	Author = "$WS_AU_BUKOWSKI"
 }
 
 map MAP03 lookup "HUSTR_3"
@@ -46,6 +49,7 @@ map MAP03 lookup "HUSTR_3"
 	cluster = 5
 	par = 120
 	music = "$MUSIC_COUNTD"
+	Author = "$WS_AU_MCGEE"
 }
 
 map MAP04 lookup "HUSTR_4"
@@ -57,6 +61,7 @@ map MAP04 lookup "HUSTR_4"
 	cluster = 5
 	par = 120
 	music = "$MUSIC_BETWEE"
+	Author = "$WS_AU_MCGEE"
 }
 
 map MAP05 lookup "HUSTR_5"
@@ -68,6 +73,7 @@ map MAP05 lookup "HUSTR_5"
 	cluster = 5
 	par = 90
 	music = "$MUSIC_DOOM"
+	Author = "$WS_AU_MCGEE"
 }
 
 map MAP06 lookup "HUSTR_6"
@@ -80,6 +86,7 @@ map MAP06 lookup "HUSTR_6"
 	par = 150
 	sucktime = 1
 	music = "$MUSIC_THE_DA"
+	Author = "$WS_AU_MCGEE"
 }
 
 map MAP07 lookup "HUSTR_7"
@@ -92,6 +99,7 @@ map MAP07 lookup "HUSTR_7"
 	par = 120
 	map07special
 	music = "$MUSIC_SHAWN"
+	Author = "$WS_AU_MCGEE_PETERSEN"
 }
 
 map MAP08 lookup "HUSTR_8"
@@ -103,6 +111,7 @@ map MAP08 lookup "HUSTR_8"
 	cluster = 6
 	par = 120
 	music = "$MUSIC_DDTBLU"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP09 lookup "HUSTR_9"
@@ -114,6 +123,7 @@ map MAP09 lookup "HUSTR_9"
 	cluster = 6
 	par = 270
 	music = "$MUSIC_IN_CIT"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP10 lookup "HUSTR_10"
@@ -125,6 +135,7 @@ map MAP10 lookup "HUSTR_10"
 	cluster = 6
 	par = 90
 	music = "$MUSIC_DEAD"
+	Author = "$WS_AU_PETERSEN_HALL"
 }
 
 map MAP11 lookup "HUSTR_11"
@@ -136,6 +147,7 @@ map MAP11 lookup "HUSTR_11"
 	cluster = 6
 	par = 210
 	music = "$MUSIC_STLKS2"
+	Author = "$WS_AU_ROMERO"
 }
 
 map MAP12 lookup "HUSTR_12"
@@ -147,6 +159,7 @@ map MAP12 lookup "HUSTR_12"
 	cluster = 7
 	par = 150
 	music = "$MUSIC_THEDA2"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP13 lookup "HUSTR_13"
@@ -158,6 +171,7 @@ map MAP13 lookup "HUSTR_13"
 	cluster = 7
 	par = 150
 	music = "$MUSIC_DOOM2"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP14 lookup "HUSTR_14"
@@ -169,6 +183,7 @@ map MAP14 lookup "HUSTR_14"
 	cluster = 7
 	par = 150
 	music = "$MUSIC_DDTBL2"
+	Author = "$WS_AU_MCGEE"
 }
 
 map MAP15 lookup "HUSTR_15"
@@ -180,6 +195,7 @@ map MAP15 lookup "HUSTR_15"
 	cluster = 7
 	par = 210
 	music = "$MUSIC_RUNNI2"
+	Author = "$WS_AU_ROMERO"
 }
 
 map MAP16 lookup "HUSTR_16"
@@ -191,6 +207,7 @@ map MAP16 lookup "HUSTR_16"
 	cluster = 7
 	par = 150
 	music = "$MUSIC_DEAD2"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP17 lookup "HUSTR_17"
@@ -202,6 +219,7 @@ map MAP17 lookup "HUSTR_17"
 	cluster = 7
 	par = 420
 	music = "$MUSIC_STLKS3"
+	Author = "$WS_AU_ROMERO"
 }
 
 map MAP18 lookup "HUSTR_18"
@@ -213,6 +231,7 @@ map MAP18 lookup "HUSTR_18"
 	cluster = 7
 	par = 150
 	music = "$MUSIC_ROMERO"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP19 lookup "HUSTR_19"
@@ -224,6 +243,7 @@ map MAP19 lookup "HUSTR_19"
 	cluster = 7
 	par = 210
 	music = "$MUSIC_SHAWN2"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP20 lookup "HUSTR_20"
@@ -235,6 +255,7 @@ map MAP20 lookup "HUSTR_20"
 	cluster = 7
 	par = 150
 	music = "$MUSIC_MESSAG"
+	Author = "$WS_AU_ROMERO"
 }
 
 map MAP21 lookup "HUSTR_21"
@@ -246,6 +267,7 @@ map MAP21 lookup "HUSTR_21"
 	cluster = 8
 	par = 240
 	music = "$MUSIC_COUNT2"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP22 lookup "HUSTR_22"
@@ -257,6 +279,7 @@ map MAP22 lookup "HUSTR_22"
 	cluster = 8
 	par = 150
 	music = "$MUSIC_DDTBL3"
+	Author = "$WS_AU_MCGEE"
 }
 
 map MAP23 lookup "HUSTR_23"
@@ -268,6 +291,7 @@ map MAP23 lookup "HUSTR_23"
 	cluster = 8
 	par = 180
 	music = "$MUSIC_AMPIE"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP24 lookup "HUSTR_24"
@@ -279,6 +303,7 @@ map MAP24 lookup "HUSTR_24"
 	cluster = 8
 	par = 150
 	music = "$MUSIC_THEDA3"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP25 lookup "HUSTR_25"
@@ -290,6 +315,7 @@ map MAP25 lookup "HUSTR_25"
 	cluster = 8
 	par = 150
 	music = "$MUSIC_ADRIAN"
+	Author = "$WS_AU_GREEN"
 }
 
 map MAP26 lookup "HUSTR_26"
@@ -301,6 +327,7 @@ map MAP26 lookup "HUSTR_26"
 	cluster = 8
 	par = 300
 	music = "$MUSIC_MESSG2"
+	Author = "$WS_AU_ROMERO"
 }
 
 map MAP27 lookup "HUSTR_27"
@@ -312,6 +339,7 @@ map MAP27 lookup "HUSTR_27"
 	cluster = 8
 	par = 330
 	music = "$MUSIC_ROMER2"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP28 lookup "HUSTR_28"
@@ -323,6 +351,7 @@ map MAP28 lookup "HUSTR_28"
 	cluster = 8
 	par = 420
 	music = "$MUSIC_TENSE"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP29 lookup "HUSTR_29"
@@ -334,6 +363,7 @@ map MAP29 lookup "HUSTR_29"
 	cluster = 8
 	par = 300
 	music = "$MUSIC_SHAWN3"
+	Author = "$WS_AU_ROMERO"
 }
 
 map MAP30 lookup "HUSTR_30"
@@ -346,6 +376,7 @@ map MAP30 lookup "HUSTR_30"
 	par = 180
 	allowmonstertelefrags
 	music = "$MUSIC_OPENIN"
+	Author = "$WS_AU_PETERSEN"
 }
 
 // DOOM II first cluster (up thru level 6)
@@ -415,6 +446,7 @@ map NV_MAP01 lookup "NHUSTR_1"
 	titlepatch = "NWILV00"
 	par = 75
 	music = "$MUSIC_MESSAG"
+	Author = "$WS_AU_MEAKIM"
 }
 
 map NV_MAP02 lookup "NHUSTR_2"
@@ -426,6 +458,7 @@ map NV_MAP02 lookup "NHUSTR_2"
 	titlepatch = "NWILV01"
 	par = 105
 	music = "$MUSIC_DDTBLU"
+	Author = "$WS_AU_IWAKURA"
 }
 
 map NV_MAP03 lookup "NHUSTR_3"
@@ -437,6 +470,7 @@ map NV_MAP03 lookup "NHUSTR_3"
 	titlepatch = "NWILV02"
 	par = 120
 	music = "$MUSIC_DOOM"
+	Author = "$WS_AU_MEAKIM"
 }
 
 map NV_MAP04 lookup "NHUSTR_4"
@@ -448,6 +482,7 @@ map NV_MAP04 lookup "NHUSTR_4"
 	titlepatch = "NWILV03"
 	par = 105
 	music = "$MUSIC_SHAWN"
+	Author = "$WS_AU_MEAKIM"
 }
 
 map NV_MAP05 lookup "NHUSTR_5"
@@ -459,6 +494,7 @@ map NV_MAP05 lookup "NHUSTR_5"
 	titlepatch = "NWILV04"
 	par = 210
 	music = "$MUSIC_IN_CIT"
+	Author = "$WS_AU_IWAKURA"
 }
 
 map NV_MAP06 lookup "NHUSTR_6"
@@ -471,6 +507,7 @@ map NV_MAP06 lookup "NHUSTR_6"
 	par = 105
 	sucktime = 1
 	music = "$MUSIC_THE_DA"
+	Author = "$WS_AU_IWAKURA"
 }
 
 map NV_MAP07 lookup "NHUSTR_7"
@@ -483,6 +520,7 @@ map NV_MAP07 lookup "NHUSTR_7"
 	par = 165
 	map07special
 	music = "$MUSIC_IN_CIT"
+	Author = "$WS_AU_IWAKURA"
 }
 
 map NV_MAP08 lookup "NHUSTR_8"
@@ -494,6 +532,7 @@ map NV_MAP08 lookup "NHUSTR_8"
 	titlepatch = "NWILV07"
 	par = 105
 	music = "$MUSIC_SHAWN"
+	Author = "$WS_AU_IWAKURA"
 }
 
 map NV_MAP09 lookup "NHUSTR_9"
@@ -505,6 +544,7 @@ map NV_MAP09 lookup "NHUSTR_9"
 	cluster = 11
 	par = 135
 	music = "$MUSIC_DDTBLU"
+	Author = "$WS_AU_MEAKIM"
 }
 
 cluster 11

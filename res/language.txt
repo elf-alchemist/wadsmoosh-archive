@@ -31,6 +31,56 @@ WS_CRED_WS_LIBRARY = "Omgifol Library";
 WS_CRED_LD1 = "Level Designer";
 WS_CRED_TEST = "Playtesters";
 
+//
+// map author names
+//
+// doom1/2
+WS_AU_ROMERO = "John Romero";
+WS_AU_ROMERO_HALL = "John Romero & Tom Hall";
+WS_AU_PETERSEN_HALL = "Sandy Petersen & Tom Hall";
+WS_AU_PETERSEN = "Sandy Petersen";
+WS_AU_MCGEE = "American McGee";
+WS_AU_GREEN = "Shawn Green";
+WS_AU_WILLITS_CHASAR = "Tim Willits & Theresa Chasar";
+WS_AU_ANDERSON = "John \"Dr. Sleep\" Anderson";
+WS_AU_WILLITS = "Tim Willits";
+WS_AU_MCGEE_PETERSEN = "American McGee & Sandy Petersen";
+// master levels
+WS_AU_KLIE = "Chris Klie";
+WS_AU_MUSTAINE = "Tom Mustaine";
+WS_AU_KVERNMO = "Sverre André Kvernmo";
+WS_AU_FLYNN = "Jim Flynn";
+// nerve
+WS_AU_MEAKIM = "Russell Meakim";
+WS_AU_IWAKURA = "Arya Iwakura";
+// tnt + plutonia
+WS_AU_WAKELIN = "John Wakelin";
+WS_AU_PATENALL_MINADEO = "Robin Patenall & John Minadeo";
+WS_AU_TY_HALDERMAN = "Ty Halderman";
+WS_AU_DETHLEFSEN = "Jim Dethlefsen";
+WS_AU_SIEBEN_HALDERMAN = "Jimmy Sieben & Ty Halderman";
+WS_AU_DOWSWELL = "Andrew Dowswell";
+WS_AU_MINADEO = "John Minadeo";
+WS_AU_JOHNSON = "Dean Johnson";
+WS_AU_LOWELL = "Jim Lowell";
+WS_AU_KIDBY_HALDERMAN = "Brian Kidby & Ty Halderman";
+WS_AU_PATENALL = "Robin Patenall";
+WS_AU_WHITAKER = "William D. Whitaker";
+WS_AU_ARSENAULT = "Andre Arsenault";
+WS_AU_CASALI_HALDERMAN = "Dario Casali & Ty Halderman";
+WS_AU_OBRIEN = "Drake O'Brien";
+WS_AU_BUTEAU = "Christopher Buteau";
+WS_AU_TURNBULL = "Paul Turnbull";
+WS_AU_MENTZER = "Jim Mentzer";
+WS_AU_SNELL_LOWELL = "Mark Snell & Jim Lowell";
+WS_AU_MILO_CASALI = "Milo Casali";
+WS_AU_SIEBEN = "Jimmy Sieben";
+WS_AU_DARIO_CASALI = "Dario Casali";
+WS_AU_CASALIS = "Dario & Milo Casali";
+// xbox secret levels
+WS_AU_CALVIN = "David Calvin";
+WS_AU_BUKOWSKI = "Michael Bukowski";
+
 // episode names
 UD1NAME = "The Ultimate Doom";
 D2E1NAME = "Doom II: Hell on Earth";

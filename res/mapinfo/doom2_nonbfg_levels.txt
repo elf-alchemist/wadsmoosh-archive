@@ -7,6 +7,7 @@ map MAP31 lookup "HUSTR_31"
 	cluster = 9
 	par = 120
 	music = "$MUSIC_EVIL"
+	Author = "$WS_AU_PETERSEN"
 }
 
 map MAP32 lookup "HUSTR_32"
@@ -18,4 +19,5 @@ map MAP32 lookup "HUSTR_32"
 	cluster = 10
 	par = 30
 	music = "$MUSIC_ULTIMA"
+	Author = "$WS_AU_PETERSEN"
 }

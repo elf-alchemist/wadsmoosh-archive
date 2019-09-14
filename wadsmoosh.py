@@ -33,6 +33,8 @@ MASTER_LEVELS_PATCHES = {}
 MASTER_LEVELS_SKIES = {}
 MASTER_LEVELS_MUSIC = {}
 MASTER_LEVELS_MAP07_SPECIAL = []
+MASTER_LEVELS_AUTHOR_PREFIX = ''
+MASTER_LEVELS_AUTHORS = {}
 
 logfile = None
 
@@ -94,6 +96,7 @@ def get_ml_mapinfo(wad_name, map_number):
     next_map = '%sMAP%s' % (prefix, nextnum) if map_number < 20 else 'EndGameC'
     sky = MASTER_LEVELS_SKIES.get(wad_name, None) or 'RSKY1'
     music = MASTER_LEVELS_MUSIC[wad_name]
+    author_lc = '%s_%s' % (MASTER_LEVELS_AUTHOR_PREFIX, MASTER_LEVELS_AUTHORS[wad_name])
     lines.append('    next = "%s"' % next_map)
     if wad_name == 'teeth':
         lines.append('    secretnext = "ML_MAP21"')
@@ -101,7 +104,8 @@ def get_ml_mapinfo(wad_name, map_number):
     lines.append('    music = "$MUSIC_%s"' % music)
     # cluster # here should match the defs near bottom of wadsmoosh_data.py
     lines.append('    cluster = 24')
-    lines.append('    titlepatch = "MWILV%s"' % picnum)
+    #lines.append('    titlepatch = "MWILV%s"' % picnum)
+    lines.append('    Author = "$%s"' % author_lc)
     if wad_name in MASTER_LEVELS_MAP07_SPECIAL:
         lines.append('    map07special')
     # don't reset player for secret level
@@ -153,7 +157,8 @@ def extract_master_levels():
     else:
         next_map = '%sMAP%s' % (MASTER_LEVELS_MAP_PREFIX.upper(),
                                 ml_map_order.index('teeth') + 2)
-    mapinfo.write(MASTER_LEVELS_SECRET_DEF % (next_map, MASTER_LEVELS_MUSIC['teeth2']))
+    mapinfo.write(MASTER_LEVELS_SECRET_DEF % (next_map, MASTER_LEVELS_MUSIC['teeth2'],
+                                              MASTER_LEVELS_AUTHOR_PREFIX, MASTER_LEVELS_AUTHORS['teeth2']))
     # finish mapinfo
     mapinfo.writelines([MASTER_LEVELS_CLUSTER_DEF])
     mapinfo.close()
@@ -295,15 +300,6 @@ def copy_resources():
             continue
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
-    # special handling for level name lumps
-    for dirname in MAP_NAME_GRAPHICS_DIRS:
-        newdir = DEST_DIR + 'graphics/' + dirname
-        if not os.path.exists(newdir):
-            os.mkdir(newdir)
-        for filename in os.listdir(RES_DIR + 'graphics/' + dirname + '/'):
-            src_file = 'graphics/%s/%s' % (dirname, filename)
-            logg('Copying %s' % src_file)
-            copyfile(RES_DIR + src_file, DEST_DIR + src_file)
     # doom2 vs doom2bfg map31/32 names differ, different mapinfos with same name
     wad = omg.WAD()
     d2_wad_filename = get_wad_filename('doom2')

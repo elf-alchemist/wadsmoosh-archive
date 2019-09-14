@@ -59,8 +59,6 @@ WAD_MAP_PREFIXES = {
     'sigil': ''
 }
 
-MAP_NAME_GRAPHICS_DIRS = ['doom1', 'doom2', 'nerve', 'masterlevels', 'tnt', 'plutonia', 'sigil']
-
 # texture patches to extract from specific master levels PWADs
 MASTER_LEVELS_PATCHES = {
     'combine': ('RSKY1', 'ML_SKY1'),
@@ -122,7 +120,7 @@ map ML_MAP21 lookup "ML_TEETH_SECRET"
     sky1 = "RSKY1"
     music = "$MUSIC_%s"
     cluster = 24
-    titlepatch = "MWILV20"
+    Author = "$%s_%s"
 }
 """
 
@@ -134,3 +132,30 @@ cluster 24
 	exittext = lookup, "M1TEXT"
 }
 """
+
+MASTER_LEVELS_AUTHOR_PREFIX = 'WS_AU'
+
+# author strings
+MASTER_LEVELS_AUTHORS = {
+    'attack':   'WILLITS_CHASAR',
+    'canyon':   'WILLITS_CHASAR',
+    'catwalk':  'KLIE',
+    'fistula':  'KLIE',
+    'combine':  'KLIE',
+    'subspace': 'KLIE',
+    'paradox':  'MUSTAINE',
+    'subterra': 'KLIE',
+    'garrison': 'KLIE',
+    'blacktwr': 'KVERNMO',
+    'virgil':   'ANDERSON',
+    'minos':    'ANDERSON',
+    'nessus':   'ANDERSON',
+    'geryon':   'ANDERSON',
+    'vesperas': 'ANDERSON',
+    'manor':    'FLYNN',
+    'ttrap':    'FLYNN',
+    'teeth':    'KVERNMO',
+    'bloodsea': 'KVERNMO',
+    'mephisto': 'KVERNMO',
+    'teeth2':   'KVERNMO'
+}
