@@ -5,13 +5,14 @@
 
 // ACS fixes for WadSmoosh
 
-#define TNT_TEX_REPLACEMENTS 12
+#define TNT_TEX_REPLACEMENTS 14
 // two arrays; a dict type would be nice :/
 str TNT_TEX_SRC[TNT_TEX_REPLACEMENTS] = {
 	"SW1GSTON", "SW2GSTON",
 	"SKY1",
 	"SW1BRN1", "SW2BRN1",
 	"SW1SKULL", "SW2SKULL",
+	"SW1STARG", "SW2STARG", // same used by plutonia below
 	"SLADRIP1", "SLADRIP3",
 	"BLODGR1", "BLODGR4",
 	"WFALL1"
@@ -21,6 +22,7 @@ str TNT_TEX_DEST[TNT_TEX_REPLACEMENTS] = {
 	"TNT_SKY1",
 	"SW1BRN1T", "SW2BRN1T",
 	"SW1SKULT", "SW2SKULT",
+	"SW1STARP", "SW2STARP",
 	"SLADRPT1", "SLADRPT3",
 	"BLODGRT1", "BLODGRT4",
 	"TWFALL1"
