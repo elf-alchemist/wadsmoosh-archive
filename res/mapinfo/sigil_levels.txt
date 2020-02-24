@@ -13,6 +13,7 @@ map E5M1 "$HUSTR_E5M1"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
 	Author = "$WS_AU_ROMERO"
+	par = 90
 }
 
 map E5M2 "$HUSTR_E5M2"
@@ -29,6 +30,7 @@ map E5M2 "$HUSTR_E5M2"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
 	Author = "$WS_AU_ROMERO"
+	par = 150
 }
 
 map E5M3 "$HUSTR_E5M3"
@@ -45,6 +47,7 @@ map E5M3 "$HUSTR_E5M3"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
 	Author = "$WS_AU_ROMERO"
+	par = 360
 }
 
 map E5M4 "$HUSTR_E5M4"
@@ -61,6 +64,7 @@ map E5M4 "$HUSTR_E5M4"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
 	Author = "$WS_AU_ROMERO"
+	par = 420
 }
 
 map E5M5 "$HUSTR_E5M5"
@@ -77,6 +81,7 @@ map E5M5 "$HUSTR_E5M5"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
 	Author = "$WS_AU_ROMERO"
+	par = 780
 }
 
 map E5M6 "$HUSTR_E5M6"
@@ -94,6 +99,7 @@ map E5M6 "$HUSTR_E5M6"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
 	Author = "$WS_AU_ROMERO"
+	par = 420
 }
 
 map E5M7 "$HUSTR_E5M7"
@@ -110,6 +116,7 @@ map E5M7 "$HUSTR_E5M7"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
 	Author = "$WS_AU_ROMERO"
+	par = 780
 }
 
 map E5M8 "$HUSTR_E5M8"
@@ -127,6 +134,7 @@ map E5M8 "$HUSTR_E5M8"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
 	Author = "$WS_AU_ROMERO"
+	par = 300
 }
 
 map E5M9 "$HUSTR_E5M9"
@@ -143,6 +151,7 @@ map E5M9 "$HUSTR_E5M9"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
 	Author = "$WS_AU_ROMERO"
+	par = 660
 }
 
 cluster 25
