@@ -56,7 +56,7 @@ WS_AU_IWAKURA = "Arya Iwakura";
 // tnt + plutonia
 WS_AU_WAKELIN = "John Wakelin";
 WS_AU_PATENALL_MINADEO = "Robin Patenall & John Minadeo";
-WS_AU_TY_HALDERMAN = "Ty Halderman";
+WS_AU_HALDERMAN = "Ty Halderman";
 WS_AU_DETHLEFSEN = "Jim Dethlefsen";
 WS_AU_SIEBEN_HALDERMAN = "Jimmy Sieben & Ty Halderman";
 WS_AU_DOWSWELL = "Andrew Dowswell";
