@@ -1,2 +1,2 @@
 This file was created by WadSmoosh:
-https://bitbucket.org/JPLeBreton/wadsmoosh
+https://heptapod.host/jp-lebreton/wadsmoosh

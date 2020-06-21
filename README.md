@@ -24,7 +24,7 @@ Advanced users can edit `wadsmoosh_data.py` to customize how and what WadSmoosh 
 
 ## Absolute Beginner's Guide
 
-1. [Download WadSmoosh](https://bitbucket.org/JPLeBreton/wadsmoosh/downloads) and extract it to a folder.
+1. [Download WadSmoosh](https://jp.itch.io/wadsmoosh) and extract it to a folder.
 2. Find the folder(s) where Steam/GoG installed your game(s). For Steam, this will be something like `<Steam folder>\SteamApps\Common\<game name>\base`.
 3. Copy any files you find with a `.WAD` extension to the `source_wads/` subfolder where you extracted WadSmoosh.
 4. Double-click `wadsmoosh.exe`. A console window will pop up to show progress.
