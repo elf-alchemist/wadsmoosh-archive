@@ -1,5 +1,5 @@
 ===========================================================================
-Advanced engine needed  : ZDoom / ZDoom-derived eg GZDoom
+Advanced engine needed  : GZDoom
 Primary purpose         : IWAD Combining Tool
 ===========================================================================
 Title                   : WadSmoosh
@@ -16,8 +16,8 @@ Description             : A tool for combining all official id release
                           A new IWAD file called "doom_complete.pk3" will
                           be generated.
                           
-                          Linux and macOS users can run from included
-                          source with "python wadsmoosh.py".
+                          Linux and macOS users can run from the included
+                          source code with "./wadsmoo.sh".
                           
                           Program logs to wadsmoosh.log as it runs, any
                           errors it encounters will show up there.
@@ -28,10 +28,6 @@ Description             : A tool for combining all official id release
                           Advanced users can edit wadsmoosh_data.py to
                           customize what and how WadSmoosh extracts.
 
-                          If a Doom2 PWAD's sky isn't showing up properly,
-                          try "Legacy Doom2 Sky Compatibility" in the
-                          WadSmoosh Options menu.
-
 Additional Credits to   : ZDoom forums folks for help testing and fixing!
                           Custom title art by Scalliano and Hellser.
                           Episode name art by NightFright.
@@ -40,7 +36,7 @@ Additional Credits to   : ZDoom forums folks for help testing and fixing!
 Inspirational Quote     : "As my son Steve says, just 'smoosh' it in there.
                           It's not a real word, but people seem to know
                           what it means." - Bob Ross
-         
+
 ===========================================================================
 * What is included *
 
@@ -67,7 +63,7 @@ Build Time              : One weekend + a few hours here and there to bugfix
 Editor(s) used          : OMGIFOL, the excellent Python-based lump management
                           library. Playscii for the custom ENDOOM.
 Known Bugs              : Nope
-May Not Run With        : Any non-ZDoom-derived source port.
+May Not Run With        : Any non-GZDoom-derived source port.
                           Mods designed specifically for TNT or Plutonia may
                           have texture errors, as WadSmoosh renames some of
                           the originals to prevent name conflicts.
@@ -91,5 +87,5 @@ further distribution.
 * Where to get the file that this text file describes *
 
 The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
-Web sites: https://bitbucket.org/JPLeBreton/wadsmoosh
-           https://jp.itch.io/wadsmoosh
+Web sites: https://jp.itch.io/wadsmoosh
+           https://heptapod.host/jp-lebreton/wadsmoosh
