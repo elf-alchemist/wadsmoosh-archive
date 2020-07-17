@@ -70,6 +70,18 @@ class WadSmooshHandler : EventHandler
         }
     }
     
+    void DoDoom1PoisonTextureReplacements()
+    {
+        // detect doom1 style map name
+        String mapName = level.MapName.MakeLower();
+        if ( mapName.Left(1) == "e" && mapName.Mid(2, 1) == "m" )
+        {
+            // replace two size-sensitive textures with doom1-specific variants
+            TexMan.ReplaceTextures("BRNPOIS", "BRNPOIS1", 0);
+            TexMan.ReplaceTextures("NUKEPOIS", "NUKPOIS1", 0);
+        }
+    }
+    
     // check if the given sky is the level's current sky, see if that is
     // being overriden, and if so change it. return whether this happened.
     bool CheckSkyOverriden(String skyName, String possibleTrueSkyName)
@@ -82,8 +94,8 @@ class WadSmooshHandler : EventHandler
         if ( skyA == skyB )
             return false;
         //Console.Printf(String.Format("Custom sky! Using %s", possibleTrueSkyName));
-	// use skyA as sky2 if it's the same as sky1, otherwise don't touch it
-	TextureID skyA2 = (level.skytexture1 == level.skytexture2) ? skyA : level.skytexture2;
+        // use skyA as sky2 if it's the same as sky1, otherwise don't touch it
+        TextureID skyA2 = (level.skytexture1 == level.skytexture2) ? skyA : level.skytexture2;
         level.ChangeSky(skyA, skyA2);
         return true;
     }
@@ -100,5 +112,7 @@ class WadSmooshHandler : EventHandler
                 return;
             CheckSkyOverriden("RSKY3", "SKY3");
         }
+        if ( CVar.FindCVar("ws_d1pois_texswap").GetBool() )
+            DoDoom1PoisonTextureReplacements();
     }
 }

@@ -18,6 +18,7 @@ OptionMenu "WadSmooshOptions"
     Title "$WS_MENU_TITLE"
     Option "$WS_MENU_FD_TEXSWAP", "ws_finaldoom_texswap", "OnOff"
     Option "$WS_MENU_D2SKY_COMPAT", "ws_d2sky_compat", "OnOff"
+    Option "$WS_MENU_D1POIS_TEXSWAP", "ws_d1pois_texswap", "OnOff"
 }
 
 OptionMenu "WadSmooshCredits"
