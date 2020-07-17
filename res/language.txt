@@ -2,8 +2,8 @@
 
 // options menu text
 WS_MENU_TITLE = "WadSmoosh Options";
-WS_MENU_SKY_COMPAT = "Legacy Doom2 Sky Compatibility";
 WS_MENU_FD_TEXSWAP = "Final Doom Texture Substitutions";
+WS_MENU_D2SKY_COMPAT = "Doom2 Custom Sky Compatibility";
 WS_MENU_CREDITS = "WadSmoosh Credits";
 WS_NAME = "WadSmoosh";
 

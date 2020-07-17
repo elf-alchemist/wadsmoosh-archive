@@ -1,6 +1,5 @@
 AddOptionMenu "OptionsMenu"
 {
-    StaticText ""
     Submenu "$WS_MENU_TITLE", "WadSmooshOptions"
     Submenu "WadSmoosh Credits", "WadSmooshCredits"
 }
@@ -8,8 +7,8 @@ AddOptionMenu "OptionsMenu"
 OptionMenu "WadSmooshOptions"
 {
     Title "$WS_MENU_TITLE"
-    Option "$WS_MENU_SKY_COMPAT", "ws_sky_compat", "OnOff"
     Option "$WS_MENU_FD_TEXSWAP", "ws_finaldoom_texswap", "OnOff"
+    Option "$WS_MENU_D2SKY_COMPAT", "ws_d2sky_compat", "OnOff"
 }
 
 OptionMenu "WadSmooshCredits"

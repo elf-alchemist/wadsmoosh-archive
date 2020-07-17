@@ -1,0 +1,104 @@
+
+version "2.5.0"
+
+class WadSmooshHandler : EventHandler
+{
+    // Dictionary type would make this waaay simpler, but it requires GZD >=4.3
+    const TNT_TEX_REPLACEMENTS = 14;
+    static const String TNT_TEX_SRC[] = {
+        "SW1GSTON", "SW2GSTON",
+        "SKY1",
+        "SW1BRN1", "SW2BRN1",
+        "SW1SKULL", "SW2SKULL",
+        "SW1STARG", "SW2STARG", // same used by plutonia below
+        "SLADRIP1", "SLADRIP3",
+        "BLODGR1", "BLODGR4",
+        "WFALL1"
+    };
+    static const String TNT_TEX_DEST[] = {
+        "SW1GSTNT", "SW2GSTNT",
+        "TNT_SKY1",
+        "SW1BRN1T", "SW2BRN1T",
+        "SW1SKULT", "SW2SKULT",
+        "SW1STARP", "SW2STARP",
+        "SLADRPT1", "SLADRPT3",
+        "BLODGRT1", "BLODGRT4",
+        "TWFALL1"
+    };
+    const PLUT_TEX_REPLACEMENTS = 15;
+    static const String PLUT_TEX_SRC[] = {
+        "DBRAIN1", "DBRAIN4",
+        "FIREBLU1", "FIREBLU2",
+        "SW1SKULL", "SW2SKULL",
+        "SKY3",
+        "SW1BRN1", "SW2BRN1",
+        "SW1STARG", "SW2STARG",
+        "WFALL1", "WFALL2",
+        "WFALL3", "WFALL4"
+    };
+    static const String PLUT_TEX_DEST[] = {
+        "PBRAIN1", "PBRAIN4",
+        "FIREPLU1", "FIREPLU2",
+        "SW1SKULP", "SW2SKULP",
+        "PSKY3",
+        "SW1BRN1T", "SW2BRN1T",
+        "SW1STARP", "SW2STARP",
+        "PWFALL1", "PWFALL2",
+        "PWFALL3", "PWFALL4"
+    };
+    
+    void DoFinalDoomTextureReplacements()
+    {
+        String mapPrefix = level.MapName.Left(3);
+        if ( mapPrefix == "tn_" )
+        {
+            for ( int i = 0; i < TNT_TEX_REPLACEMENTS; i++ )
+            {
+                String srcTex = TNT_TEX_SRC[i];
+                String destTex = TNT_TEX_DEST[i];
+                TexMan.ReplaceTextures(srcTex, destTex, 0);
+            }
+        }
+        else if ( mapPrefix == "pl_" )
+        {
+            for ( int i = 0; i < PLUT_TEX_REPLACEMENTS; i++ )
+            {
+                String srcTex = PLUT_TEX_SRC[i];
+                String destTex = PLUT_TEX_DEST[i];
+                TexMan.ReplaceTextures(srcTex, destTex, 0);
+            }
+        }
+    }
+    
+    // check if the given sky is the level's current sky, see if that is
+    // being overriden, and if so change it. return whether this happened.
+    bool CheckSkyOverriden(String skyName, String possibleTrueSkyName)
+    {
+        String sky1Name = TexMan.GetName(level.skytexture1);
+        if ( skyName != sky1Name )
+            return false;
+        TextureID skyA = TexMan.CheckForTexture(possibleTrueSkyName, TexMan.Type_Any, TexMan.Type_Any);
+        TextureID skyB = TexMan.CheckForTexture(possibleTrueSkyName, TexMan.Type_Override, TexMan.Type_Any);
+        if ( skyA == skyB )
+            return false;
+        //Console.Printf(String.Format("Custom sky! Using %s", possibleTrueSkyName));
+	// use skyA as sky2 if it's the same as sky1, otherwise don't touch it
+	TextureID skyA2 = (level.skytexture1 == level.skytexture2) ? skyA : level.skytexture2;
+        level.ChangeSky(skyA, skyA2);
+        return true;
+    }
+    
+    override void WorldLoaded(WorldEvent e)
+    {
+        if ( CVar.FindCVar("ws_finaldoom_texswap").GetBool() )
+            DoFinalDoomTextureReplacements();
+        if ( CVar.FindCVar("ws_d2sky_compat").GetBool() )
+        {
+            if ( CheckSkyOverriden("RSKY1", "SKY1") )
+                return;
+            else if ( CheckSkyOverriden("RSKY2", "SKY2") )
+                return;
+            CheckSkyOverriden("RSKY3", "SKY3");
+        }
+    }
+}
