@@ -3,70 +3,43 @@ version "2.5.0"
 
 class WadSmooshHandler : EventHandler
 {
-    // Dictionary type would make this waaay simpler, but it requires GZD >=4.3
-    const TNT_TEX_REPLACEMENTS = 14;
-    static const String TNT_TEX_SRC[] = {
-        "SW1GSTON", "SW2GSTON",
-        "SKY1",
-        "SW1BRN1", "SW2BRN1",
-        "SW1SKULL", "SW2SKULL",
-        "SW1STARG", "SW2STARG", // same used by plutonia below
-        "SLADRIP1", "SLADRIP3",
-        "BLODGR1", "BLODGR4",
-        "WFALL1"
-    };
-    static const String TNT_TEX_DEST[] = {
-        "SW1GSTNT", "SW2GSTNT",
-        "TNT_SKY1",
-        "SW1BRN1T", "SW2BRN1T",
-        "SW1SKULT", "SW2SKULT",
-        "SW1STARP", "SW2STARP",
-        "SLADRPT1", "SLADRPT3",
-        "BLODGRT1", "BLODGRT4",
-        "TWFALL1"
-    };
-    const PLUT_TEX_REPLACEMENTS = 15;
-    static const String PLUT_TEX_SRC[] = {
-        "DBRAIN1", "DBRAIN4",
-        "FIREBLU1", "FIREBLU2",
-        "SW1SKULL", "SW2SKULL",
-        "SKY3",
-        "SW1BRN1", "SW2BRN1",
-        "SW1STARG", "SW2STARG",
-        "WFALL1", "WFALL2",
-        "WFALL3", "WFALL4"
-    };
-    static const String PLUT_TEX_DEST[] = {
-        "PBRAIN1", "PBRAIN4",
-        "FIREPLU1", "FIREPLU2",
-        "SW1SKULP", "SW2SKULP",
-        "PSKY3",
-        "SW1BRN1T", "SW2BRN1T",
-        "SW1STARP", "SW2STARP",
-        "PWFALL1", "PWFALL2",
-        "PWFALL3", "PWFALL4"
-    };
-    
     void DoFinalDoomTextureReplacements()
     {
         String mapPrefix = level.MapName.Left(3);
         if ( mapPrefix == "tn_" )
         {
-            for ( int i = 0; i < TNT_TEX_REPLACEMENTS; i++ )
-            {
-                String srcTex = TNT_TEX_SRC[i];
-                String destTex = TNT_TEX_DEST[i];
-                TexMan.ReplaceTextures(srcTex, destTex, 0);
-            }
+            TexMan.ReplaceTextures("SW1GSTON", "SW1GSTNT", 0);
+            TexMan.ReplaceTextures("SW2GSTON", "SW2GSTNT", 0);
+            TexMan.ReplaceTextures("SKY1", "TNT_SKY1", 0);
+            TexMan.ReplaceTextures("SW1BRN1", "SW1BRN1T", 0);
+            TexMan.ReplaceTextures("SW2BRN1", "SW2BRN1T", 0);
+            TexMan.ReplaceTextures("SW1SKULL", "SW1SKULT", 0);
+            TexMan.ReplaceTextures("SW2SKULL", "SW2SKULT", 0);
+            TexMan.ReplaceTextures("SW1STARG", "SW1STARP", 0); // also in plutonia
+            TexMan.ReplaceTextures("SW2STARG", "SW2STARP", 0);
+            TexMan.ReplaceTextures("SLADRIP1", "SLADRPT1", 0);
+            TexMan.ReplaceTextures("SLADRIP3", "SLADRPT3", 0);
+            TexMan.ReplaceTextures("BLODGR1", "BLODGRT1", 0);
+            TexMan.ReplaceTextures("BLODGR4", "BLODGRT4", 0);
+            TexMan.ReplaceTextures("WFALL1", "TWFALL1", 0);
         }
         else if ( mapPrefix == "pl_" )
         {
-            for ( int i = 0; i < PLUT_TEX_REPLACEMENTS; i++ )
-            {
-                String srcTex = PLUT_TEX_SRC[i];
-                String destTex = PLUT_TEX_DEST[i];
-                TexMan.ReplaceTextures(srcTex, destTex, 0);
-            }
+            TexMan.ReplaceTextures("DBRAIN1", "PBRAIN1", 0);
+            TexMan.ReplaceTextures("DBRAIN4", "PBRAIN4", 0);
+            TexMan.ReplaceTextures("FIREBLU1", "FIREPLU1", 0);
+            TexMan.ReplaceTextures("FIREBLU2", "FIREPLU2", 0);
+            TexMan.ReplaceTextures("SW1SKULL", "SW1SKULP", 0);
+            TexMan.ReplaceTextures("SW2SKULL", "SW2SKULP", 0);
+            TexMan.ReplaceTextures("SKY3", "PSKY3", 0);
+            TexMan.ReplaceTextures("SW1BRN1", "SW1BRN1T", 0); // also in tnt
+            TexMan.ReplaceTextures("SW2BRN1", "SW2BRN1T", 0);
+            TexMan.ReplaceTextures("SW1STARG", "SW1STARP", 0);
+            TexMan.ReplaceTextures("SW2STARG", "SW2STARP", 0);
+            TexMan.ReplaceTextures("WFALL1", "PWFALL1", 0);
+            TexMan.ReplaceTextures("WFALL2", "PWFALL2", 0);
+            TexMan.ReplaceTextures("WFALL3", "PWFALL3", 0);
+            TexMan.ReplaceTextures("WFALL4", "PWFALL4", 0);
         }
     }
     
