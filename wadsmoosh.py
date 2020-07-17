@@ -321,6 +321,16 @@ def get_report_found():
     for wadname in ['doom', 'sigil', 'sigil_shreds', 'doom2', 'nerve', 'attack', 'tnt', 'plutonia', 'sewers', 'betray']:
         if get_wad_filename(wadname):
             found.append(wadname)
+    # look for sigil by other names
+    if 'doom' in found and not 'sigil' in found:
+        for alt_name in SIGIL_ALT_FILENAMES:
+            sigil_alt = get_wad_filename(alt_name)
+            # rather than handle variable filename for it, just create
+            # a copy in source_wads/ with the expected name
+            if sigil_alt:
+                copyfile(sigil_alt, SRC_WAD_DIR + 'sigil.wad')
+                found.insert(1, 'sigil')
+                break
     return found
 
 def get_eps(wads_found):

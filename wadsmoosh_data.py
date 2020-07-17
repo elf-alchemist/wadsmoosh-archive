@@ -158,3 +158,6 @@ MASTER_LEVELS_AUTHORS = {
     'mephisto': 'KVERNMO',
     'teeth2':   'KVERNMO'
 }
+
+# help the initial source wad reporting find sigil by any of its released names
+SIGIL_ALT_FILENAMES = ['sigil_v1_0', 'sigil_v1_1', 'sigil_v1_2', 'sigil_v1_21']
