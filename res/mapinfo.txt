@@ -6,22 +6,24 @@ include mapinfo/tnt_levels.txt
 include mapinfo/plutonia_levels.txt
 include mapinfo/sigil_levels.txt
 
-gameinfo
+GameInfo
 {
-	creditpage = "CREDIT"
-	titlemusic = "$MUSIC_DM2TTL"
-	titletime = 11
-	pagetime = 5
-	finalemusic = "$MUSIC_VICTOR"
-	finaleflat = "FLOOR4_8"
-	finalepage = "CREDIT", "VICTORY2", "ENDPIC"
-	infopage = "HELP", "CREDIT"
-	quitsound = "menu/quit1"
-	borderflat = "FLOOR7_2"
-	drawreadthis = false
-	intermissionmusic = "$MUSIC_DM2INT"
-	quitmessages = "$QUITMSG", "$QUITMSG1", "$QUITMSG2", "$QUITMSG3", "$QUITMSG4", "$QUITMSG5", "$QUITMSG6", "$QUITMSG7",
-				   "$QUITMSG8", "$QUITMSG9", "$QUITMSG10", "$QUITMSG11", "$QUITMSG12", "$QUITMSG13", "$QUITMSG14"
+	CreditPage = "CREDIT"
+	TitleMusic = "$MUSIC_DM2TTL"
+	TitleTime = 11
+	PageTime = 5
+	FinaleMusic = "$MUSIC_VICTOR"
+	FinaleFlat = "FLOOR4_8"
+	FinalePage = "CREDIT", "VICTORY2", "ENDPIC"
+	InfoPage = "HELP", "CREDIT"
+	QuitSound = "menu/quit1"
+	BorderFlat = "FLOOR7_2"
+	DrawReadThis = false
+	IntermissionMusic = "$MUSIC_DM2INT"
+	QuitMessages = "$QUITMSG", "$QUITMSG1", "$QUITMSG2", "$QUITMSG3",
+		"$QUITMSG4", "$QUITMSG5", "$QUITMSG6", "$QUITMSG7", "$QUITMSG8",
+		"$QUITMSG9", "$QUITMSG10", "$QUITMSG11", "$QUITMSG12",
+		"$QUITMSG13", "$QUITMSG14"
 }
 
 clearepisodes
