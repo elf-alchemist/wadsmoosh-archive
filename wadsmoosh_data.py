@@ -16,6 +16,19 @@ RES_FILES = [
     'menudef.txt', 'cvarinfo.txt', 'zscript.txt'
 ]
 
+# files within pk3 dir that will be removed before a new run
+TIDY_DIR_EXTENSIONS = {
+    'flats/': ['lmp'],
+    'graphics/': ['lmp'],
+    'patches/': ['lmp'],
+    'sounds/': ['lmp'],
+    'sprites/': ['lmp'],
+    'music/': ['mus'],
+    'mapinfo/': ['txt'],
+    'maps/': ['wad'],
+    './': ['lmp', 'txt']
+}
+
 IWADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve', 'sigil', 'sigil_shreds']
 
 # lists of lumps common to doom 1+2
