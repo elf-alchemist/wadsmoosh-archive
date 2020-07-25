@@ -368,6 +368,8 @@ def main():
     # clear out pk3 dir from previous runs
     files_tidied = 0
     for dirname,extensions in TIDY_DIR_EXTENSIONS.items():
+        if not os.path.exists(DEST_DIR + dirname):
+            continue
         for filename in os.listdir(DEST_DIR + dirname):
             for ext in extensions:
                 if filename.endswith(ext):
