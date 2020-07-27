@@ -477,7 +477,7 @@ map NV_MAP04 lookup "NHUSTR_4"
 {
 	next = "NV_MAP05"
 	secretnext = "NV_MAP09"
-	sky1 = "RSKY1"
+	sky1 = "RSKY3"
 	cluster = 11
 	titlepatch = "NWILV03"
 	par = 105
@@ -489,7 +489,7 @@ map NV_MAP05 lookup "NHUSTR_5"
 {
 	next = "NV_MAP06"
 	secretnext = "NV_MAP09"
-	sky1 = "RSKY1"
+	sky1 = "RSKY3"
 	cluster = 11
 	titlepatch = "NWILV04"
 	par = 210
@@ -501,7 +501,7 @@ map NV_MAP06 lookup "NHUSTR_6"
 {
 	next = "NV_MAP07"
 	secretnext = "NV_MAP09"
-	sky1 = "RSKY1"
+	sky1 = "RSKY3"
 	cluster = 11
 	titlepatch = "NWILV05"
 	par = 105
@@ -514,7 +514,7 @@ map NV_MAP07 lookup "NHUSTR_7"
 {
 	next = "NV_MAP08"
 	secretnext = "NV_MAP09"
-	sky1 = "RSKY1"
+	sky1 = "RSKY3"
 	cluster = 11
 	titlepatch = "NWILV06"
 	par = 165
@@ -527,7 +527,7 @@ map NV_MAP08 lookup "NHUSTR_8"
 {
 	next = "EndGameC"
 	secretnext = "EndGameC"
-	sky1 = "RSKY1"
+	sky1 = "RSKY3"
 	cluster = 11
 	titlepatch = "NWILV07"
 	par = 105
