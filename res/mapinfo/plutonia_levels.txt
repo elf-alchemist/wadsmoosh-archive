@@ -416,8 +416,10 @@ map PL_MAP30 lookup "PHUSTR_30"
 	allowmonstertelefrags
 	music = "P_OPENIN"
 	ExitPic = "PLUINTER"
+	InterMusic = "P_DM2INT"
 	next = endgame {
 		pic = "PLUBOSS"
+		music = "P_THE_DA"
 		cast
 	}
 	Author = "$WS_AU_CASALIS"

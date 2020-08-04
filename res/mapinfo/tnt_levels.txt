@@ -419,8 +419,10 @@ map TN_MAP30 lookup "THUSTR_30"
 	compat_stairs
 	music = "T_OPENIN"
 	ExitPic = "TNTINTER"
+	InterMusic = "T_DM2INT"
 	next = endgame {
 		pic = "TNTBOSS"
+		music = "T_DM2INT"
 		cast
 	}
 	Author = "$WS_AU_SIEBEN"
