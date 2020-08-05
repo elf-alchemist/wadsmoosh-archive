@@ -189,6 +189,7 @@ def add_secret_exit(map_name, line_id):
     wad.to_file(wad_filename)
 
 def add_secret_level(map_src_filename, map_src_name, map_dest_name):
+    global num_maps
     # copies given map file into dest dir and sets its map lump name
     src_filename = get_wad_filename(map_src_filename)
     dest_filename = DEST_DIR + 'maps/%s.wad' % map_dest_name
@@ -197,6 +198,7 @@ def add_secret_level(map_src_filename, map_src_name, map_dest_name):
     wad.from_file(dest_filename)
     wad.maps.rename(map_src_name, map_dest_name)
     wad.to_file(dest_filename)
+    num_maps += 1
 
 def add_xbox_levels():
     # :P
