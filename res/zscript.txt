@@ -6,6 +6,7 @@ class WadSmooshHandler : EventHandler
     void DoFinalDoomTextureReplacements()
     {
         String mapPrefix = level.MapName.Left(3);
+        mapPrefix = mapPrefix.MakeLower();
         if ( mapPrefix == "tn_" )
         {
             TexMan.ReplaceTextures("SW1GSTON", "SW1GSTNT", 0);

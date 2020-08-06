@@ -28,7 +28,7 @@ GameInfo
 }
 
 clearepisodes
-episode e1m1
+episode E1M1
 {
 	picname = "M_EPI1"
 	name = "$TXT_D1E1"
@@ -36,7 +36,7 @@ episode e1m1
 	optional
 }
 
-episode e2m1
+episode E2M1
 {
 	picname = "M_EPI2"
 	name = "$TXT_D1E2"
@@ -44,7 +44,7 @@ episode e2m1
 	optional
 }
 
-episode e3m1
+episode E3M1
 {
 	picname = "M_EPI3"
 	name = "$TXT_D1E3"
@@ -52,7 +52,7 @@ episode e3m1
 	optional
 }
 
-episode e4m1
+episode E4M1
 {
 	picname = "M_EPI4"
 	name = "$TXT_D1E4"
@@ -60,7 +60,7 @@ episode e4m1
 	optional
 }
 
-episode e5m1
+episode E5M1
 {
 	picname = "M_EPI5"
 	name = "$HUSTR_EPI5"
@@ -68,7 +68,7 @@ episode e5m1
 	optional
 }
 
-episode map01
+episode MAP01
 {
 	picname = "M_HELL"
 	name = "$TXT_D2E1"
@@ -76,7 +76,7 @@ episode map01
 	optional
 }
 
-episode nv_map01
+episode NV_MAP01
 {
 	picname = "M_NOREST"
 	name = "$TXT_D2E2"
@@ -84,7 +84,7 @@ episode nv_map01
 	optional
 }
 
-episode ml_map01
+episode ML_MAP01
 {
 	picname = "M_MASTER"
 	name = "$D2MLNAME"
@@ -92,7 +92,7 @@ episode ml_map01
 	optional
 }
 
-episode tn_map01
+episode TN_MAP01
 {
 	picname = "M_TNT"
 	name = "$TXT_TNT_EP"
@@ -100,7 +100,7 @@ episode tn_map01
 	optional
 }
 
-episode pl_map01
+episode PL_MAP01
 {
 	picname = "M_PLUT"
 	name = "$TXT_PLUT_EP"
