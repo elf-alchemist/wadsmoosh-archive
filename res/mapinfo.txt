@@ -17,7 +17,7 @@ GameInfo
 	FinalePage = "CREDIT", "VICTORY2", "ENDPIC"
 	InfoPage = "HELP", "CREDIT"
 	QuitSound = "menu/quit1"
-	BorderFlat = "FLOOR7_2"
+	BorderFlat = "GRNROCK"
 	DrawReadThis = false
 	IntermissionMusic = "$MUSIC_DM2INT"
 	QuitMessages = "$QUITMSG", "$QUITMSG1", "$QUITMSG2", "$QUITMSG3",
