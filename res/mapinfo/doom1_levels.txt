@@ -13,6 +13,7 @@ map E1M1 lookup "HUSTR_E1M1"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI1"
 	Author = "$WS_AU_ROMERO"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E1M10 lookup "HUSTR_E1M10"
@@ -28,6 +29,7 @@ map E1M10 lookup "HUSTR_E1M10"
 	ExitPic = "$IN_EPI1"
 	par = 150
 	Author = "$WS_AU_CALVIN"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E1M2 lookup "HUSTR_E1M2"
@@ -43,6 +45,7 @@ map E1M2 lookup "HUSTR_E1M2"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI1"
 	Author = "$WS_AU_ROMERO"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E1M3 lookup "HUSTR_E1M3"
@@ -58,6 +61,7 @@ map E1M3 lookup "HUSTR_E1M3"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI1"
 	Author = "$WS_AU_ROMERO"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E1M4 lookup "HUSTR_E1M4"
@@ -73,6 +77,7 @@ map E1M4 lookup "HUSTR_E1M4"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI1"
 	Author = "$WS_AU_ROMERO_HALL"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E1M5 lookup "HUSTR_E1M5"
@@ -88,6 +93,7 @@ map E1M5 lookup "HUSTR_E1M5"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI1"
 	Author = "$WS_AU_ROMERO"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E1M6 lookup "HUSTR_E1M6"
@@ -103,6 +109,7 @@ map E1M6 lookup "HUSTR_E1M6"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI1"
 	Author = "$WS_AU_ROMERO"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E1M7 lookup "HUSTR_E1M7"
@@ -118,6 +125,7 @@ map E1M7 lookup "HUSTR_E1M7"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI1"
 	Author = "$WS_AU_ROMERO"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E1M8 lookup "HUSTR_E1M8"
@@ -137,6 +145,7 @@ map E1M8 lookup "HUSTR_E1M8"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI1"
 	Author = "$WS_AU_PETERSEN_HALL"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E1M9 lookup "HUSTR_E1M9"
@@ -152,6 +161,7 @@ map E1M9 lookup "HUSTR_E1M9"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI1"
 	Author = "$WS_AU_ROMERO"
+	BorderTexture = "FLOOR7_2"
 }
 
 // Registered/Retail Episode 2
@@ -169,6 +179,7 @@ map E2M1 lookup "HUSTR_E2M1"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI2"
 	Author = "$WS_AU_PETERSEN_HALL"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E2M2 lookup "HUSTR_E2M2"
@@ -184,6 +195,7 @@ map E2M2 lookup "HUSTR_E2M2"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI2"
 	Author = "$WS_AU_PETERSEN_HALL"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E2M3 lookup "HUSTR_E2M3"
@@ -199,6 +211,7 @@ map E2M3 lookup "HUSTR_E2M3"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI2"
 	Author = "$WS_AU_PETERSEN_HALL"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E2M4 lookup "HUSTR_E2M4"
@@ -214,6 +227,7 @@ map E2M4 lookup "HUSTR_E2M4"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI2"
 	Author = "$WS_AU_PETERSEN_HALL"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E2M5 lookup "HUSTR_E2M5"
@@ -229,6 +243,7 @@ map E2M5 lookup "HUSTR_E2M5"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI2"
 	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E2M6 lookup "HUSTR_E2M6"
@@ -244,6 +259,7 @@ map E2M6 lookup "HUSTR_E2M6"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI2"
 	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E2M7 lookup "HUSTR_E2M7"
@@ -259,6 +275,7 @@ map E2M7 lookup "HUSTR_E2M7"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI2"
 	Author = "$WS_AU_PETERSEN_HALL"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E2M8 lookup "HUSTR_E2M8"
@@ -278,6 +295,7 @@ map E2M8 lookup "HUSTR_E2M8"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI2"
 	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E2M9 lookup "HUSTR_E2M9"
@@ -293,6 +311,7 @@ map E2M9 lookup "HUSTR_E2M9"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI2"
 	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 // Registered/Retail Episode 3
@@ -310,6 +329,7 @@ map E3M1 lookup "HUSTR_E3M1"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI3"
 	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E3M2 lookup "HUSTR_E3M2"
@@ -325,6 +345,7 @@ map E3M2 lookup "HUSTR_E3M2"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI3"
 	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E3M3 lookup "HUSTR_E3M3"
@@ -340,6 +361,7 @@ map E3M3 lookup "HUSTR_E3M3"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI3"
 	Author = "$WS_AU_PETERSEN_HALL"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E3M4 lookup "HUSTR_E3M4"
@@ -355,6 +377,7 @@ map E3M4 lookup "HUSTR_E3M4"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI3"
 	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E3M5 lookup "HUSTR_E3M5"
@@ -370,6 +393,7 @@ map E3M5 lookup "HUSTR_E3M5"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI3"
 	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E3M6 lookup "HUSTR_E3M6"
@@ -385,6 +409,7 @@ map E3M6 lookup "HUSTR_E3M6"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI3"
 	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E3M7 lookup "HUSTR_E3M7"
@@ -400,6 +425,7 @@ map E3M7 lookup "HUSTR_E3M7"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI3"
 	Author = "$WS_AU_PETERSEN_HALL"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E3M8 lookup "HUSTR_E3M8"
@@ -419,6 +445,7 @@ map E3M8 lookup "HUSTR_E3M8"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI3"
 	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E3M9 lookup "HUSTR_E3M9"
@@ -434,6 +461,7 @@ map E3M9 lookup "HUSTR_E3M9"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "$IN_EPI3"
 	Author = "$WS_AU_PETERSEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 // Retail Episode 4
@@ -451,6 +479,7 @@ map E4M1 lookup "HUSTR_E4M1"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
 	Author = "$WS_AU_MCGEE"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E4M2 lookup "HUSTR_E4M2"
@@ -466,6 +495,7 @@ map E4M2 lookup "HUSTR_E4M2"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
 	Author = "$WS_AU_ROMERO"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E4M3 lookup "HUSTR_E4M3"
@@ -481,6 +511,7 @@ map E4M3 lookup "HUSTR_E4M3"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
 	Author = "$WS_AU_GREEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E4M4 lookup "HUSTR_E4M4"
@@ -496,6 +527,7 @@ map E4M4 lookup "HUSTR_E4M4"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
 	Author = "$WS_AU_MCGEE"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E4M5 lookup "HUSTR_E4M5"
@@ -511,6 +543,7 @@ map E4M5 lookup "HUSTR_E4M5"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
 	Author = "$WS_AU_WILLITS_CHASAR"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E4M6 lookup "HUSTR_E4M6"
@@ -528,6 +561,7 @@ map E4M6 lookup "HUSTR_E4M6"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
 	Author = "$WS_AU_ROMERO"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E4M7 lookup "HUSTR_E4M7"
@@ -543,6 +577,7 @@ map E4M7 lookup "HUSTR_E4M7"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
 	Author = "$WS_AU_ANDERSON"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E4M8 lookup "HUSTR_E4M8"
@@ -562,6 +597,7 @@ map E4M8 lookup "HUSTR_E4M8"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
 	Author = "$WS_AU_GREEN"
+	BorderTexture = "FLOOR7_2"
 }
 
 map E4M9 lookup "HUSTR_E4M9"
@@ -577,6 +613,7 @@ map E4M9 lookup "HUSTR_E4M9"
 	InterMusic = "$MUSIC_INTER"
 	ExitPic = "INTER_E4"
 	Author = "$WS_AU_WILLITS"
+	BorderTexture = "FLOOR7_2"
 }
 
 // Clusters (correspond with same-numbered episode)
