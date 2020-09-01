@@ -43,7 +43,7 @@ DOOM1_LUMPS = [
 
 DOOM2_LUMPS = [
     'flats_doom2', 'graphics_doom2', 'music_doom2', 'patches_doom2',
-    'sounds_doom2', 'sprites_doom2', 'txdefs_doom2'
+    'sounds_doom2', 'sprites_doom2'
 ]
 
 # lists of lumps to extract from each IWAD
@@ -58,8 +58,6 @@ WAD_LUMP_LISTS = {
 }
 
 # prefixes for filenames of maps extracted from IWADs
-# warning: changing prefixes for TNT and Plutonia map files will
-# short-circuit the ACS texture fixes
 WAD_MAP_PREFIXES = {
     'doom': '',
     'doom2': '',
