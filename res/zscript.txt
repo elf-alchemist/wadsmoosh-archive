@@ -63,30 +63,33 @@ class WadSmooshHandler : EventHandler
         String sky1Name = TexMan.GetName(level.skytexture1);
         if ( skyName != sky1Name )
             return false;
-        TextureID skyA = TexMan.CheckForTexture(possibleTrueSkyName, TexMan.Type_Any, TexMan.Type_Any);
-        TextureID skyB = TexMan.CheckForTexture(possibleTrueSkyName, TexMan.Type_Override, TexMan.Type_Any);
+        int flags = TexMan.ReturnFirst; // default = TexMan.TryAny
+        TextureID skyA = TexMan.CheckForTexture(possibleTrueSkyName, TexMan.Type_Any, flags);
+        TextureID skyB = TexMan.CheckForTexture(possibleTrueSkyName, TexMan.Type_Override, flags);
         if ( skyA == skyB )
             return false;
-        //Console.Printf(String.Format("Custom sky! Using %s", possibleTrueSkyName));
         // use skyA as sky2 if it's the same as sky1, otherwise don't touch it
         TextureID skyA2 = (level.skytexture1 == level.skytexture2) ? skyA : level.skytexture2;
         level.ChangeSky(skyA, skyA2);
         return true;
     }
     
+    void DoDoom2SkyReplacements()
+    {
+        if ( CheckSkyOverriden("RSKY1", "SKY1") )
+            return;
+        else if ( CheckSkyOverriden("RSKY2", "SKY2") )
+            return;
+        CheckSkyOverriden("RSKY3", "SKY3");
+    }
+    
     override void WorldLoaded(WorldEvent e)
     {
         if ( CVar.FindCVar("ws_finaldoom_texswap").GetBool() )
             DoFinalDoomTextureReplacements();
-        if ( CVar.FindCVar("ws_d2sky_compat").GetBool() )
-        {
-            if ( CheckSkyOverriden("RSKY1", "SKY1") )
-                return;
-            else if ( CheckSkyOverriden("RSKY2", "SKY2") )
-                return;
-            CheckSkyOverriden("RSKY3", "SKY3");
-        }
         if ( CVar.FindCVar("ws_d1pois_texswap").GetBool() )
             DoDoom1PoisonTextureReplacements();
+        if ( CVar.FindCVar("ws_d2sky_compat").GetBool() )
+            DoDoom2SkyReplacements();
     }
 }
