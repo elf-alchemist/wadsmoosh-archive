@@ -1,10 +1,7 @@
 
-map E5M1 "$HUSTR_E5M1"
+adddefaultmap
 {
-	levelnum = 41
-	titlepatch = "WILV40"
-	next = "E5M2"
-	music = "D_E5M1"
+	BorderTexture = "FLOOR7_2"
 	nocrouch
 	nojump
 	sky1 = "SKY5"
@@ -13,8 +10,15 @@ map E5M1 "$HUSTR_E5M1"
 	exitpic = "SIGILINT"
 	InterMusic = "S_INTER"
 	Author = "$WS_AU_ROMERO"
+}
+
+map E5M1 "$HUSTR_E5M1"
+{
+	levelnum = 41
+	titlepatch = "WILV40"
+	next = "E5M2"
+	music = "D_E5M1"
 	par = 90
-	BorderTexture = "FLOOR7_2"
 }
 
 map E5M2 "$HUSTR_E5M2"
@@ -23,16 +27,7 @@ map E5M2 "$HUSTR_E5M2"
 	titlepatch = "WILV41"
 	next = "E5M3"
 	music = "D_E5M2"
-	nocrouch
-	nojump
-	sky1 = "SKY5"
-	cluster = 25
-	enterpic = "SIGILINT"
-	exitpic = "SIGILINT"
-	InterMusic = "S_INTER"
-	Author = "$WS_AU_ROMERO"
 	par = 150
-	BorderTexture = "FLOOR7_2"
 }
 
 map E5M3 "$HUSTR_E5M3"
@@ -41,16 +36,7 @@ map E5M3 "$HUSTR_E5M3"
 	titlepatch = "WILV42"
 	next = "E5M4"
 	music = "D_E5M3"
-	nocrouch
-	nojump
-	sky1 = "SKY5"
-	cluster = 25
-	enterpic = "SIGILINT"
-	exitpic = "SIGILINT"
-	InterMusic = "S_INTER"
-	Author = "$WS_AU_ROMERO"
 	par = 360
-	BorderTexture = "FLOOR7_2"
 }
 
 map E5M4 "$HUSTR_E5M4"
@@ -59,16 +45,7 @@ map E5M4 "$HUSTR_E5M4"
 	titlepatch = "WILV43"
 	next = "E5M5"
 	music = "D_E5M4"
-	nocrouch
-	nojump
-	sky1 = "SKY5"
-	cluster = 25
-	enterpic = "SIGILINT"
-	exitpic = "SIGILINT"
-	InterMusic = "S_INTER"
-	Author = "$WS_AU_ROMERO"
 	par = 420
-	BorderTexture = "FLOOR7_2"
 }
 
 map E5M5 "$HUSTR_E5M5"
@@ -77,16 +54,7 @@ map E5M5 "$HUSTR_E5M5"
 	titlepatch = "WILV44"
 	next = "E5M6"
 	music = "D_E5M5"
-	nocrouch
-	nojump
-	sky1 = "SKY5"
-	cluster = 25
-	enterpic = "SIGILINT"
-	exitpic = "SIGILINT"
-	InterMusic = "S_INTER"
-	Author = "$WS_AU_ROMERO"
 	par = 780
-	BorderTexture = "FLOOR7_2"
 }
 
 map E5M6 "$HUSTR_E5M6"
@@ -96,16 +64,7 @@ map E5M6 "$HUSTR_E5M6"
 	next = "E5M7"
 	secretnext = "E5M9"
 	music = "D_E5M6"
-	nocrouch
-	nojump
-	sky1 = "SKY5"
-	cluster = 25
-	enterpic = "SIGILINT"
-	exitpic = "SIGILINT"
-	InterMusic = "S_INTER"
-	Author = "$WS_AU_ROMERO"
 	par = 420
-	BorderTexture = "FLOOR7_2"
 }
 
 map E5M7 "$HUSTR_E5M7"
@@ -114,16 +73,7 @@ map E5M7 "$HUSTR_E5M7"
 	titlepatch = "WILV46"
 	next = "E5M8"
 	music = "D_E5M7"
-	nocrouch
-	nojump
-	sky1 = "SKY5"
-	cluster = 25
-	enterpic = "SIGILINT"
-	exitpic = "SIGILINT"
-	InterMusic = "S_INTER"
-	Author = "$WS_AU_ROMERO"
 	par = 780
-	BorderTexture = "FLOOR7_2"
 }
 
 map E5M8 "$HUSTR_E5M8"
@@ -133,16 +83,7 @@ map E5M8 "$HUSTR_E5M8"
 	next = EndPic, "SCREDIT"
 	nosoundclipping
 	music = "D_E5M8"
-	nocrouch
-	nojump
-	sky1 = "SKY5"
-	cluster = 25
-	enterpic = "SIGILINT"
-	exitpic = "SIGILINT"
-	InterMusic = "S_INTER"
-	Author = "$WS_AU_ROMERO"
 	par = 300
-	BorderTexture = "FLOOR7_2"
 }
 
 map E5M9 "$HUSTR_E5M9"
@@ -151,16 +92,7 @@ map E5M9 "$HUSTR_E5M9"
 	titlepatch = "WILV48"
 	next = "E5M7"
 	music =  "D_E5M9"
-	nocrouch
-	nojump
-	sky1 = "SKY5"
-	cluster = 25
-	enterpic = "SIGILINT"
-	exitpic = "SIGILINT"
-	InterMusic = "S_INTER"
-	Author = "$WS_AU_ROMERO"
 	par = 660
-	BorderTexture = "FLOOR7_2"
 }
 
 cluster 25
