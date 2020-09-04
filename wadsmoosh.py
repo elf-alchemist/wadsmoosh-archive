@@ -22,7 +22,7 @@ ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/masterlevels.txt'
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
 RES_FILES = []
-IWADS = []
+WADS = []
 COMMON_LUMPS = []
 DOOM1_LUMPS = []
 DOOM2_LUMPS = []
@@ -311,7 +311,8 @@ def copy_resources():
                  DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
         return
     wad.from_file(d2_wad_filename)
-    if wad.graphics.get('M_ACPT', None):
+    # bfg version?
+    if wad.graphics.get(BFG_ONLY_LUMP, None):
         copyfile(RES_DIR + 'mapinfo/doom2_bfg_levels.txt',
                  DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
     else:
@@ -320,7 +321,7 @@ def copy_resources():
 
 def get_report_found():
     found = []
-    for wadname in ['doom', 'sigil', 'sigil_shreds', 'doom2', 'nerve', 'attack', 'tnt', 'plutonia', 'sewers', 'betray']:
+    for wadname in ['doom', 'sigil', 'sigil_shreds', 'doom2', 'nerve', 'attack', 'tnt', 'plutonia', 'sewers', 'betray', 'extras']:
         if get_wad_filename(wadname):
             found.append(wadname)
     # look for sigil by other names
@@ -417,10 +418,10 @@ def main():
         if not get_wad_filename('doom'):
             WAD_LUMP_LISTS['tnt'] += COMMON_LUMPS
     # extract lumps and maps from wads
-    for iwad_name in IWADS:
+    for iwad_name in WADS:
         wad_filename = get_wad_filename(iwad_name)
         if not wad_filename:
-            logg('IWAD %s not found' % iwad_name)
+            logg('WAD %s not found' % iwad_name)
             continue
         if iwad_name == 'nerve' and not get_wad_filename('doom2'):
             logg('Skipping nerve.wad as doom2.wad is not present', error=True)
@@ -431,7 +432,7 @@ def main():
         if iwad_name == 'sigil_shreds' and not get_wad_filename('sigil'):
             logg('Skipping SIGIL_SHREDS.wad as SIGIL.wad is not present', error=True)
             continue
-        logg('Processing IWAD %s...' % iwad_name)
+        logg('Processing WAD %s...' % iwad_name)
         if should_extract:
             extract_lumps(iwad_name)
             prefix = WAD_MAP_PREFIXES.get(iwad_name, None)

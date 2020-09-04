@@ -29,7 +29,8 @@ TIDY_DIR_EXTENSIONS = {
     './': ['lmp', 'txt']
 }
 
-IWADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve', 'sigil', 'sigil_shreds']
+# list of files we can extract from
+WADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve', 'sigil', 'sigil_shreds', 'extras']
 
 # lists of lumps common to doom 1+2
 COMMON_LUMPS = [
@@ -54,7 +55,9 @@ WAD_LUMP_LISTS = {
     'plutonia': ['graphics_plutonia', 'music_plutonia', 'patches_plutonia'],
     'sigil': ['graphics_sigil', 'music_sigil', 'patches_sigil', 'data_sigil'],
     # (buckethead tracks use the same names as jimmy's midi)
-    'sigil_shreds': ['music_sigil']
+    'sigil_shreds': ['music_sigil'],
+    # "found secret" sound from unity port
+    'extras': ['sounds_unity']
 }
 
 # prefixes for filenames of maps extracted from IWADs
@@ -172,3 +175,6 @@ MASTER_LEVELS_AUTHORS = {
 
 # help the initial source wad reporting find sigil by any of its released names
 SIGIL_ALT_FILENAMES = ['sigil_v1_0', 'sigil_v1_1', 'sigil_v1_2', 'sigil_v1_21']
+
+# lump whose presence distinguishes BFG & Unity vs original doom2.wad
+BFG_ONLY_LUMP = 'DMENUPIC'
