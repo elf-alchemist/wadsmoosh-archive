@@ -23,6 +23,7 @@ ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/masterlevels.txt'
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
 RES_FILES = []
 WADS = []
+REPORT_WADS = []
 COMMON_LUMPS = []
 DOOM1_LUMPS = []
 DOOM2_LUMPS = []
@@ -35,6 +36,8 @@ MASTER_LEVELS_MUSIC = {}
 MASTER_LEVELS_MAP07_SPECIAL = []
 MASTER_LEVELS_AUTHOR_PREFIX = ''
 MASTER_LEVELS_AUTHORS = {}
+SIGIL_ALT_FILENAMES = []
+BFG_ONLY_LUMP = ''
 
 logfile = None
 
@@ -321,7 +324,7 @@ def copy_resources():
 
 def get_report_found():
     found = []
-    for wadname in ['doom', 'sigil', 'sigil_shreds', 'doom2', 'nerve', 'attack', 'tnt', 'plutonia', 'sewers', 'betray', 'doomu', 'doom2u', 'extras']:
+    for wadname in REPORT_WADS:
         if get_wad_filename(wadname):
             found.append(wadname)
     # look for sigil by other names

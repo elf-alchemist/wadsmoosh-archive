@@ -31,7 +31,12 @@ TIDY_DIR_EXTENSIONS = {
 
 # list of files we can extract from
 WADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve', 'sigil', 'sigil_shreds',
-        'doomu', 'doom2u', 'extras']
+        'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
+
+# wads to search for and report if found
+REPORT_WADS = ['doom', 'sigil', 'sigil_shreds', 'doom2', 'nerve', 'attack',
+               'tnt', 'plutonia', 'sewers', 'betray', 'doomu', 'doom2u',
+               'nerveu', 'tntu', 'plutoniau', 'extras']
 
 # lists of lumps common to doom 1+2
 COMMON_LUMPS = [
@@ -60,6 +65,9 @@ WAD_LUMP_LISTS = {
     # widescreen assets from unity ports
     'doomu': ['graphics_doomu'],
     'doom2u': ['graphics_doom2u'],
+    'nerveu': ['graphics_nerveu'],
+    'tntu': ['graphics_tntu'],
+    'plutoniau': ['graphics_plutoniau'],
     # "found secret" sound from unity port
     'extras': ['sounds_unity']
 }

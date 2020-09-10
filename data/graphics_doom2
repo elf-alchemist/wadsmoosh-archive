@@ -1,6 +1,8 @@
 BOSSBACK
 HELP
 INTERPIC
+// extract a copy of intermission bg for nerve
+INTERPIC : NVINTER
 CWILV00
 CWILV01
 CWILV02

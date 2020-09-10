@@ -441,6 +441,7 @@ map NV_MAP01 lookup "NHUSTR_1"
 	titlepatch = "NWILV00"
 	par = 75
 	music = "$MUSIC_MESSAG"
+	ExitPic = "NVINTER"
 	Author = "$WS_AU_MEAKIM"
 }
 
@@ -453,6 +454,7 @@ map NV_MAP02 lookup "NHUSTR_2"
 	titlepatch = "NWILV01"
 	par = 105
 	music = "$MUSIC_DDTBLU"
+	ExitPic = "NVINTER"
 	Author = "$WS_AU_IWAKURA"
 }
 
@@ -465,6 +467,7 @@ map NV_MAP03 lookup "NHUSTR_3"
 	titlepatch = "NWILV02"
 	par = 120
 	music = "$MUSIC_DOOM"
+	ExitPic = "NVINTER"
 	Author = "$WS_AU_MEAKIM"
 }
 
@@ -477,6 +480,7 @@ map NV_MAP04 lookup "NHUSTR_4"
 	titlepatch = "NWILV03"
 	par = 105
 	music = "$MUSIC_SHAWN"
+	ExitPic = "NVINTER"
 	Author = "$WS_AU_MEAKIM"
 }
 
@@ -489,6 +493,7 @@ map NV_MAP05 lookup "NHUSTR_5"
 	titlepatch = "NWILV04"
 	par = 210
 	music = "$MUSIC_IN_CIT"
+	ExitPic = "NVINTER"
 	Author = "$WS_AU_IWAKURA"
 }
 
@@ -502,6 +507,7 @@ map NV_MAP06 lookup "NHUSTR_6"
 	par = 105
 	sucktime = 1
 	music = "$MUSIC_THE_DA"
+	ExitPic = "NVINTER"
 	Author = "$WS_AU_IWAKURA"
 }
 
@@ -515,6 +521,7 @@ map NV_MAP07 lookup "NHUSTR_7"
 	par = 165
 	map07special
 	music = "$MUSIC_IN_CIT"
+	ExitPic = "NVINTER"
 	Author = "$WS_AU_IWAKURA"
 }
 
@@ -527,6 +534,7 @@ map NV_MAP08 lookup "NHUSTR_8"
 	titlepatch = "NWILV07"
 	par = 105
 	music = "$MUSIC_SHAWN"
+	ExitPic = "NVINTER"
 	Author = "$WS_AU_IWAKURA"
 }
 
@@ -539,6 +547,7 @@ map NV_MAP09 lookup "NHUSTR_9"
 	cluster = 11
 	par = 135
 	music = "$MUSIC_DDTBLU"
+	ExitPic = "NVINTER"
 	Author = "$WS_AU_MEAKIM"
 }
 
