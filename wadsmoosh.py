@@ -321,7 +321,7 @@ def copy_resources():
 
 def get_report_found():
     found = []
-    for wadname in ['doom', 'sigil', 'sigil_shreds', 'doom2', 'nerve', 'attack', 'tnt', 'plutonia', 'sewers', 'betray', 'extras']:
+    for wadname in ['doom', 'sigil', 'sigil_shreds', 'doom2', 'nerve', 'attack', 'tnt', 'plutonia', 'sewers', 'betray', 'doomu', 'doom2u', 'extras']:
         if get_wad_filename(wadname):
             found.append(wadname)
     # look for sigil by other names
@@ -391,7 +391,7 @@ def main():
             files_tidied += 1
     if files_tidied > 0:
         logg('Removed %s files from a previous run.' % files_tidied)
-    logg('Found in %s: ' % SRC_WAD_DIR + ', '.join(found))
+    logg('Found in %s:\n  ' % SRC_WAD_DIR + ', '.join(found))
     print('A new PK3 format IWAD will be generated with the following episodes:')
     for num_eps,ep_name in enumerate(get_eps(found)):
         print('- %s' % ep_name)
