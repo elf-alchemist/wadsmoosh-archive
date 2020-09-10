@@ -12,8 +12,8 @@ GameInfo
 	TitleMusic = "$MUSIC_DM2TTL"
 	TitleTime = 11
 	PageTime = 5
-	FinaleMusic = "$MUSIC_VICTOR"
-	FinaleFlat = "FLOOR4_8"
+	FinaleMusic = "$MUSIC_READ_M"
+	FinaleFlat = "SLIME16"
 	FinalePage = "CREDIT", "VICTORY2", "ENDPIC"
 	InfoPage = "HELP", "CREDIT"
 	QuitSound = "menu/quit1"
