@@ -1,6 +1,6 @@
 // Registered/Retail Episode 1
 
-adddefaultmap
+defaultmap
 {
 	BorderTexture = "FLOOR7_2"
 	InterMusic = "$MUSIC_INTER"

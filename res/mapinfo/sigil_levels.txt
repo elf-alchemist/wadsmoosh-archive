@@ -1,5 +1,5 @@
 
-adddefaultmap
+defaultmap
 {
 	BorderTexture = "FLOOR7_2"
 	nocrouch
