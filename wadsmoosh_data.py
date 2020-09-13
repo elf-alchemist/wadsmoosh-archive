@@ -6,7 +6,7 @@ RES_FILES = [
     'mapinfo.txt', 'language.txt', 'endoom', 'smooshed.txt',
     'textures.common', 'textures.doom1', 'textures.doom2',
     'textures.tnt', 'textures.plut', 'animdefs.txt',
-    'PNAMES.lmp', 'TEXTURE1.lmp',
+    'PNAMES.lmp', 'TEXTURE1.lmp', 'graphics/DUMMY.lmp',
     'graphics/M_DOOM.lmp', 'graphics/TITLEPIC.lmp',
     'graphics/M_HELL.lmp', 'graphics/M_NOREST.lmp',
     'graphics/M_MASTER.lmp', 'graphics/M_TNT.lmp',
