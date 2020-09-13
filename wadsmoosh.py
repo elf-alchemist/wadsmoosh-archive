@@ -22,6 +22,7 @@ ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/masterlevels.txt'
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
 RES_FILES = []
+WIDESCREEN_RES_FILES = []
 WADS = []
 REPORT_WADS = []
 COMMON_LUMPS = []
@@ -36,6 +37,7 @@ MASTER_LEVELS_MUSIC = {}
 MASTER_LEVELS_MAP07_SPECIAL = []
 MASTER_LEVELS_AUTHOR_PREFIX = ''
 MASTER_LEVELS_AUTHORS = {}
+MASTER_LEVELS_MAPINFO_HEADER = []
 SIGIL_ALT_FILENAMES = []
 BFG_ONLY_LUMP = ''
 
@@ -76,7 +78,7 @@ def get_master_levels_map_order():
     else:
         order_file = ML_ORDER_FILENAME
     if not os.path.exists(order_file):
-        return
+        return order_file, []
     logg('Using Master Levels ordering from %s' % order_file)
     for line in open(order_file).readlines():
         line = line.strip().lower()
@@ -86,7 +88,7 @@ def get_master_levels_map_order():
             logg('ERROR: Unrecognized Master Level %s' % line, error=True)
             continue
         order.append(line)
-    return order
+    return order_file, order
 
 def get_ml_mapinfo(wad_name, map_number):
     lines = []
@@ -120,7 +122,7 @@ def get_ml_mapinfo(wad_name, map_number):
 
 def extract_master_levels():
     # check if present first
-    ml_map_order = get_master_levels_map_order()
+    order_file, ml_map_order = get_master_levels_map_order()
     if len(ml_map_order) == 0:
         return
     first_ml_wad = get_wad_filename(ml_map_order[0])
@@ -129,7 +131,7 @@ def extract_master_levels():
         return
     logg('Processing Master Levels...')
     mapinfo = open(ML_MAPINFO_FILENAME, 'w')
-    mapinfo.write('// master levels for doom 2\n\n')
+    mapinfo.write(MASTER_LEVELS_MAPINFO_HEADER % order_file)
     for i,wad_name in enumerate(ml_map_order):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
@@ -305,17 +307,25 @@ def copy_resources():
             continue
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
+    # unity doom 1 present? use alternate widescreen intermissions
+    d1wad = omg.WAD()
+    d1_wad_filename = get_wad_filename('doom')
+    d1wad.from_file(d1_wad_filename)
+    if get_wad_filename('doomu') or d1wad.graphics['TITLEPIC'].width > 320:
+        for src_file in WIDESCREEN_RES_FILES:
+            logg('Copying %s' % src_file)
+            copyfile(RES_DIR + src_file, DEST_DIR + os.path.basename(src_file))
     # doom2 vs doom2bfg map31/32 names differ, different mapinfos with same name
-    wad = omg.WAD()
+    d2wad = omg.WAD()
     d2_wad_filename = get_wad_filename('doom2')
     # neither doom2: mapinfo still wants a file for the secret levels
     if not d2_wad_filename:
         copyfile(RES_DIR + 'mapinfo/doom2_nonbfg_levels.txt',
                  DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
         return
-    wad.from_file(d2_wad_filename)
+    d2wad.from_file(d2_wad_filename)
     # bfg version?
-    if wad.graphics.get(BFG_ONLY_LUMP, None):
+    if d2wad.graphics.get(BFG_ONLY_LUMP, None):
         copyfile(RES_DIR + 'mapinfo/doom2_bfg_levels.txt',
                  DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
     else:

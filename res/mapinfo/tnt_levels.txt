@@ -1,5 +1,11 @@
 // TNT maps
 
+defaultmap
+{
+	ExitPic = "TNTINTER"
+	InterMusic = "T_DM2INT"
+}
+
 map TN_MAP01 lookup "THUSTR_1"
 {
 	next = "TN_MAP02"
@@ -9,8 +15,6 @@ map TN_MAP01 lookup "THUSTR_1"
 	titlepatch = "TWILV00"
 	par = 30
 	music = "T_RUNNIN"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_MUSTAINE"
 }
 
@@ -23,8 +27,6 @@ map TN_MAP02 lookup "THUSTR_2"
 	titlepatch = "TWILV01"
 	par = 90
 	music = "T_STALKS"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_WAKELIN"
 }
 
@@ -37,8 +39,6 @@ map TN_MAP03 lookup "THUSTR_3"
 	titlepatch = "TWILV02"
 	par = 120
 	music = "T_COUNTD"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_PATENALL_MINADEO"
 }
 
@@ -51,8 +51,6 @@ map TN_MAP04 lookup "THUSTR_4"
 	titlepatch = "TWILV03"
 	par = 120
 	music = "T_BETWEE"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_HALDERMAN"
 }
 
@@ -65,8 +63,6 @@ map TN_MAP05 lookup "THUSTR_5"
 	titlepatch = "TWILV04"
 	par = 90
 	music = "T_DOOM"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_DETHLEFSEN"
 }
 
@@ -79,8 +75,6 @@ map TN_MAP06 lookup "THUSTR_6"
 	titlepatch = "TWILV05"
 	par = 150
 	music = "T_THE_DA"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_SIEBEN_HALDERMAN"
 }
 
@@ -94,8 +88,6 @@ map TN_MAP07 lookup "THUSTR_7"
 	par = 120
 	map07special
 	music = "T_SHAWN"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_DOWSWELL"
 }
 
@@ -108,8 +100,6 @@ map TN_MAP08 lookup "THUSTR_8"
 	titlepatch = "TWILV07"
 	par = 120
 	music = "T_DDTBLU"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_MINADEO"
 }
 
@@ -122,8 +112,6 @@ map TN_MAP09 lookup "THUSTR_9"
 	titlepatch = "TWILV08"
 	par = 270
 	music = "T_IN_CIT"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_SIEBEN_HALDERMAN"
 }
 
@@ -136,8 +124,6 @@ map TN_MAP10 lookup "THUSTR_10"
 	titlepatch = "TWILV09"
 	par = 90
 	music = "T_DEAD"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_MUSTAINE"
 }
 
@@ -150,8 +136,6 @@ map TN_MAP11 lookup "THUSTR_11"
 	titlepatch = "TWILV10"
 	par = 210
 	music = "T_STLKS2"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_JOHNSON"
 }
 
@@ -164,8 +148,6 @@ map TN_MAP12 lookup "THUSTR_12"
 	titlepatch = "TWILV11"
 	par = 150
 	music = "T_THEDA2"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_LOWELL"
 }
 
@@ -178,8 +160,6 @@ map TN_MAP13 lookup "THUSTR_13"
 	titlepatch = "TWILV12"
 	par = 150
 	music = "T_DOOM2"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_KIDBY_HALDERMAN"
 }
 
@@ -192,8 +172,6 @@ map TN_MAP14 lookup "THUSTR_14"
 	titlepatch = "TWILV13"
 	par = 150
 	music = "T_DDTBL2"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_PATENALL"
 }
 
@@ -206,8 +184,6 @@ map TN_MAP15 lookup "THUSTR_15"
 	titlepatch = "TWILV14"
 	par = 210
 	music = "T_RUNNI2"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_WHITAKER"
 }
 
@@ -220,8 +196,6 @@ map TN_MAP16 lookup "THUSTR_16"
 	titlepatch = "TWILV15"
 	par = 150
 	music = "T_DEAD2"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_ARSENAULT"
 }
 
@@ -234,8 +208,6 @@ map TN_MAP17 lookup "THUSTR_17"
 	titlepatch = "TWILV16"
 	par = 420
 	music = "T_STLKS3"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_MUSTAINE"
 }
 
@@ -248,8 +220,6 @@ map TN_MAP18 lookup "THUSTR_18"
 	titlepatch = "TWILV17"
 	par = 150
 	music = "T_ROMERO"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_CASALI_HALDERMAN"
 }
 
@@ -262,8 +232,6 @@ map TN_MAP19 lookup "THUSTR_19"
 	titlepatch = "TWILV18"
 	par = 210
 	music = "T_SHAWN2"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_HALDERMAN"
 }
 
@@ -276,8 +244,6 @@ map TN_MAP20 lookup "THUSTR_20"
 	titlepatch = "TWILV19"
 	par = 150
 	music = "T_MESSAG"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_OBRIEN"
 }
 
@@ -290,8 +256,6 @@ map TN_MAP21 lookup "THUSTR_21"
 	titlepatch = "TWILV20"
 	par = 240
 	music = "T_COUNT2"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_OBRIEN"
 }
 
@@ -304,8 +268,6 @@ map TN_MAP22 lookup "THUSTR_22"
 	titlepatch = "TWILV21"
 	par = 150
 	music = "T_DDTBL3"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_BUTEAU"
 }
 
@@ -318,8 +280,6 @@ map TN_MAP23 lookup "THUSTR_23"
 	titlepatch = "TWILV22"
 	par = 180
 	music = "T_AMPIE"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_TURNBULL"
 }
 
@@ -332,8 +292,6 @@ map TN_MAP24 lookup "THUSTR_24"
 	titlepatch = "TWILV23"
 	par = 150
 	music = "T_THEDA3"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_JOHNSON"
 }
 
@@ -346,8 +304,6 @@ map TN_MAP25 lookup "THUSTR_25"
 	titlepatch = "TWILV24"
 	par = 150
 	music = "T_ADRIAN"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_MENTZER"
 }
 
@@ -360,8 +316,6 @@ map TN_MAP26 lookup "THUSTR_26"
 	titlepatch = "TWILV25"
 	par = 300
 	music = "T_MESSG2"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_SNELL_LOWELL"
 }
 
@@ -374,8 +328,6 @@ map TN_MAP27 lookup "THUSTR_27"
 	titlepatch = "TWILV26"
 	par = 330
 	music = "T_ROMER2"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_OBRIEN"
 }
 
@@ -388,8 +340,6 @@ map TN_MAP28 lookup "THUSTR_28"
 	titlepatch = "TWILV27"
 	par = 420
 	music = "T_TENSE"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
@@ -402,8 +352,6 @@ map TN_MAP29 lookup "THUSTR_29"
 	cluster = 15
 	par = 300
 	music = "T_SHAWN3"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_SIEBEN"
 }
 
@@ -418,8 +366,6 @@ map TN_MAP30 lookup "THUSTR_30"
 	// hardcodes for TNT.wad but must be manually specified here
 	compat_stairs
 	music = "T_OPENIN"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	next = endgame {
 		pic = "TNTBOSS"
 		music = "T_DM2INT"
@@ -437,8 +383,6 @@ map TN_MAP31 lookup "THUSTR_31"
 	titlepatch = "TWILV30"
 	par = 120
 	music = "T_EVIL"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
@@ -451,8 +395,6 @@ map TN_MAP32 lookup "THUSTR_32"
 	titlepatch = "TWILV31"
 	par = 30
 	music = "T_ULTIMA"
-	ExitPic = "TNTINTER"
-	InterMusic = "T_DM2INT"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 

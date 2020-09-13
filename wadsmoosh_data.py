@@ -6,7 +6,6 @@ RES_FILES = [
     'mapinfo.txt', 'language.txt', 'endoom', 'smooshed.txt',
     'textures.common', 'textures.doom1', 'textures.doom2',
     'textures.tnt', 'textures.plut', 'animdefs.txt',
-    'PNAMES.lmp', 'TEXTURE1.lmp', 'graphics/DUMMY.lmp',
     'graphics/M_DOOM.lmp', 'graphics/TITLEPIC.lmp',
     'graphics/M_HELL.lmp', 'graphics/M_NOREST.lmp',
     'graphics/M_MASTER.lmp', 'graphics/M_TNT.lmp',
@@ -15,6 +14,10 @@ RES_FILES = [
     'mapinfo/tnt_levels.txt', 'mapinfo/plutonia_levels.txt',
     'mapinfo/masterlevels.txt', 'mapinfo/sigil_levels.txt',
     'menudef.txt', 'cvarinfo.txt', 'zscript.txt'
+]
+
+WIDESCREEN_RES_FILES = [
+    'widescreen/in_epi1.txt', 'widescreen/in_epi2.txt', 'widescreen/in_epi3.txt'
 ]
 
 # files within pk3 dir that will be removed before a new run
@@ -46,12 +49,15 @@ COMMON_LUMPS = [
 ]
 
 DOOM1_LUMPS = [
-    'graphics_doom1', 'music_doom1', 'patches_doom1', 'sounds_doom1'
+    'graphics_doom1', 'music_doom1', 'patches_doom1', 'sounds_doom1',
+    # extract PNAMES and TEXTURE1 from both doom.wad and doom2.wad,
+    # in case only one is present
+    'txdefs_doom1'
 ]
 
 DOOM2_LUMPS = [
     'flats_doom2', 'graphics_doom2', 'music_doom2', 'patches_doom2',
-    'sounds_doom2', 'sprites_doom2'
+    'sounds_doom2', 'sprites_doom2', 'txdefs_doom2'
 ]
 
 # lists of lumps to extract from each IWAD
@@ -185,6 +191,13 @@ MASTER_LEVELS_AUTHORS = {
     'mephisto': 'KVERNMO',
     'teeth2':   'KVERNMO'
 }
+
+# lines that will be placed at the top of the generated master levels mapinfo
+MASTER_LEVELS_MAPINFO_HEADER = """
+// master levels for doom 2
+// generated from file '%s' by WadSmoosh
+
+"""
 
 # help the initial source wad reporting find sigil by any of its released names
 SIGIL_ALT_FILENAMES = ['sigil_v1_0', 'sigil_v1_1', 'sigil_v1_2', 'sigil_v1_21']
