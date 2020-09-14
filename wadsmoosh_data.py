@@ -151,7 +151,6 @@ map ML_MAP21 lookup "ML_TEETH_SECRET"
     next = "%s"
     sky1 = "RSKY1"
     music = "$MUSIC_%s"
-    cluster = 24
     Author = "$%s_%s"
 }
 """
@@ -196,6 +195,11 @@ MASTER_LEVELS_AUTHORS = {
 MASTER_LEVELS_MAPINFO_HEADER = """
 // master levels for doom 2
 // generated from file '%s' by WadSmoosh
+
+defaultmap
+{
+    cluster = 24
+}
 
 """
 
