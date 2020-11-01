@@ -22,7 +22,6 @@ ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/masterlevels.txt'
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
 RES_FILES = []
-WIDESCREEN_RES_FILES = []
 WADS = []
 REPORT_WADS = []
 COMMON_LUMPS = []
@@ -305,14 +304,6 @@ def copy_resources():
             continue
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
-    # unity doom 1 present? use alternate widescreen intermissions
-    d1wad = omg.WAD()
-    d1_wad_filename = get_wad_filename('doom')
-    d1wad.from_file(d1_wad_filename)
-    if get_wad_filename('doomu') or d1wad.graphics['TITLEPIC'].width > 320:
-        for src_file in WIDESCREEN_RES_FILES:
-            logg('Copying %s' % src_file)
-            copyfile(RES_DIR + src_file, DEST_DIR + os.path.basename(src_file))
     # doom2 vs doom2bfg map31/32 names differ, different mapinfos with same name
     d2wad = omg.WAD()
     d2_wad_filename = get_wad_filename('doom2')

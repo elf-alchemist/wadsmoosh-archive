@@ -1,5 +1,5 @@
 
-version "2.5.0"
+version "4.1.0"
 
 class WadSmooshHandler : EventHandler
 {
@@ -9,38 +9,38 @@ class WadSmooshHandler : EventHandler
         mapPrefix = mapPrefix.MakeLower();
         if ( mapPrefix == "tn_" )
         {
-            TexMan.ReplaceTextures("SW1GSTON", "SW1GSTNT", 0);
-            TexMan.ReplaceTextures("SW2GSTON", "SW2GSTNT", 0);
-            TexMan.ReplaceTextures("SKY1", "TNT_SKY1", 0);
-            TexMan.ReplaceTextures("SW1BRN1", "SW1BRN1T", 0);
-            TexMan.ReplaceTextures("SW2BRN1", "SW2BRN1T", 0);
-            TexMan.ReplaceTextures("SW1SKULL", "SW1SKULT", 0);
-            TexMan.ReplaceTextures("SW2SKULL", "SW2SKULT", 0);
-            TexMan.ReplaceTextures("SW1STARG", "SW1STARP", 0); // also in plutonia
-            TexMan.ReplaceTextures("SW2STARG", "SW2STARP", 0);
-            TexMan.ReplaceTextures("SLADRIP1", "SLADRPT1", 0);
-            TexMan.ReplaceTextures("SLADRIP3", "SLADRPT3", 0);
-            TexMan.ReplaceTextures("BLODGR1", "BLODGRT1", 0);
-            TexMan.ReplaceTextures("BLODGR4", "BLODGRT4", 0);
-            TexMan.ReplaceTextures("WFALL1", "TWFALL1", 0);
+            Level.ReplaceTextures("SW1GSTON", "SW1GSTNT", 0);
+            Level.ReplaceTextures("SW2GSTON", "SW2GSTNT", 0);
+            Level.ReplaceTextures("SKY1", "TNT_SKY1", 0);
+            Level.ReplaceTextures("SW1BRN1", "SW1BRN1T", 0);
+            Level.ReplaceTextures("SW2BRN1", "SW2BRN1T", 0);
+            Level.ReplaceTextures("SW1SKULL", "SW1SKULT", 0);
+            Level.ReplaceTextures("SW2SKULL", "SW2SKULT", 0);
+            Level.ReplaceTextures("SW1STARG", "SW1STARP", 0); // also in plutonia
+            Level.ReplaceTextures("SW2STARG", "SW2STARP", 0);
+            Level.ReplaceTextures("SLADRIP1", "SLADRPT1", 0);
+            Level.ReplaceTextures("SLADRIP3", "SLADRPT3", 0);
+            Level.ReplaceTextures("BLODGR1", "BLODGRT1", 0);
+            Level.ReplaceTextures("BLODGR4", "BLODGRT4", 0);
+            Level.ReplaceTextures("WFALL1", "TWFALL1", 0);
         }
         else if ( mapPrefix == "pl_" )
         {
-            TexMan.ReplaceTextures("DBRAIN1", "PBRAIN1", 0);
-            TexMan.ReplaceTextures("DBRAIN4", "PBRAIN4", 0);
-            TexMan.ReplaceTextures("FIREBLU1", "FIREPLU1", 0);
-            TexMan.ReplaceTextures("FIREBLU2", "FIREPLU2", 0);
-            TexMan.ReplaceTextures("SW1SKULL", "SW1SKULP", 0);
-            TexMan.ReplaceTextures("SW2SKULL", "SW2SKULP", 0);
-            TexMan.ReplaceTextures("SKY3", "PSKY3", 0);
-            TexMan.ReplaceTextures("SW1BRN1", "SW1BRN1T", 0); // also in tnt
-            TexMan.ReplaceTextures("SW2BRN1", "SW2BRN1T", 0);
-            TexMan.ReplaceTextures("SW1STARG", "SW1STARP", 0);
-            TexMan.ReplaceTextures("SW2STARG", "SW2STARP", 0);
-            TexMan.ReplaceTextures("WFALL1", "PWFALL1", 0);
-            TexMan.ReplaceTextures("WFALL2", "PWFALL2", 0);
-            TexMan.ReplaceTextures("WFALL3", "PWFALL3", 0);
-            TexMan.ReplaceTextures("WFALL4", "PWFALL4", 0);
+            Level.ReplaceTextures("DBRAIN1", "PBRAIN1", 0);
+            Level.ReplaceTextures("DBRAIN4", "PBRAIN4", 0);
+            Level.ReplaceTextures("FIREBLU1", "FIREPLU1", 0);
+            Level.ReplaceTextures("FIREBLU2", "FIREPLU2", 0);
+            Level.ReplaceTextures("SW1SKULL", "SW1SKULP", 0);
+            Level.ReplaceTextures("SW2SKULL", "SW2SKULP", 0);
+            Level.ReplaceTextures("SKY3", "PSKY3", 0);
+            Level.ReplaceTextures("SW1BRN1", "SW1BRN1T", 0); // also in tnt
+            Level.ReplaceTextures("SW2BRN1", "SW2BRN1T", 0);
+            Level.ReplaceTextures("SW1STARG", "SW1STARP", 0);
+            Level.ReplaceTextures("SW2STARG", "SW2STARP", 0);
+            Level.ReplaceTextures("WFALL1", "PWFALL1", 0);
+            Level.ReplaceTextures("WFALL2", "PWFALL2", 0);
+            Level.ReplaceTextures("WFALL3", "PWFALL3", 0);
+            Level.ReplaceTextures("WFALL4", "PWFALL4", 0);
         }
     }
     
@@ -51,8 +51,8 @@ class WadSmooshHandler : EventHandler
         if ( mapName.Left(1) == "e" && mapName.Mid(2, 1) == "m" )
         {
             // replace two size-sensitive textures with doom1-specific variants
-            TexMan.ReplaceTextures("BRNPOIS", "BRNPOIS1", 0);
-            TexMan.ReplaceTextures("NUKEPOIS", "NUKPOIS1", 0);
+            Level.ReplaceTextures("BRNPOIS", "BRNPOIS1", 0);
+            Level.ReplaceTextures("NUKEPOIS", "NUKPOIS1", 0);
         }
     }
     

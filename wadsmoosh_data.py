@@ -16,10 +16,6 @@ RES_FILES = [
     'menudef.txt', 'cvarinfo.txt', 'zscript.txt'
 ]
 
-WIDESCREEN_RES_FILES = [
-    'widescreen/in_epi1.txt', 'widescreen/in_epi2.txt', 'widescreen/in_epi3.txt'
-]
-
 # files within pk3 dir that will be removed before a new run
 TIDY_DIR_EXTENSIONS = {
     'flats/': ['lmp'],
