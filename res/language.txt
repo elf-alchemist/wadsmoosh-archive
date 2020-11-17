@@ -8,6 +8,7 @@ WS_MENU_D2SKY_COMPAT = "Doom2 Custom Sky Compatibility";
 WS_MENU_D1POIS_TEXSWAP = "Doom1 Poison Texture Substitutions";
 WS_MENU_CREDITS = "WadSmoosh Credits";
 WS_NAME = "WadSmoosh";
+WS_SKILL_UVPLUS = "Ultra-Violence+";
 
 // credits headings
 WS_CRED_DEVPUB = "Developed and Published by";

@@ -27,6 +27,16 @@ GameInfo
 	AddEventHandlers = "WadSmooshHandler"
 }
 
+// define UV+ skill
+skill hardplus
+{
+	SpawnFilter = Hard
+	Name = "$WS_SKILL_UVPLUS"
+	Key = "u"
+	FastMonsters
+	SpawnMulti
+}
+
 clearepisodes
 episode E1M1
 {
