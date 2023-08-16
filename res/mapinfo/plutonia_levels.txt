@@ -4,7 +4,6 @@ defaultmap
 {
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
-	Author = "$WS_AU_CASALIS"
 }
 
 map PL_MAP01 lookup "PHUSTR_1"
@@ -16,6 +15,7 @@ map PL_MAP01 lookup "PHUSTR_1"
 	titlepatch = "PWILV00"
 	par = 30
 	music = "P_RUNNIN"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP02 lookup "PHUSTR_2"
@@ -27,6 +27,7 @@ map PL_MAP02 lookup "PHUSTR_2"
 	titlepatch = "PWILV01"
 	par = 90
 	music = "P_STALKS"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP03 lookup "PHUSTR_3"
@@ -38,6 +39,7 @@ map PL_MAP03 lookup "PHUSTR_3"
 	titlepatch = "PWILV02"
 	par = 120
 	music = "P_COUNTD"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP04 lookup "PHUSTR_4"
@@ -49,6 +51,7 @@ map PL_MAP04 lookup "PHUSTR_4"
 	titlepatch = "PWILV03"
 	par = 120
 	music = "P_BETWEE"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP05 lookup "PHUSTR_5"
@@ -60,6 +63,7 @@ map PL_MAP05 lookup "PHUSTR_5"
 	titlepatch = "PWILV04"
 	par = 90
 	music = "P_DOOM"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP06 lookup "PHUSTR_6"
@@ -71,6 +75,7 @@ map PL_MAP06 lookup "PHUSTR_6"
 	titlepatch = "PWILV05"
 	par = 150
 	music = "P_THE_DA"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP07 lookup "PHUSTR_7"
@@ -83,6 +88,7 @@ map PL_MAP07 lookup "PHUSTR_7"
 	par = 120
 	map07special
 	music = "P_SHAWN"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP08 lookup "PHUSTR_8"
@@ -94,6 +100,7 @@ map PL_MAP08 lookup "PHUSTR_8"
 	titlepatch = "PWILV07"
 	par = 120
 	music = "P_DDTBLU"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP09 lookup "PHUSTR_9"
@@ -105,6 +112,7 @@ map PL_MAP09 lookup "PHUSTR_9"
 	titlepatch = "PWILV08"
 	par = 270
 	music = "P_IN_CIT"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP10 lookup "PHUSTR_10"
@@ -116,6 +124,7 @@ map PL_MAP10 lookup "PHUSTR_10"
 	titlepatch = "PWILV09"
 	par = 90
 	music = "P_DEAD"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP11 lookup "PHUSTR_11"
@@ -127,6 +136,7 @@ map PL_MAP11 lookup "PHUSTR_11"
 	titlepatch = "PWILV10"
 	par = 210
 	music = "P_STLKS2"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP12 lookup "PHUSTR_12"
@@ -138,6 +148,7 @@ map PL_MAP12 lookup "PHUSTR_12"
 	titlepatch = "PWILV11"
 	par = 150
 	music = "P_THEDA2"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP13 lookup "PHUSTR_13"
@@ -149,6 +160,7 @@ map PL_MAP13 lookup "PHUSTR_13"
 	titlepatch = "PWILV12"
 	par = 150
 	music = "P_DOOM2"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP14 lookup "PHUSTR_14"
@@ -160,6 +172,7 @@ map PL_MAP14 lookup "PHUSTR_14"
 	titlepatch = "PWILV13"
 	par = 150
 	music = "P_DDTBL2"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP15 lookup "PHUSTR_15"
@@ -171,6 +184,7 @@ map PL_MAP15 lookup "PHUSTR_15"
 	titlepatch = "PWILV14"
 	par = 210
 	music = "P_RUNNI2"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP16 lookup "PHUSTR_16"
@@ -182,6 +196,7 @@ map PL_MAP16 lookup "PHUSTR_16"
 	titlepatch = "PWILV15"
 	par = 150
 	music = "P_DEAD2"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP17 lookup "PHUSTR_17"
@@ -193,6 +208,7 @@ map PL_MAP17 lookup "PHUSTR_17"
 	titlepatch = "PWILV16"
 	par = 420
 	music = "P_STLKS3"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP18 lookup "PHUSTR_18"
@@ -204,6 +220,7 @@ map PL_MAP18 lookup "PHUSTR_18"
 	titlepatch = "PWILV17"
 	par = 150
 	music = "P_ROMERO"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP19 lookup "PHUSTR_19"
@@ -215,6 +232,7 @@ map PL_MAP19 lookup "PHUSTR_19"
 	titlepatch = "PWILV18"
 	par = 210
 	music = "P_SHAWN2"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP20 lookup "PHUSTR_20"
@@ -226,6 +244,7 @@ map PL_MAP20 lookup "PHUSTR_20"
 	titlepatch = "PWILV19"
 	par = 150
 	music = "P_MESSAG"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP21 lookup "PHUSTR_21"
@@ -237,6 +256,7 @@ map PL_MAP21 lookup "PHUSTR_21"
 	titlepatch = "PWILV20"
 	par = 240
 	music = "P_COUNT2"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP22 lookup "PHUSTR_22"
@@ -248,6 +268,7 @@ map PL_MAP22 lookup "PHUSTR_22"
 	titlepatch = "PWILV21"
 	par = 150
 	music = "P_DDTBL3"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP23 lookup "PHUSTR_23"
@@ -259,6 +280,7 @@ map PL_MAP23 lookup "PHUSTR_23"
 	titlepatch = "PWILV22"
 	par = 180
 	music = "P_AMPIE"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP24 lookup "PHUSTR_24"
@@ -270,6 +292,7 @@ map PL_MAP24 lookup "PHUSTR_24"
 	titlepatch = "PWILV23"
 	par = 150
 	music = "P_THEDA3"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP25 lookup "PHUSTR_25"
@@ -281,6 +304,7 @@ map PL_MAP25 lookup "PHUSTR_25"
 	titlepatch = "PWILV24"
 	par = 150
 	music = "P_ADRIAN"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP26 lookup "PHUSTR_26"
@@ -292,6 +316,7 @@ map PL_MAP26 lookup "PHUSTR_26"
 	titlepatch = "PWILV25"
 	par = 300
 	music = "P_MESSG2"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP27 lookup "PHUSTR_27"
@@ -303,6 +328,7 @@ map PL_MAP27 lookup "PHUSTR_27"
 	titlepatch = "PWILV26"
 	par = 330
 	music = "P_ROMER2"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP28 lookup "PHUSTR_28"
@@ -314,6 +340,7 @@ map PL_MAP28 lookup "PHUSTR_28"
 	titlepatch = "PWILV27"
 	par = 420
 	music = "P_TENSE"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP29 lookup "PHUSTR_29"
@@ -325,6 +352,7 @@ map PL_MAP29 lookup "PHUSTR_29"
 	titlepatch = "PWILV28"
 	par = 300
 	music = "P_SHAWN3"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 map PL_MAP30 lookup "PHUSTR_30"
@@ -335,6 +363,7 @@ map PL_MAP30 lookup "PHUSTR_30"
 	par = 180
 	allowmonstertelefrags
 	music = "P_OPENIN"
+	Author = "$WS_AU_MILO_CASALI"
 	next = endgame {
 		pic = "PLUBOSS"
 		music = "P_THE_DA"
@@ -351,6 +380,7 @@ map PL_MAP31 lookup "PHUSTR_31"
 	titlepatch = "PWILV30"
 	par = 120
 	music = "P_EVIL"
+	Author = "$WS_AU_DARIO_CASALI"
 }
 
 map PL_MAP32 lookup "PHUSTR_32"
@@ -362,6 +392,7 @@ map PL_MAP32 lookup "PHUSTR_32"
 	titlepatch = "PWILV31"
 	par = 30
 	music = "P_ULTIMA"
+	Author = "$WS_AU_MILO_CASALI"
 }
 
 // Plutonia first cluster (up thru level 6)
