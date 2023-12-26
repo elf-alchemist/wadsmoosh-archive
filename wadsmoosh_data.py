@@ -13,6 +13,7 @@ RES_FILES = [
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
     'mapinfo/tnt_levels.txt', 'mapinfo/plutonia_levels.txt',
     'mapinfo/masterlevels.txt', 'mapinfo/sigil_levels.txt',
+    'mapinfo/sigil2_levels.txt',
     'menudef.txt', 'cvarinfo.txt', 'zscript.txt'
 ]
 
@@ -31,11 +32,12 @@ TIDY_DIR_EXTENSIONS = {
 
 # list of files we can extract from
 WADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve', 'sigil', 'sigil_shreds',
-        'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
+        'sigil2', 'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
 
 # wads to search for and report if found
-REPORT_WADS = ['doom', 'sigil', 'sigil_shreds', 'doom2', 'nerve', 'attack',
-               'tnt', 'plutonia', 'sewers', 'betray', 'doomu', 'doom2u',
+REPORT_WADS = ['doom', 'sigil', 'sigil_shreds', 'sigil2',
+               'doom2', 'nerve', 'attack', 'tnt', 'plutonia',
+               'sewers', 'betray', 'doomu', 'doom2u',
                'nerveu', 'tntu', 'plutoniau', 'extras']
 
 # lists of lumps common to doom 1+2
@@ -65,6 +67,7 @@ WAD_LUMP_LISTS = {
     'sigil': ['graphics_sigil', 'music_sigil', 'patches_sigil', 'data_sigil'],
     # (buckethead tracks use the same names as jimmy's midi)
     'sigil_shreds': ['music_sigil'],
+    'sigil2': ['graphics_sigil2', 'music_sigil2', 'patches_sigil2', 'data_sigil2', 'flats_sigil2'],
     # widescreen assets from unity ports
     'doomu': ['graphics_doomu'],
     'doom2u': ['graphics_doom2u'],
@@ -84,7 +87,8 @@ WAD_MAP_PREFIXES = {
     'nerve': 'NV_',
     # master levels not processed like other wads, bespoke prefix lookup
     'masterlevels': 'ML_',
-    'sigil': ''
+    'sigil': '',
+    'sigil2': ''
 }
 
 # texture patches to extract from specific master levels PWADs
@@ -201,6 +205,8 @@ defaultmap
 
 # help the initial source wad reporting find sigil by any of its released names
 SIGIL_ALT_FILENAMES = ['sigil_v1_0', 'sigil_v1_1', 'sigil_v1_2', 'sigil_v1_21']
+# same for sigil2 - no sigil_shreds equivalent; MP3 music just an alternate wad
+SIGIL2_ALT_FILENAMES = ['sigil_ii_v1_0', 'sigil_ii_mp3_v1_0']
 
 # lump whose presence distinguishes BFG & Unity vs original doom2.wad
 BFG_ONLY_LUMP = 'DMENUPIC'

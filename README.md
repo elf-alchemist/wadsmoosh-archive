@@ -24,7 +24,7 @@ Advanced users can edit `wadsmoosh_data.py` to customize how and what WadSmoosh 
 
 ## Supported WADs
 
-WadSmoosh is not a general-purpose tool for merging Doom WADs; it is for *merging retail content* only - it was created in 2016 out of a desire for a "complete" retail version of Doom and Doom II, and only exists as a program because the IWAD file that it generates cannot be distributed legally. Please do not ask if WadSmoosh will support any specific WAD. If you want to add your own content to a custom IWAD, please either modify [WadSmoosh's source code](https://heptapod.host/jp-lebreton/wadsmoosh) yourself, or simply edit the `doom_complete.pk3` file by opening it in a ZIP archive management program. Please do not ask me for support when doing either.
+WadSmoosh is not a general-purpose tool for merging Doom WADs; it is for *merging retail content* only - it was created in 2016 out of a desire for a "complete" retail version of Doom and Doom II, and only exists as a program because the IWAD file that it generates cannot be distributed legally. Please do not ask if WadSmoosh will support any specific WAD. If you want to add your own content to a custom IWAD, please either modify [WadSmoosh's source code](https://heptapod.host/jp-lebreton/wadsmoosh) yourself, or simply edit the `doom_complete.pk3` file WadSmoosh generated on your computer by opening it in a ZIP archive management program. Please do not ask me for support when doing either.
 
 Here is the official list of WADs that WadSmoosh will recognize:
 - Ultimate Doom (`doom.wad`)
@@ -33,7 +33,10 @@ Here is the official list of WADs that WadSmoosh will recognize:
 - The Master Levels (the 20 unmodified WAD files from the retail release)
 - Final Doom (`tnt.wad` and `plutonia.wad`)
 - No Rest for the Living (`nerve.wad`)
-- Sigil
+- Sigil (`sigil.wad` and its optional music addon `sigil_shreds.wad`)
+- Sigil II (`sigil2.wad`, either its MIDI or MP3 soundtrack versions)
+
+For Sigil and Sigil II, all the filenames for different releases of those WADs are also recognized; you shouldn't have to rename your original files.
 
 None of the "official add-on" content from the [Unity-based rereleases of Doom and Doom II](https://doomwiki.org/wiki/Doom_Classic_Unity_port) is supported. Only the versions of `doom.wad` and `doom2.wad` in the install folders for these ports are supported; they are virtually identical to the original data files.
 

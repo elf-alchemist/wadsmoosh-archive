@@ -96,4 +96,17 @@ class WadSmooshHandler : EventHandler
         if ( CVar.FindCVar("ws_d2sky_compat").GetBool() )
             DoDoom2SkyReplacements();
     }
+    
+    override void WorldThingSpawned(WorldEvent e)
+    {
+        // sigil 2 spider boss buff
+        String mapName = level.MapName.MakeLower();
+        if ( mapName.Left(3) == "e6m" )
+        {
+            if ( CVar.FindCVar("ws_s2_spiderboss").GetBool() && e.Thing.GetClassName() == "SpiderMastermind" )
+            {
+                e.Thing.Health = 9000;
+            }
+        }
+    }
 }
