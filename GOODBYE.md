@@ -1,4 +1,4 @@
-I am ending development and support for WadSmoosh
+# I am ending development and support for WadSmoosh
 
 Over 4th of July weekend in 2016, I wrote a little Python utility that would, with the [omgifol library](https://github.com/devinacker/omgifol) doing all the heavy lifting, merge the contents of [doom.wad](https://doomwiki.org/wiki/DOOM.WAD) and [doom2.wad](https://doomwiki.org/wiki/DOOM2.WAD) into a single file you could run with [ZDoom](https://doomwiki.org/wiki/ZDoom), and have all the Classic Doom episodes in a single place, ie without having to relaunch the game with either individual IWAD.
 
@@ -20,4 +20,5 @@ Thank you for the support and encouragement these past 8 years, Doom community.
 
 
 JP LeBreton
+
 2024-08-10
