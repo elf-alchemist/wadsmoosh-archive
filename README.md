@@ -1,5 +1,7 @@
 # WadSmoosh - simple IWAD merge utility
 
+**NOTE: I am no longer developing or supporting WadSmoosh. Please fork the code or find a community fork if you need something fixed or added. See [GOODBYE.md](GOODBYE.md) for details.**
+
 WadSmoosh merges your provided Ultimate Doom, Doom 2, Master Levels, No Rest for the Living, Final Doom, and Sigil data into a single IWAD file that can be played in GZDoom, with each game as its own entry in the episode list. This makes it very convenient to play all of classic Doom's official releases without relaunching the game with different settings.
 
 It's fine if you don't have all of the Doom games, eg you have Doom 2 but not Final Doom - WadSmoosh will package up everything it can find.
